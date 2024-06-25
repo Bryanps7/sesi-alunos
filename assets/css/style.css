@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+}
+
+#mostraAlunos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* body {
+    display: flex;
+}
+
+img { 
+    width: 24%;
+    border: 8px;
+    margin: 3px;
+    border-radius: 10px;
+}     */
