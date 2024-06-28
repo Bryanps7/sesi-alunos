@@ -55,12 +55,19 @@ todosAlunos.addEventListener('click', ()=>{
         img.src = `/assets/img/aluno${i}.png`;
         img.alt = `Aluno(a) ${alunos[i]}`;
         title.textContent = alunos[i];
-        
-        title.style.height = `60px`
+            
+        title.style.height = `auto`
+        box.style.width = `30%`;
         title.style.fontSize = `1.5rem`;
-        box.style.width = `20%`;
+        title.style.margin = `5px 0`;
+        box.style.margin = `0 1%`
+        box.style.border = `1px solid rgb(0, 92, 169)`
+        box.style.height = `min-content`
         img.style.width = `100%`;
-        img.style.marginBottom = `25px`;
+        img.style.borderRadius = `15px`
+        box.style.borderRadius = `15px`
+        box.style.marginBottom = `25px`;
+        
 
         img.onerror = function() {
             this.src = '/assets/img/alunoNA.png';

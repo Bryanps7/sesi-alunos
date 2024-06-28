@@ -7,13 +7,7 @@
     flex-wrap: wrap;
 }
 
-/* body {
+body {
+    background-color: rgb(0, 140, 255);
     display: flex;
 }
-
-img { 
-    width: 24%;
-    border: 8px;
-    margin: 3px;
-    border-radius: 10px;
-}     */
