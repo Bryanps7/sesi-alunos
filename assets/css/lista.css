@@ -1,0 +1,51 @@
+header nav {
+    display: flex;
+    justify-content: center;
+    margin-top: calc(var(--margin) / 2);
+}
+
+header nav button {
+    background-color: white;
+    border: var(--border);
+    font-weight: bold;
+    margin: 0 var(--margin);
+    border-radius: var(--border-radius);
+    padding: calc(var(--padding) / 2);
+}
+
+header nav button:hover {
+    background-color: black;
+    color: white;
+    border: var(--border-reverse);
+    transition: var(--transition);
+    font-size: var(--font-size-hover);
+}
+
+header div {
+    text-align: center;
+    margin-top: calc(var(--margin) / 2);
+    justify-content: center;
+}
+
+header div input {
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+    border: var(--border);
+    padding: calc(var(--padding) / 2);
+}
+
+header div button {
+    background-color: white;
+    border: var(--border);
+    font-weight: bold;
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    padding: calc(var(--padding) / 2);
+    outline: 0;
+}
+
+header div button:hover {
+    background-color: black;
+    color: white;
+    border: var(--border-reverse);
+    transition: var(--transition);
+    font-size: var(--font-size-hover);
+}

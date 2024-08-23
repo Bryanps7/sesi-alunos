@@ -1,0 +1,31 @@
+#mostraAlunos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: var(--margin);
+}
+
+#mostraAlunos div {
+    width: 330px;
+    border: var(--border-person);
+    border-radius: calc(var(--border-radius) / 2);
+    margin-bottom: calc(var(--margin) / 2);
+}
+
+#mostraAlunos img {
+    width: 100%;
+    border-radius: 0 0 calc(var(--border-radius) / 2) calc(var(--border-radius) / 2);
+    margin: 0;
+}
+
+#mostraAlunos p:hover {
+    transition: var(--transition);
+    font-weight: bold;
+}
+
+@media(max-width: 800px) {
+    #mostraAlunos div {
+        width: 200px;
+    }
+}

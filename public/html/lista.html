@@ -6,17 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/public/sesi-logo.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="/assets/css/style.css">
     <script src="/assets/js/lista.js" defer></script>
+
+    <link rel="stylesheet" href="/assets/css/lista.css">
+    <link rel="stylesheet" href="/assets/css/scroll.css">
+    <link rel="stylesheet" href="/assets/css/pessoa.css">
+    <link rel="stylesheet" href="/assets/css/config.css">
 </head>
 <body>
-    <div class="container">
+    <header>
         <nav>
             <button id="todosAlunos">Imprimir todos os Alunos</button>
-            <button id="abrirInput">Por letra</button>
-            <div id="letra"></div>
+            <button id="abrirInput">Pesquisar</button>
         </nav>
-        <div id="mostraAlunos"></div>
-    </div>
+        <div id="pesquisa"></div>
+    </header>
+    <main>
+        <div id="mostraAlunos"></div>   
+    </main>
 </body>
 </html>

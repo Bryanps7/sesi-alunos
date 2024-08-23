@@ -19,7 +19,7 @@ const alunos = [
     "Helena Neis da Silva",
     "João Francisco Luchtenberg Ventura",
     "João Paulo Fagundes",
-    "Joao Victor de Abreu Cunha",
+    "João Victor de Abreu Cunha",
     "João Vitor Galiotto de Souza",
     "João Vitor Santos",
     "Jonas Luiz Marin",
@@ -33,7 +33,6 @@ const alunos = [
     "Nicollas Lopes do Nascimento",
     "Pedro Rafael Santiago",
     "Ruan Geraldo",
-    "Victor Fey da Silva",
     "Vinícius de Bona Ruas",
     "Yan Bueno Goulart",
 ];
@@ -57,6 +56,53 @@ const alunos = [
 //         carrosel.appendChild(img)
 //     }
 // }
+
+window.onload = iniciar()
+
+function iniciar() {
+    let carousel = document.querySelector('.carousel-images')
+
+    for(let i = 1; i <= 100; i++){
+        carousel.innerHTML = `
+            <img src="/assets/img/alunoNA.png" alt="Agatha Iasmin Koschel do Nascimento">
+            <img src="/assets/img/aluno1.png" alt="Ana Clara Furtado Goudinho">
+            <img src="/assets/img/aluno2.png" alt="Arthur Alexandre Abbruzzini">
+            <img src="/assets/img/aluno3.png" alt="Arthur Marcos Serpa Martins">
+            <img src="/assets/img/aluno4.png" alt="Arthur Soglia Veronica">
+            <img src="/assets/img/aluno5.png" alt="Artur Ximendes Del Guerso">
+            <img src="/assets/img/aluno6.png" alt="Augusto Gonçalves Dias">
+            <img src="/assets/img/aluno7.png" alt="Brenda Julya de Souza Freitas da Silva">
+            <img src="/assets/img/aluno8.png" alt="Bryan Prinz da Siva">
+            <img src="/assets/img/aluno9.png" alt="Daniel Domingo">
+            <img src="/assets/img/aluno10.png" alt="Davi Schoenardie de Almeida">
+            <img src="/assets/img/aluno11.png" alt="Eduardo Corrêa da Cruz">
+            <img src="/assets/img/aluno12.png" alt="Eric D. Scapini">
+            <img src="/assets/img/aluno13.png" alt="Érick Miguel Schuck">
+            <img src="/assets/img/aluno14.png" alt="Francisco Lisboa da Silva Lima">
+            <img src="/assets/img/aluno15.png" alt="Giovanni Filipe Burgo">
+            <img src="/assets/img/aluno16.png" alt="Guilherme Tomaz Silva">
+            <img src="/assets/img/aluno17.png" alt="Helena Neis da Silva">
+            <img src="/assets/img/aluno18.png" alt="João Francisco Luchtenberg Ventura">
+            <img src="/assets/img/aluno19.png" alt="João Paulo Fagundes">
+            <img src="/assets/img/aluno20.png" alt="Joao Victor de Abreu Cunha">
+            <img src="/assets/img/aluno21.png" alt="João Vitor Galiotto de Souza">
+            <img src="/assets/img/aluno22.png" alt="João Vitor Santos">
+            <img src="/assets/img/aluno23.png" alt="Jonas Luiz Marin">
+            <img src="/assets/img/aluno24.png" alt="Kauê Dantti Schaparini">
+            <img src="/assets/img/aluno25.png" alt="Lucas Pereira">
+            <img src="/assets/img/aluno26.png" alt="Lucas Wagner Salim">
+            <img src="/assets/img/aluno27.png" alt="Manuela Cristina Torres Guimarães">
+            <img src="/assets/img/aluno28.png" alt="Mateus Queiroz Logrado">
+            <img src="/assets/img/aluno29.png" alt="Mateus Zandona Krieger">
+            <img src="/assets/img/aluno30.png" alt="Nicollas Jose Prim">
+            <img src="/assets/img/aluno31.png" alt="Nicollas Lopes do Nascimento">
+            <img src="/assets/img/aluno32.png" alt="Pedro Rafael Santiago">
+            <img src="/assets/img/aluno33.png" alt="Ruan Geraldo">
+            <img src="/assets/img/aluno34.png" alt="Vinícius de Bona Ruas">
+            <img src="/assets/img/aluno35.png" alt="Yan Bueno Goulart">
+        `
+    }
+}
 
 document.addEventListener('DOMContentLoaded', function() {
     var playButton = document.getElementById('playButton');

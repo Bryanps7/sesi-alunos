@@ -19,7 +19,7 @@ const alunos = [
     "Helena Neis da Silva",
     "João Francisco Luchtenberg Ventura",
     "João Paulo Fagundes",
-    "Joao Victor de Abreu Cunha",
+    "João Victor de Abreu Cunha",
     "João Vitor Galiotto de Souza",
     "João Vitor Santos",
     "Jonas Luiz Marin",
@@ -33,7 +33,6 @@ const alunos = [
     "Nicollas Lopes do Nascimento",
     "Pedro Rafael Santiago",
     "Ruan Geraldo",
-    "Victor Fey da Silva",
     "Vinícius de Bona Ruas",
     "Yan Bueno Goulart",
 ];
@@ -41,12 +40,14 @@ const alunos = [
 let todosAlunos = document.getElementById("todosAlunos");
 let abrirInput = document.getElementById("abrirInput");
 let mostraAlunos = document.getElementById("mostraAlunos");
-let letra = document.getElementById("letra");
+let pesquisa = document.getElementById("pesquisa");
 
 todosAlunos.addEventListener('click', ()=>{
     
     mostraAlunos.innerHTML = ""
 
+    pesquisa.style.display = 'none'
+    
     for(let i=0;i<alunos.length;i++){
         const box = document.createElement('div');
         const img = document.createElement('img');
@@ -56,17 +57,17 @@ todosAlunos.addEventListener('click', ()=>{
         img.alt = `Aluno(a) ${alunos[i]}`;
         title.textContent = alunos[i];
             
-        title.style.height = `auto`
-        box.style.width = `30%`;
-        title.style.fontSize = `1.5rem`;
-        title.style.margin = `5px 0`;
-        box.style.margin = `0 1%`
-        box.style.border = `1px solid rgb(0, 92, 169)`
-        box.style.height = `min-content`
-        img.style.width = `100%`;
-        img.style.borderRadius = `15px`
-        box.style.borderRadius = `15px`
-        box.style.marginBottom = `25px`;
+        // title.style.height = `auto`
+        // box.style.width = `30%`;
+        // title.style.fontSize = `1.5rem`;
+        // title.style.margin = `5px 0`;
+        // box.style.margin = `0 1%`
+        // box.style.border = `1px solid rgb(0, 92, 169)`
+        // box.style.height = `min-content`
+        // img.style.width = `100%`;
+        // img.style.borderRadius = `15px`
+        // box.style.borderRadius = `15px`
+        // box.style.marginBottom = `25px`;
         
 
         img.onerror = function() {
@@ -75,23 +76,25 @@ todosAlunos.addEventListener('click', ()=>{
         
         box.appendChild(title);
         box.appendChild(img);
-
+        
         mostraAlunos.appendChild(box);
     }
 })
 
 abrirInput.addEventListener('click', ()=>{
-    letra.innerHTML = "<input id='letraBus' type='text' placeholder='Insira uma letra:'>"
-    letra.innerHTML += "<button onclick='buscaLetra()'>Buscar</button>"
+    pesquisa.style.display = 'flex'
+
+    pesquisa.innerHTML = "<input id='pesq' type='text' placeholder='Insira um nome:'>"
+    pesquisa.innerHTML += "<button onclick='pesquisar()'>Buscar</button>"
 })  
 
-function buscaLetra(){
-    let letraBus = String(document.getElementById("letraBus").value)
+function pesquisar(){
+    let pesq = String(document.getElementById("pesq").value)
 
     mostraAlunos.innerHTML = ""
     console.log('teste')
     for(let i=0; i<alunos.length;i++){
-        if(alunos[i].charAt(0) == letraBus.charAt(0)){
+        if(alunos[i].toLowerCase().indexOf(pesq.toLowerCase()) > -1){
             const box = document.createElement('div');
             const img = document.createElement('img');
             const title = document.createElement('p');
@@ -100,11 +103,11 @@ function buscaLetra(){
             img.alt = `Aluno(a) ${alunos[i]}`;
             title.textContent = alunos[i];
             
-            title.style.height = `60px`
-            title.style.fontSize = `1.5rem`;
-            box.style.width = `20%`;
-            img.style.width = `100%`;
-            img.style.marginBottom = `25px`;
+            // title.style.height = `60px`
+            // title.style.fontSize = `1.5rem`;
+            // box.style.width = `20%`;
+            // img.style.width = `100%`;
+            // img.style.marginBottom = `25px`;
 
             img.onerror = function() {
                 this.src = '/assets/img/alunoNA.png';
