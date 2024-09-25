@@ -62,7 +62,7 @@ window.onload = iniciar()
 function iniciar() {
     let carousel = document.querySelector('.carousel-images')
 
-    for(let i = 1; i <= 100; i++){
+    for(let i = 1; i <= 1000; i++){
         carousel.innerHTML += `
             <img src="/assets/img/alunoNA.png" alt="Agatha Iasmin Koschel do Nascimento">
             <img src="/assets/img/aluno1.png" alt="Ana Clara Furtado Goudinho">
@@ -84,7 +84,7 @@ function iniciar() {
             <img src="/assets/img/aluno17.png" alt="Helena Neis da Silva">
             <img src="/assets/img/aluno18.png" alt="João Francisco Luchtenberg Ventura">
             <img src="/assets/img/aluno19.png" alt="João Paulo Fagundes">
-            <img src="/assets/img/aluno20.png" alt="Joao Victor de Abreu Cunha">
+            <img src="/assets/img/aluno20.png" alt="João Victor de Abreu Cunha">
             <img src="/assets/img/aluno21.png" alt="João Vitor Galiotto de Souza">
             <img src="/assets/img/aluno22.png" alt="João Vitor Santos">
             <img src="/assets/img/aluno23.png" alt="Jonas Luiz Marin">
