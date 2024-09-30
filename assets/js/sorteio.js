@@ -62,7 +62,7 @@ window.onload = iniciar()
 function iniciar() {
     let carousel = document.querySelector('.carousel-images')
 
-    for(let i = 1; i <= 1000; i++){
+    for(let i = 1; i <= 100; i++){
         carousel.innerHTML += `
             <img src="/assets/img/alunoNA.png" alt="Agatha Iasmin Koschel do Nascimento">
             <img src="/assets/img/aluno1.png" alt="Ana Clara Furtado Goudinho">
