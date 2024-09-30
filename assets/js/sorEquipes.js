@@ -112,7 +112,7 @@ function gerarEquipes(quantEquipe, valResto, npe) {
             linha.push(alunosDisponiveis[alunoIndex]);
             console.table(alunosDisponiveis);
             
-            alunosDisponiveis.splice(alunoIndex, 1); // Remove o aluno selecionado
+            alunosDisponiveis.splice(alunoIndex, 1);
 
         }
         equipes.push(linha)

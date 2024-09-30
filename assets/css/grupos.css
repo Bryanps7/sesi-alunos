@@ -17,6 +17,12 @@
     border-radius: var(--border-radius);
 }
 
+#section-equipes div:hover {
+    height: 41vh;
+    transition: 0.5s;
+    box-shadow: 0 0 5px gray;
+}
+
 #section-equipes h1 {
     height: 10%;
     font-size: 1.4rem; 

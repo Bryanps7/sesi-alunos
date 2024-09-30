@@ -97,7 +97,6 @@ function inicio() {
     escolha.innerHTML = ''
     escolha.style.backgroundColor = 'black'
     document.getElementById('header').style.height = '10vh'
-    descobrir(aluno1, aluno2)
     document.getElementById('main').style.height = '70vh'
     document.getElementById('main').innerHTML = `
         <aside id="aside">
@@ -122,9 +121,16 @@ function inicio() {
             </tbody>
         </table>
     `
+    document.getElementById('header').innerHTML = `
+    <p>Vez de:</p>
+    <span id="vez">${aluno1}</span>
+    `
+    descobrir(aluno1, aluno2)
 }
 
 let save1 = 0, save2 = 0
+let vez = 0
+let cod = 0
 
 function descobrir(carinha1, carinha2) {
     for(let i = 0; i < alunos.length; i++) {
@@ -138,10 +144,10 @@ function descobrir(carinha1, carinha2) {
             save2 = i
         }
     }
+    vez = alunos[save1]
+    cod = save1
 }
 
-let vez = alunos[save1]
-let cod = save1
 
 let veios = [
     [11, 12, 13],
@@ -180,7 +186,7 @@ function final() {
     if(cont == 9) {
         // alert('Deu velho')
         // document.getElementById('aside').style = "background: url('img/velho.png');"
-        document.getElementById('aside').innerHTML = '<img src="./img/velho.png">'
+        document.getElementById('aside').innerHTML = '<img src="/assets/img/velho.png">'
         // document.getElementById('aside').style = "background-repeat: no-repeat;"
         setTimeout(acabou, 3000)
     }
