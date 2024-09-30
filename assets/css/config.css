@@ -9,6 +9,9 @@
     --padding: 10px;
     --transition: 750ms;
     --font-size-hover: 1.1rem;
+    --color1: #ff4746;
+    --color2: #92b55f;
+    --color3: #4b4452;
 }
 
 * {
@@ -19,4 +22,21 @@
 body {
     margin: 0;
     height: 100vh;
+}
+
+button {
+    background-color: white;
+    border: var(--border);
+    font-weight: bold;
+    margin: 0;
+    border-radius: var(--border-radius);
+    padding: calc(var(--padding) / 2);
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    border: var(--border-reverse);
+    transition: var(--transition);
+    font-size: var(--font-size-hover);
 }

@@ -7,7 +7,7 @@ const alunos = [
     "Artur Ximendes Del Guerso",
     "Augusto Gonçalves Dias",
     "Brenda Julya de Souza Freitas da Silva",
-    "Bryan Prinz da Siva",
+    "Bryan Prinz da Silva",
     "Daniel Domingo",
     "Davi Schoenardie de Almeida",
     "Eduardo Corrêa da Cruz",
@@ -85,7 +85,7 @@ abrirInput.addEventListener('click', ()=>{
     pesquisa.style.display = 'flex'
 
     pesquisa.innerHTML = "<input id='pesq' type='text' placeholder='Insira um nome:'>"
-    pesquisa.innerHTML += "<button onclick='pesquisar()'>Buscar</button>"
+    pesquisa.innerHTML += "<button onfocus='pesquisar()'>Buscar</button>"
 })  
 
 function pesquisar(){

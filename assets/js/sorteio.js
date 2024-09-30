@@ -7,7 +7,7 @@ const alunos = [
     "Artur Ximendes Del Guerso",
     "Augusto Gonçalves Dias",
     "Brenda Julya de Souza Freitas da Silva",
-    "Bryan Prinz da Siva",
+    "Bryan Prinz da Silva",
     "Daniel Domingo",
     "Davi Schoenardie de Almeida",
     "Eduardo Corrêa da Cruz",

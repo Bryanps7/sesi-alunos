@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+label {
+    margin-right: 3px;
+}
+
+input {
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+    border: var(--border);
+    padding: calc(var(--padding) / 2);
+    margin: 0;
+}
+
+button {
+    background-color: white;
+    border: var(--border);
+    border-left-width: 0;
+    font-weight: bold;
+    margin: 0;
+    border-radius: var(--border-radius);
+    padding: calc(var(--padding) / 2);
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    border: var(--border-reverse);
+    border-left-width: 0;
+    transition: var(--transition);
+    font-size: var(--font-size-hover);
+}
+
+#section-equipes {
+    height: 85vh;
+}
+
+/* .card {
+    width: 100px;
+    height: 150px;
+    background-color: #007BFF;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+    border-radius: 10px;
+}
+
+.card.revealed img {
+    opacity: 1;
+} */

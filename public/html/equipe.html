@@ -10,9 +10,15 @@
         <link rel="stylesheet" href="/assets/css/config.css">
 
         <script src="/assets/js/sorEquipes.js" defer></script>
+        <link rel="stylesheet" href="/assets/css/grupos.css">
     </head>
 <body>
-    <label for="numEquipe">Equipe de quantas pessoas?</label>
-    <input type="number" id="numPessoaEquipe">
+    <div class="container">
+        <label for="numPessoaEquipe">Equipe de quantas pessoas?</label>
+        <input type="number" id="numPessoaEquipe">
+        <button onfocus="contEquipes()">Gerar Equipes</button>
+    </div>
+    <div id="section-equipes">
+    </div>
 </body>
 </html>

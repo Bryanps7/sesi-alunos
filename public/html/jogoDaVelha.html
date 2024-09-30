@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Jogo dos Veios</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/public/sesi-logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="/assets/css/config.css">
+    <link rel="stylesheet" href="/assets/css/jogoDaVelha.css">
+    <script src="/assets/js/jogoDaVelha.js" defer></script>
+</head>
+
+<body>
+    <header id="header">
+        <div id="escolha">
+            <h3>Escolha os Alunos:</h3>
+            <div class="alunos">
+                <div class="aluno">
+                    <input id="aluno1" list="lista1">
+                    <datalist id="lista1"></datalist>
+                </div>
+                <div class="aluno">
+                    <input id="aluno2" list="lista2">
+                    <datalist id="lista2"></datalist>
+                </div>
+            </div>
+            <button onfocus="inicio()">Iniciar Partida</button>
+        </div>
+
+        <!-- <p>Vez de:</p>
+        <span id="vez">Cunha</span> -->
+    </header>
+    <main id='main'>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+body {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background-color: black;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    transition: 0.5s;
+}
+
+#escolha {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+}
+
+#escolha:hover {
+    transition: 1s;
+    box-shadow: 0 0 5px white;
+}
+
+#escolha h3 {
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+#escolha input {
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+    border: var(--border);
+    padding: calc(var(--padding) / 2);
+}
+
+#escolha h3:hover {
+    transition: 1s;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#escolha button {
+    margin-top: 5px;
+}
+
+.alunos {
+    display: flex;
+}
+
+header p, header span {
+    font-weight: bold;
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 3px;
+}
+
+main {
+    transition: 0.5s;
+    background-color: whitesmoke;
+    height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+aside {
+    height: 100%;
+    width: 30%;
+    background-repeat: no-repeat;
+}
+
+table {
+    height: 450px;
+    border-collapse: collapse;
+}
+
+td {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+}
+
+td:hover {
+    cursor: pointer;
+}
+
+td img {
+    width: 150px;
+    height: 150px;
+}

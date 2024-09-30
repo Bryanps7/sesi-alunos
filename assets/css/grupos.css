@@ -1,0 +1,46 @@
+#section-equipes {
+    width: 98vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;    
+}
+
+#section-equipes div {
+    height: 40vh;
+    width: max-content;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+}
+
+#section-equipes h1 {
+    height: 10%;
+    font-size: 1.4rem; 
+}
+
+#section-equipes h1:hover {
+    font-size: 1.6rem;
+    transition: 1s;
+    color: white;
+}
+
+#section-equipes section {
+    height: 85%;
+}
+
+#equipe1, #equipe4, #equipe7, #equipe10, #equipe13, #equipe16, #equipe19 {
+    background-color: var(--color1);
+}
+
+#equipe2, #equipe5, #equipe8, #equipe11, #equipe14, #equipe17, #equipe20 {
+    background-color: var(--color2);
+    
+}
+
+#equipe3, #equipe6, #equipe9, #equipe12, #equipe15, #equipe18, #equipe21 {
+    background-color: var(--color3);
+}
