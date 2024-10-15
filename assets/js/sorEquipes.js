@@ -40,14 +40,24 @@ let alunos = [
 let equipes = []
 
 let canva = document.getElementById('section-equipes')
-// let numPessoaEquipe = 4
 
 let conta = alunos.length
 let numEquipes = 0
 let resto = 0
 
+function checar() {
+    let numPessoaEquipe = Number(document.getElementById('numPessoaEquipe').value)
+    if((numPessoaEquipe >= 2)&&(numPessoaEquipe < 18)) {
+        contEquipes()
+    } else {
+        document.getElementById('numPessoaEquipe').innerHTML = ''
+        alert('Você colocou um valor inválido!')
+    }
+}
+
 function contEquipes() {
     let numPessoaEquipe = Number(document.getElementById('numPessoaEquipe').value)
+
     for (let i = 0; i < alunos.length; i++) {
         if (conta % numPessoaEquipe == 0) {
             numEquipes = conta / numPessoaEquipe
