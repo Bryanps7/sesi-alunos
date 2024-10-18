@@ -47,7 +47,7 @@ let resto = 0
 
 function checar() {
     let numPessoaEquipe = Number(document.getElementById('numPessoaEquipe').value)
-    if((numPessoaEquipe >= 2)&&(numPessoaEquipe < 18)) {
+    if((numPessoaEquipe >= 2)&&(numPessoaEquipe <= 18)&&numPessoaEquipe % 1 == 0) {
         contEquipes()
     } else {
         document.getElementById('numPessoaEquipe').innerHTML = ''
@@ -57,6 +57,8 @@ function checar() {
 
 function contEquipes() {
     let numPessoaEquipe = Number(document.getElementById('numPessoaEquipe').value)
+    resto = 0
+    numEquipes = 0
 
     for (let i = 0; i < alunos.length; i++) {
         if (conta % numPessoaEquipe == 0) {
@@ -121,7 +123,7 @@ function gerarEquipes(quantEquipe, valResto, npe) {
             let alunoIndex = Math.floor(Math.random() * alunosDisponiveis.length);
             linha.push(alunosDisponiveis[alunoIndex]);
             console.table(alunosDisponiveis);
-            
+
             alunosDisponiveis.splice(alunoIndex, 1);
 
         }
@@ -172,9 +174,11 @@ function gerarEquipes(quantEquipe, valResto, npe) {
                 <section class='imagens'>
             `
         for(let j = 0; j < npe; j++) {
-            grupo += `
-                <img src='${equipes[i][j]}' height='${tamanho}'>
-            `
+            if(equipes[i][j]) {
+                grupo += `
+                    <img src='${equipes[i][j]}' height='${tamanho}'>
+                `
+            }
         }
         grupo += `
             </section>
