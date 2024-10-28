@@ -4,186 +4,188 @@ let alunos = [
 
 let ataquesAlunos = {
     "Agatha Iasmin Koschel do Nascimento": [
-        ["Chute Veloz", 3],
-        ["Soco Devastador", 4],
-        ["Explosão de Energia", 5]
+        ["Chute Veloz", -3],
+        ["Soco Devastador", -4],
+        ["Explosão de Energia", -5]
     ],
     "Ana Clara Furtado Goudinho": [
-        ["Raio Congelante", 4],
-        ["Soco Flamejante", 3],
-        ["Investida Feroz", 4]
+        ["Raio Congelante", -4],
+        ["Soco Flamejante", -3],
+        ["Investida Feroz", -4]
     ],
     "Arthur Alexandre Abbruzzini": [
-        ["Golpe de Martelo", 5],
-        ["Chute Giratório", 3],
-        ["Corte de Espada", 4]
+        ["Golpe de Martelo", -5],
+        ["Chute Giratório", -3],
+        ["Corte de Espada", -4]
     ],
     "Arthur Marcos Serpa Martins": [
-        ["Impacto de Trovão", 4],
-        ["Chute Sônico", 3],
-        ["Soco de Ferro", 4]
+        ["Impacto de Trovão", -4],
+        ["Chute Sônico", -3],
+        ["Soco de Ferro", -4]
     ],
     "Arthur Soglia Veronica": [
-        ["Tornado de Pés", 3],
-        ["Golpe de Impacto", 5],
-        ["Lança Relâmpago", 4]
+        ["Tornado de Pés", -3],
+        ["Golpe de Impacto", -5],
+        ["Lança Relâmpago", -4]
     ],
     "Artur Ximendes Del Guerso": [
-        ["Soco Flamejante", 4],
-        ["Raio Concentrado", 5],
-        ["Investida Poderosa", 3]
+        ["Soco Flamejante", -4],
+        ["Raio Concentrado", -5],
+        ["Investida Poderosa", -3]
     ],
     "Augusto Gonçalves Dias": [
-        ["Escudo de Terra", 3],
-        ["Soco Sísmico", 4],
-        ["Fúria Explosiva", 5]
+        ["Escudo de Terra", -3],
+        ["Soco Sísmico", -4],
+        ["Fúria Explosiva", -5]
     ],
     "Brenda Julya de Souza Freitas da Silva": [
-        ["Chicote de Fogo", 4],
-        ["Rajada de Vento", 3],
-        ["Golpe Místico", 4]
+        ["Chicote de Fogo", -4],
+        ["Rajada de Vento", -3],
+        ["Golpe Místico", -4]
     ],
     "Bryan Prinz da Silva": [
-        ["Raio Energético", 4],
-        ["Soco Meteoro", 5],
-        ["Ataque de Velocidade", 3]
+        ["Raio Energético", -4],
+        ["Soco Meteoro", -5],
+        ["Ataque de Velocidade", -3]
     ],
     "Daniel Domingo": [
-        ["Muralha de Gelo", 3],
-        ["Lâmina Voadora", 4],
-        ["Soco de Terra", 5]
+        ["Muralha de Gelo", -3],
+        ["Lâmina Voadora", -4],
+        ["Soco de Terra", -5]
     ],
     "Davi Schoenardie de Almeida": [
-        ["Impacto de Luz", 4],
-        ["Fúria Elétrica", 5],
-        ["Chute de Plasma", 3]
+        ["Impacto de Luz", -4],
+        ["Fúria Elétrica", -5],
+        ["Chute de Plasma", -3]
     ],
     "Eduardo Corrêa da Cruz": [
-        ["Fúria do Dragão", 4],
-        ["Golpe Pesado", 5],
-        ["Soco Rápido", 3]
+        ["Fúria do Dragão", -4],
+        ["Golpe Pesado", -5],
+        ["Soco Rápido", -3]
     ],
     "Eric D. Scapini": [
-        ["Golpe de Fogo", 5],
-        ["Chute Relâmpago", 4],
-        ["Soco de Gelo", 3]
+        ["Golpe de Fogo", -5],
+        ["Chute Relâmpago", -4],
+        ["Soco de Gelo", -3]
     ],
     "Érick Miguel Schuck": [
-        ["Raio Violeta", 5],
-        ["Impacto Pesado", 4],
-        ["Explosão de Chamas", 3]
+        ["Raio Violeta", -5],
+        ["Impacto Pesado", -4],
+        ["Explosão de Chamas", -3]
     ],
     "Francisco Lisboa da Silva Lima": [
-        ["Soco Relâmpago", 4],
-        ["Chute Furioso", 5],
-        ["Golpe Aéreo", 3]
+        ["Soco Relâmpago", -4],
+        ["Chute Furioso", -5],
+        ["Golpe Aéreo", -3]
     ],
     "Giovanni Filipe Burgo": [
-        ["Corte de Ar", 4],
-        ["Impacto Sombrio", 5],
-        ["Soco Explosivo", 3]
+        ["Corte de Ar", -4],
+        ["Impacto Sombrio", -5],
+        ["Soco Explosivo", -3]
     ],
     "Guilherme Tomaz Silva": [
-        ["Lança de Gelo", 4],
-        ["Chute Elétrico", 5],
-        ["Rajada de Fogo", 3]
+        ["Lança de Gelo", -4],
+        ["Chute Elétrico", -5],
+        ["Rajada de Fogo", -3]
     ],
     "Helena Neis da Silva": [
-        ["Golpe de Luz", 4],
-        ["Chute Destruidor", 5],
-        ["Soco Congelante", 3]
+        ["Golpe de Luz", -4],
+        ["Chute Destruidor", -5],
+        ["Soco Congelante", -3]
     ],
     "João Francisco Luchtenberg Ventura": [
-        ["Chama Azul", 5],
-        ["Golpe de Impacto", 4],
-        ["Lâmina de Vento", 3]
+        ["Chama Azul", -5],
+        ["Golpe de Impacto", -4],
+        ["Lâmina de Vento", -3]
     ],
     "João Paulo Fagundes": [
-        ["Raio Explosivo", 5],
-        ["Soco Potente", 3],
-        ["Chute de Ferro", 4]
+        ["Raio Explosivo", -5],
+        ["Soco Potente", -3],
+        ["Chute de Ferro", -4]
     ],
     "João Victor de Abreu Cunha": [
-        ["Ataque de Velocidade", 3],
-        ["Impacto Sísmico", 5],
-        ["Soco Elétrico", 4]
+        ["Ataque de Velocidade", -3],
+        ["Impacto Sísmico", -5],
+        ["Soco Elétrico", -4]
     ],
     "João Vitor Galiotto de Souza": [
-        ["Lâmina de Fogo", 4],
-        ["Golpe Rápido", 3],
-        ["Explosão de Raio", 5]
+        ["Lâmina de Fogo", -4],
+        ["Golpe Rápido", -3],
+        ["Explosão de Raio", -5]
     ],
     "João Vitor Santos": [
-        ["Impacto de Fogo", 4],
-        ["Soco de Terra", 5],
-        ["Chute de Gelo", 3]
+        ["Impacto de Fogo", -4],
+        ["Soco de Terra", -5],
+        ["Chute de Gelo", -3]
     ],
     "Jonas Luiz Marin": [
-        ["Golpe Meteoro", 5],
-        ["Rajada Congelante", 3],
-        ["Fúria de Raios", 4]
+        ["Golpe Meteoro", -5],
+        ["Rajada Congelante", -3],
+        ["Fúria de Raios", -4]
     ],
     "Kauê Dantti Schaparini": [
-        ["Impacto de Luz", 4],
-        ["Soco Devastador", 5],
-        ["Chute Sísmico", 3]
+        ["Impacto de Luz", -4],
+        ["Soco Devastador", -5],
+        ["Chute Sísmico", -3]
     ],
     "Lucas Pereira": [
-        ["Rajada de Raios", 4],
-        ["Impacto de Lava", 5],
-        ["Chute Rápido", 3]
+        ["Rajada de Raios", -4],
+        ["Impacto de Lava", -5],
+        ["Chute Rápido", -3]
     ],
     "Lucas Wagner Salim": [
-        ["Explosão de Vento", 4],
-        ["Golpe de Energia", 5],
-        ["Soco de Fogo", 3]
+        ["Explosão de Vento", -4],
+        ["Golpe de Energia", -5],
+        ["Soco de Fogo", -3]
     ],
     "Manuela Cristina Torres Guimarães": [
-        ["Lança de Luz", 4],
-        ["Golpe Rápido", 3],
-        ["Explosão Sombria", 5]
+        ["Lança de Luz", -4],
+        ["Golpe Rápido", -3],
+        ["Explosão Sombria", -5]
     ],
     "Mateus Queiroz Logrado": [
-        ["Chute Elétrico", 5],
-        ["Impacto de Gelo", 4],
-        ["Soco de Raio", 3]
+        ["Chute Elétrico", -5],
+        ["Impacto de Gelo", -4],
+        ["Soco de Raio", -3]
     ],
     "Mateus Zandona Krieger": [
-        ["Golpe Sombrio", 5],
-        ["Explosão de Luz", 3],
-        ["Chute Devastador", 4]
+        ["Golpe Sombrio", -5],
+        ["Explosão de Luz", -3],
+        ["Chute Devastador", -4]
     ],
     "Nicollas Jose Prim": [
-        ["Raio Congelante", 4],
-        ["Golpe de Energia", 5],
-        ["Chute Relâmpago", 3]
+        ["Raio Congelante", -4],
+        ["Golpe de Energia", -5],
+        ["Chute Relâmpago", -3]
     ],
     "Nicollas Lopes do Nascimento": [
-        ["Impacto Devastador", 5],
-        ["Explosão de Fogo", 4],
-        ["Soco Rápido", 3]
+        ["Impacto Devastador", -5],
+        ["Explosão de Fogo", -4],
+        ["Soco Rápido", -3]
     ],
     "Pedro Rafael Santiago": [
-        ["Lança Relâmpago", 5],
-        ["Golpe de Impacto", 4],
-        ["Chute de Fogo", 3]
+        ["Lança Relâmpago", -5],
+        ["Golpe de Impacto", -4],
+        ["Chute de Fogo", -3]
     ],
     "Ruan Geraldo": [
-        ["Impacto de Fogo", 5],
-        ["Chute de Gelo", 4],
-        ["Rajada de Raios", 3]
+        ["Impacto de Fogo", -5],
+        ["Chute de Gelo", -4],
+        ["Rajada de Raios", -3]
     ],
     "Vinícius de Bona Ruas": [
-        ["Explosão de Energia", 5],
-        ["Golpe Pesado", 4],
-        ["Chute Veloz", 3]
+        ["Explosão de Energia", -5],
+        ["Golpe Pesado", -4],
+        ["Chute Veloz", -3]
     ],
     "Yan Bueno Goulart": [
-        ["Lâmina de Fogo", 4],
-        ["Soco Sísmico", 5],
-        ["Chute Rápido", 3]
+        ["Lâmina de Fogo", -4],
+        ["Soco Sísmico", -5],
+        ["Chute Rápido", -3]
     ]
 };
+
+console.table(ataquesAlunos['Bryan Prinz da Silva'][0][1])
 
 function setValueRandom(max, min) {
     let random = Math.floor(Math.random() * (max - min + 1) + min)
@@ -229,14 +231,23 @@ function saveConfig() {
     }
 }
 
+
 function iniciar() {
     let name = document.createElement('h1')
     let icon = document.createElement('img')
-    let vida = document.createElement('div')
     let textV = document.createElement('p')
+    let vida = document.createElement('div')
     
     let golpes = document.createElement('div')
-     = document.createElement('')
+    
+    let golpe1 = document.createElement('p')
+    golpe1.textContent = `${ataquesAlunos[personagem][0][0]} | dano: ${ataquesAlunos[personagem][0][1]}`
+    let golpe2 = document.createElement('p')
+    golpe2.textContent = `${ataquesAlunos[personagem][1][0]} | dano: ${ataquesAlunos[personagem][1][1]}`
+    let golpe3 = document.createElement('p')
+    golpe3.textContent = `${ataquesAlunos[personagem][2][0]} | dano: ${ataquesAlunos[personagem][2][1]}`
+
+    golpes.appendChild(golpe1, golpe2, golpe3)
 
     let jogador = document.createElement('div')
     jogador.id('jogador')

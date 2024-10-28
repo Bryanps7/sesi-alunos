@@ -1,0 +1,47 @@
+#container {
+    display: none;
+}
+
+#luta {
+    display: flex;
+    justify-content: space-between;
+}
+
+#luta h1 {
+    font-size: 2rem;
+}
+
+img {
+    width: 300px;
+}
+
+.golpes {
+    display: flex;
+    flex-direction: column;
+}
+
+.vidao {
+    height: 15px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+#porcentagemJogador, #porcentagemAdversario {
+    background-color: red;
+    height: 100%;
+    width: 100%;
+    transition: 0.6s;
+}
+
+#porcentagemJogador:hover, #porcentagemAdversario:hover{
+    width: 50%;
+}
+
+#golpesJogador button {
+    text-align: start;
+}
+
+#golpesAdversario button {
+    text-align: end;
+}

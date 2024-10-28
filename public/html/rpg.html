@@ -17,7 +17,44 @@
             <input id="aluno" list="alunos" required>
             <datalist id="alunos"></datalist>
         </div>
-        <button onclick="saveConfig()">Jogar</button>
+        <button onclick="saveConfig()">Jogar</button>    
+    </div>
+    <div id="luta">
+        <div id="jogador">
+            <div class="info">
+                <h1 id="nameJogador">Bryan Prinz da Silva</h1>
+                <img id="imgJogador" src="/assets/img/aluno8.png" alt="aluno8">
+            </div>
+            <div class="vida">
+                <p>Vida:</p>
+                <div class="vidao">
+                    <div id="porcentagemJogador"></div>
+                </div>
+            </div>
+            <div class="golpes" id="golpesJogador">
+                <button id="golpe1Jogador">Golpe 1</button>
+                <button id="golpe2Jogador">Golpe 2</button>
+                <button id="golpe3Jogador">Golpe 3</button>
+            </div>
+        </div>
+        <div id="adversario">
+            <div class="info">
+                <h1 id="nameAdversario">João Vitor Santos</h1>
+                <img id="imgAdversario" src="/assets/img/aluno22.png" alt="aluno22">
+            </div>
+            <div class="vida">
+                <p>Vida:</p>
+                <div class="vidao">
+                    <div id="porcentagemAdversario"></div>
+                </div>
+            </div>
+            <div class="golpes" id="golpesAdversario">
+                <button id="golpe1Adversario">Golpe 1</button>
+                <button id="golpe2Adversario">Golpe 2</button>
+                <button id="golpe3Adversario">Golpe 3</button>
+            </div>
+
+        </div>
     </div>
 </body>
 </html>
