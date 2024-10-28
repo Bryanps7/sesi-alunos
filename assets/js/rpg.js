@@ -185,8 +185,6 @@ let ataquesAlunos = {
     ]
 };
 
-console.table(ataquesAlunos['Bryan Prinz da Silva'][0][1])
-
 function setValueRandom(max, min) {
     let random = Math.floor(Math.random() * (max - min + 1) + min)
     return random
@@ -202,6 +200,7 @@ window.addEventListener('load', ()=>{
 
 let personagem = '', adversario = ''
 let numberPerson = 0, numberAdver = 0
+let vidaPerson = 200, vidaAdver = 200
 let screen = document.getElementById('container')
 
 function saveConfig() {
@@ -221,7 +220,7 @@ function saveConfig() {
             }
         }
         numberAdver = setValueRandom(alunos.length, 0)
-        adversario = alunos[numberAdver]
+        adversario = alunos[numberAdver-1]
         console.log('Seu adversário será: '+ adversario)
 
         console.log(`Seu número: ${numberPerson} || Número do adversário: ${numberAdver}`)
@@ -231,27 +230,92 @@ function saveConfig() {
     }
 }
 
+let scren = document.getElementById('quem')
 
 function iniciar() {
-    let name = document.createElement('h1')
-    let icon = document.createElement('img')
-    let textV = document.createElement('p')
-    let vida = document.createElement('div')
+    document.querySelector('#container').style.display = 'none'
+    document.getElementById('luta').style.display = 'flex'
+    document.getElementById('placar').style.display = 'flex'
     
-    let golpes = document.createElement('div')
-    
-    let golpe1 = document.createElement('p')
-    golpe1.textContent = `${ataquesAlunos[personagem][0][0]} | dano: ${ataquesAlunos[personagem][0][1]}`
-    let golpe2 = document.createElement('p')
-    golpe2.textContent = `${ataquesAlunos[personagem][1][0]} | dano: ${ataquesAlunos[personagem][1][1]}`
-    let golpe3 = document.createElement('p')
-    golpe3.textContent = `${ataquesAlunos[personagem][2][0]} | dano: ${ataquesAlunos[personagem][2][1]}`
+    scren.innerHTML = personagem
 
-    golpes.appendChild(golpe1, golpe2, golpe3)
+    let nomeJog = document.querySelector('#nameJogador')
+    let imgJog = document.querySelector('#imgJogador')
+    let ata1Jog = document.querySelector('#golpe1Jogador')
+    let ata2Jog = document.querySelector('#golpe2Jogador')
+    let ata3Jog = document.querySelector('#golpe3Jogador')
 
-    let jogador = document.createElement('div')
-    jogador.id('jogador')
+    nomeJog.innerHTML = personagem
+    imgJog.src = `/assets/img/aluno${numberPerson}.png`
+    imgJog.alt = personagem
+    ata1Jog.textContent = ataquesAlunos[personagem][0][0]
+    ata2Jog.textContent = ataquesAlunos[personagem][1][0]
+    ata3Jog.textContent = ataquesAlunos[personagem][2][0]
     
-    let adversario = document.createElement('div')
-    adversario.id('adversario')
+    
+    
+    let nomeAdv = document.querySelector('#nameAdversario')
+    let imgAdv = document.querySelector('#imgAdversario')
+    
+    nomeAdv.innerHTML = adversario
+    imgAdv.src = `/assets/img/aluno${numberAdver}.png`
+    imgAdv.alt = adversario
+}
+
+function ataque(atack) {
+    let lifeJogador = document.querySelector('#porcentagemJogador')
+    let lifeAdversario = document.querySelector('#porcentagemAdversario')
+    if(scren.innerHTML == personagem) {
+        if(ataquesAlunos[personagem][atack][1] <= -1) {
+            vidaAdver += ataquesAlunos[personagem][atack][1] * 10
+            
+            let calculoPor = 0
+            let contAdver = 100 + calculoPor
+            calculoPor = ataquesAlunos[personagem][atack][1] * 10 / 2
+
+            lifeAdversario.style.width = contAdver + calculoPor + '%'
+            console.log("Vida do Adversário: "+vidaAdver)
+        } else {
+            vidaPerson += ataquesAlunos[personagem][atack][1] * 10
+
+            let calculoPor = 0
+            let contJogad = 100 + calculoPor
+            calculoPor = ataquesAlunos[personagem][atack][1] * 10 / 2
+
+            lifeJogador.style.width = contJogad + calculoPor + '%'
+            console.log("Vida do Jogador: "+vidaPerson)
+        }
+
+        scren.innerHTML = adversario
+        ataqueAdversario()
+    }
+}
+
+function ataqueAdversario() {
+    let qualGolpe = setValueRandom(2, 0)
+    let lifeJogador = document.querySelector('#porcentagemJogador')
+    let lifeAdversario = document.querySelector('#porcentagemAdversario')
+    if(scren.innerHTML == adversario) {
+        if(ataquesAlunos[adversario][qualGolpe][1] <= -1) {
+            vidaPerson += ataquesAlunos[adversario][qualGolpe][1] * 10
+            
+            let calculoPor = 0
+            let contJogad = 100 + calculoPor
+            calculoPor = ataquesAlunos[adversario][qualGolpe][1] * 10 / 2
+
+            lifeJogador.style.width = contJogad + calculoPor + '%'
+            console.log("Vida do Personagem: "+vidaPerson)
+        } else {
+            vidaAdver += ataquesAlunos[adversario][qualGolpe][1] * 10
+
+            let calculoPor = 0
+            let contAdver = 100 + calculoPor
+            calculoPor = ataquesAlunos[adversario][qualGolpe][1] * 10 / 2
+
+            lifeAdversario.style.width = contAdver + calculoPor + '%'
+            console.log("Vida do Adversario: "+vidaAdver)
+        }
+
+        scren.innerHTML = personagem
+    }
 }

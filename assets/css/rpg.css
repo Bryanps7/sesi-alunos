@@ -1,14 +1,25 @@
-#container {
+#placar {
     display: none;
+    justify-content: center;
+    border-bottom: 3px solid;
+}
+
+#placar span, #placar div {
+    font-size: 1.5rem;
+    margin: 0 2px;
 }
 
 #luta {
-    display: flex;
+    display: none;
     justify-content: space-between;
 }
 
 #luta h1 {
     font-size: 2rem;
+}
+
+#jogador, #adversario {
+    flex-basis: 300px;
 }
 
 img {
@@ -32,10 +43,6 @@ img {
     height: 100%;
     width: 100%;
     transition: 0.6s;
-}
-
-#porcentagemJogador:hover, #porcentagemAdversario:hover{
-    width: 50%;
 }
 
 #golpesJogador button {
