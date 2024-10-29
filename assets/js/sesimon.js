@@ -276,25 +276,29 @@ function ataque(atack) {
     let lifeJogador = document.querySelector('#porcentagemJogador')
     let lifeAdversario = document.querySelector('#porcentagemAdversario')
     if (scren.innerHTML == personagem) {
-        if (ataquesAlunos[personagem][atack][1] <= -1) {
-            vidaAdver += ataquesAlunos[personagem][atack][1] * 10
+        let oAtaque = ataquesAlunos[personagem][atack][1]
 
-            let calculoPor = ataquesAlunos[personagem][atack][1] * 5
+        if ((oAtaque <= -1)||(oAtaque == adversario)) {
+            let calculoPor = 0
+            
+            if(oAtaque == adversario) {
+                vidaAdver += -200
+                calculoPor = -100 
+            } else {
+                vidaAdver += oAtaque * 10
+                calculoPor = oAtaque * 5
+            }
+
 
             lifeAdversario.style.width = contAdver + calculoPor + '%'
-<<<<<<< HEAD:assets/js/sesimon.js
             console.log("Vida do Adversário: " + vidaAdver)
 
             contAdver += calculoPor
 
-=======
-            console.log(lifeAdversario.style.width)
-            console.log("Vida do Adversário: "+vidaAdver)
->>>>>>> fbd471548fc17396702e1740cf13f7bbd60d9d31:assets/js/rpg.js
         } else {
-            vidaPerson += ataquesAlunos[personagem][atack][1] * 10
+            vidaPerson += oAtaque * 10
 
-            let calculoPor = ataquesAlunos[personagem][atack][1] * 5
+            let calculoPor = oAtaque * 5
 
             lifeJogador.style.width = contJogad + calculoPor + '%'
             console.log("Vida do Jogador: " + vidaPerson)
@@ -305,13 +309,9 @@ function ataque(atack) {
         gameOver()
 
         scren.innerHTML = adversario
-<<<<<<< HEAD:assets/js/sesimon.js
         setTimeout(() => {
             ataqueAdversario()
         }, 2000)
-=======
-        setInterval(ataqueAdversario(), 3000)
->>>>>>> fbd471548fc17396702e1740cf13f7bbd60d9d31:assets/js/rpg.js
     }
 }
 
@@ -320,19 +320,28 @@ function ataqueAdversario() {
     let lifeJogador = document.querySelector('#porcentagemJogador')
     let lifeAdversario = document.querySelector('#porcentagemAdversario')
     if (scren.innerHTML == adversario) {
-        if (ataquesAlunos[adversario][qualGolpe][1] <= -1) {
-            vidaPerson += ataquesAlunos[adversario][qualGolpe][1] * 10
+        let oAtaque = ataquesAlunos[adversario][qualGolpe][1]
 
-            let calculoPor = ataquesAlunos[adversario][qualGolpe][1] * 5
+        if ((oAtaque <= -1)||(oAtaque == personagem)) {
+
+            let calculoPor = 0
+            
+            if(oAtaque == personagem) {
+                vidaPerson += -200
+                calculoPor = -100 
+            } else {
+                vidaPerson += oAtaque * 10
+                calculoPor = oAtaque * 5
+            }
 
             lifeJogador.style.width = contJogad + calculoPor + '%'
             console.log("Vida do Personagem: " + vidaPerson)
 
             contJogad += calculoPor
         } else {
-            vidaAdver += ataquesAlunos[adversario][qualGolpe][1] * 10
+            vidaAdver += oAtaque * 10
 
-            let calculoPor = ataquesAlunos[adversario][qualGolpe][1] * 5
+            let calculoPor = oAtaque * 5
 
             lifeAdversario.style.width = contAdver + calculoPor + '%'
             console.log("Vida do Adversario: " + vidaAdver)
