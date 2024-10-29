@@ -1,4 +1,4 @@
-let alunos = [ 
+let alunos = [
     "Agatha Iasmin Koschel do Nascimento", "Ana Clara Furtado Goudinho", "Arthur Alexandre Abbruzzini", "Arthur Marcos Serpa Martins", "Arthur Soglia Veronica", "Artur Ximendes Del Guerso", "Augusto Gonçalves Dias", "Brenda Julya de Souza Freitas da Silva", "Bryan Prinz da Silva", "Daniel Domingo", "Davi Schoenardie de Almeida", "Eduardo Corrêa da Cruz", "Eric D. Scapini", "Érick Miguel Schuck", "Francisco Lisboa da Silva Lima", "Giovanni Filipe Burgo", "Guilherme Tomaz Silva", "Helena Neis da Silva", "João Francisco Luchtenberg Ventura", "João Paulo Fagundes", "João Victor de Abreu Cunha", "João Vitor Galiotto de Souza", "João Vitor Santos", "Jonas Luiz Marin", "Kauê Dantti Schaparini", "Lucas Pereira", "Lucas Wagner Salim", "Manuela Cristina Torres Guimarães", "Mateus Queiroz Logrado", "Mateus Zandona Krieger", "Nicollas Jose Prim", "Nicollas Lopes do Nascimento", "Pedro Rafael Santiago", "Ruan Geraldo", "Vinícius de Bona Ruas", "Yan Bueno Goulart",
 ];
 
@@ -45,8 +45,8 @@ let ataquesAlunos = {
     ],
     "Bryan Prinz da Silva": [
         ["Raio Energético", -4],
-        ["Soco Meteoro", -5],
-        ["Ataque de Velocidade", -3]
+        ["Soco Meteoro", -3],
+        ["Ataque de Velocidade", -5]
     ],
     "Daniel Domingo": [
         ["Muralha de Gelo", -3],
@@ -190,10 +190,10 @@ function setValueRandom(max, min) {
     return random
 }
 
-window.addEventListener('load', ()=>{
+window.addEventListener('load', () => {
     let lista = document.getElementById('alunos')
 
-    for(let i = 0; i < alunos.length; i++) {
+    for (let i = 0; i < alunos.length; i++) {
         lista.innerHTML += `<option value='${alunos[i]}'>${alunos[i]}</option>`
     }
 })
@@ -205,23 +205,27 @@ let screen = document.getElementById('container')
 
 function saveConfig() {
     let counter = 0
-    for(let i = 0; i < alunos.length; i++){
-        if(document.getElementById('aluno').value == alunos[i]) {
+    for (let i = 0; i < alunos.length; i++) {
+        if (document.getElementById('aluno').value == alunos[i]) {
             counter++
         }
     }
-    if(counter == 1){
+    if (counter == 1) {
         personagem = document.getElementById('aluno').value
-        console.log('Seu personagem escolhido: '+personagem)
-        for(let i = 0; i < alunos.length; i++) {
-            if(alunos[i] == personagem) {
+        console.log('Seu personagem escolhido: ' + personagem)
+        for (let i = 0; i < alunos.length; i++) {
+            if (alunos[i] == personagem) {
                 alunos.splice(i, 1)
                 numberPerson = i
             }
         }
         numberAdver = setValueRandom(alunos.length, 0)
-        adversario = alunos[numberAdver-1]
-        console.log('Seu adversário será: '+ adversario)
+        if (numberAdver >= numberPerson) {
+            adversario = alunos[numberAdver - 1]
+        } else {
+            adversario = alunos[numberAdver]
+        }
+        console.log('Seu adversário será: ' + adversario)
 
         console.log(`Seu número: ${numberPerson} || Número do adversário: ${numberAdver}`)
         iniciar()
@@ -233,10 +237,13 @@ function saveConfig() {
 let scren = document.getElementById('quem')
 
 function iniciar() {
-    document.querySelector('#container').style.display = 'none'
+    setTimeout(()=>{
+        document.querySelector('#container').style.display = 'none'
+    }, 1000)
+    document.querySelector('#container').style.height = '0'
     document.getElementById('luta').style.display = 'flex'
     document.getElementById('placar').style.display = 'flex'
-    
+
     scren.innerHTML = personagem
 
     let nomeJog = document.querySelector('#nameJogador')
@@ -251,43 +258,51 @@ function iniciar() {
     ata1Jog.textContent = ataquesAlunos[personagem][0][0]
     ata2Jog.textContent = ataquesAlunos[personagem][1][0]
     ata3Jog.textContent = ataquesAlunos[personagem][2][0]
-    
-    
-    
+
+
+
     let nomeAdv = document.querySelector('#nameAdversario')
     let imgAdv = document.querySelector('#imgAdversario')
-    
+
     nomeAdv.innerHTML = adversario
     imgAdv.src = `/assets/img/aluno${numberAdver}.png`
     imgAdv.alt = adversario
 }
 
+let contAdver = 100
+let contJogad = 100
+
 function ataque(atack) {
     let lifeJogador = document.querySelector('#porcentagemJogador')
     let lifeAdversario = document.querySelector('#porcentagemAdversario')
-    if(scren.innerHTML == personagem) {
-        if(ataquesAlunos[personagem][atack][1] <= -1) {
+    if (scren.innerHTML == personagem) {
+        if (ataquesAlunos[personagem][atack][1] <= -1) {
             vidaAdver += ataquesAlunos[personagem][atack][1] * 10
-            
-            let calculoPor = 0
-            let contAdver = 100 + calculoPor
-            calculoPor = ataquesAlunos[personagem][atack][1] * 10 / 2
+
+            let calculoPor = ataquesAlunos[personagem][atack][1] * 5
 
             lifeAdversario.style.width = contAdver + calculoPor + '%'
-            console.log("Vida do Adversário: "+vidaAdver)
+            console.log("Vida do Adversário: " + vidaAdver)
+
+            contAdver += calculoPor
+
         } else {
             vidaPerson += ataquesAlunos[personagem][atack][1] * 10
 
-            let calculoPor = 0
-            let contJogad = 100 + calculoPor
-            calculoPor = ataquesAlunos[personagem][atack][1] * 10 / 2
+            let calculoPor = ataquesAlunos[personagem][atack][1] * 5
 
             lifeJogador.style.width = contJogad + calculoPor + '%'
-            console.log("Vida do Jogador: "+vidaPerson)
+            console.log("Vida do Jogador: " + vidaPerson)
+
+            contJogad += calculoPor
         }
 
+        gameOver()
+
         scren.innerHTML = adversario
-        ataqueAdversario()
+        setTimeout(() => {
+            ataqueAdversario()
+        }, 2000)
     }
 }
 
@@ -295,27 +310,51 @@ function ataqueAdversario() {
     let qualGolpe = setValueRandom(2, 0)
     let lifeJogador = document.querySelector('#porcentagemJogador')
     let lifeAdversario = document.querySelector('#porcentagemAdversario')
-    if(scren.innerHTML == adversario) {
-        if(ataquesAlunos[adversario][qualGolpe][1] <= -1) {
+    if (scren.innerHTML == adversario) {
+        if (ataquesAlunos[adversario][qualGolpe][1] <= -1) {
             vidaPerson += ataquesAlunos[adversario][qualGolpe][1] * 10
-            
-            let calculoPor = 0
-            let contJogad = 100 + calculoPor
-            calculoPor = ataquesAlunos[adversario][qualGolpe][1] * 10 / 2
+
+            let calculoPor = ataquesAlunos[adversario][qualGolpe][1] * 5
 
             lifeJogador.style.width = contJogad + calculoPor + '%'
-            console.log("Vida do Personagem: "+vidaPerson)
+            console.log("Vida do Personagem: " + vidaPerson)
+
+            contJogad += calculoPor
         } else {
             vidaAdver += ataquesAlunos[adversario][qualGolpe][1] * 10
 
-            let calculoPor = 0
-            let contAdver = 100 + calculoPor
-            calculoPor = ataquesAlunos[adversario][qualGolpe][1] * 10 / 2
+            let calculoPor = ataquesAlunos[adversario][qualGolpe][1] * 5
 
             lifeAdversario.style.width = contAdver + calculoPor + '%'
-            console.log("Vida do Adversario: "+vidaAdver)
+            console.log("Vida do Adversario: " + vidaAdver)
+
+            contAdver += calculoPor
         }
+
+        gameOver()
 
         scren.innerHTML = personagem
     }
+}
+
+function gameOver() {
+    if (vidaPerson <= 0) {
+        setTimeout(()=>{
+            document.getElementById('gameOver').style.display = 'flex'
+        }, 1000)
+        setTimeout(()=>{
+            resetar()
+        }, 2000)
+    } else if (vidaAdver <= 0) {
+        setTimeout(()=>{
+            document.getElementById('vitory').style.display = 'flex'
+        }, 1000)
+        setTimeout(()=>{
+            resetar()
+        }, 2000)
+    }
+}
+
+function resetar() {
+    window.location.reload()
 }

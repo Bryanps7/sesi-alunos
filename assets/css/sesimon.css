@@ -1,12 +1,30 @@
+#container {
+    background-color: black;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 1s;
+}
+
+#container button {
+    margin-top: 5px;
+    border-color: white;
+}
+
 #placar {
     display: none;
     justify-content: center;
     border-bottom: 3px solid;
+    background-color: black;
+    color: white;
+    padding: 20px 0;
 }
 
 #placar span, #placar div {
     font-size: 1.5rem;
-    margin: 0 2px;
+    margin: 0 5px;
 }
 
 #luta {
@@ -16,6 +34,15 @@
 
 #luta h1 {
     font-size: 2rem;
+    margin: 20px 0 0 0;
+}
+
+#luta p {
+    margin: 0;
+}
+
+#luta .vida {
+    margin-bottom: 20px;
 }
 
 #jogador, #adversario {
@@ -24,6 +51,7 @@
 
 img {
     width: 300px;
+    border-radius: 10px;
 }
 
 .golpes {
@@ -51,4 +79,18 @@ img {
 
 #golpesAdversario button {
     text-align: end;
+}
+
+#gameOver , #vitory{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    color: white;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
