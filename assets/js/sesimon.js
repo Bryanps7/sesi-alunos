@@ -282,10 +282,15 @@ function ataque(atack) {
             let calculoPor = ataquesAlunos[personagem][atack][1] * 5
 
             lifeAdversario.style.width = contAdver + calculoPor + '%'
+<<<<<<< HEAD:assets/js/sesimon.js
             console.log("Vida do Adversário: " + vidaAdver)
 
             contAdver += calculoPor
 
+=======
+            console.log(lifeAdversario.style.width)
+            console.log("Vida do Adversário: "+vidaAdver)
+>>>>>>> fbd471548fc17396702e1740cf13f7bbd60d9d31:assets/js/rpg.js
         } else {
             vidaPerson += ataquesAlunos[personagem][atack][1] * 10
 
@@ -300,9 +305,13 @@ function ataque(atack) {
         gameOver()
 
         scren.innerHTML = adversario
+<<<<<<< HEAD:assets/js/sesimon.js
         setTimeout(() => {
             ataqueAdversario()
         }, 2000)
+=======
+        setInterval(ataqueAdversario(), 3000)
+>>>>>>> fbd471548fc17396702e1740cf13f7bbd60d9d31:assets/js/rpg.js
     }
 }
 
