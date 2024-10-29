@@ -274,6 +274,7 @@ function ataque(atack) {
             calculoPor = ataquesAlunos[personagem][atack][1] * 10 / 2
 
             lifeAdversario.style.width = contAdver + calculoPor + '%'
+            console.log(lifeAdversario.style.width)
             console.log("Vida do Adversário: "+vidaAdver)
         } else {
             vidaPerson += ataquesAlunos[personagem][atack][1] * 10
@@ -287,7 +288,7 @@ function ataque(atack) {
         }
 
         scren.innerHTML = adversario
-        ataqueAdversario()
+        setInterval(ataqueAdversario(), 3000)
     }
 }
 
