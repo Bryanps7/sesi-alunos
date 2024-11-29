@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/assets/css/sorteador.css">
     <link rel="stylesheet" href="/assets/css/config.css">
 </head>
- <body onload="criarAlunos()">
+ <body>
     <header>
         <div class="title">
             <h2>Feito por Bryan Prinz</h2>
@@ -21,14 +21,22 @@
             <button class="stop" id="stopButton">Parar</button>
         </div>
     </header><br><br>
-    <div class="name"></div>
-    <div class="carousel">
-        <div class="carousel-images"></div>
-        <div class="opacidade"></div>
-    </div>
-    <div class="triangulo">
-        <img src="/assets/img/triangulo.svg" alt="">
-    </div>
+    <main>
+        <div class="name"></div>
+        <div class="carousel">
+            <div class="carousel-images"></div>
+            <div class="opacidade"></div>
+        </div>
+        <div class="triangulo">
+            <img src="/assets/img/triangulo.svg" alt="">
+        </div>
+        <div id="student-list">
+            <ul>
+                <!-- A lista será gerada dinamicamente no `window.onload` -->
+            </ul>
+        </div>
+        <button id="updateList">Atualizar Lista</button>
+    </main>
     <audio id="music" src="/assets/aud/music.mp3"></audio>
 </body>
 </html>
