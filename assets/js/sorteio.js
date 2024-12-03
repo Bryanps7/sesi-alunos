@@ -62,7 +62,7 @@ function updateStudentList() {
 function renderCarousel() {
     const carousel = document.querySelector('.carousel-images');
     carousel.innerHTML = ''; // Limpa o carrossel
-    for(let i = 1; i <= 100; i++) {
+    for(let i = 1; i <= 50; i++) {
         alunos.forEach((aluno, index) => {
             carousel.innerHTML += `
                 <img src="/assets/img/aluno${listAlunos.indexOf(aluno)}.png" alt="${aluno}">
