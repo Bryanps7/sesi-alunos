@@ -23,9 +23,7 @@ let alunos = [
     "João Vitor Galiotto de Souza",
     "João Vitor Santos",
     "Jonas Luiz Marin",
-    "Kauê Dantti Schaparini",
     "Lucas Pereira",
-    "Lucas Wagner Salim",
     "Manuela Cristina Torres Guimarães",
     "Mateus Queiroz Logrado",
     "Mateus Zandona Krieger",
@@ -71,9 +69,7 @@ let codAlunos = [
     "/assets/img/aluno30.png",
     "/assets/img/aluno31.png",
     "/assets/img/aluno32.png",
-    "/assets/img/aluno33.png",
-    "/assets/img/aluno34.png",
-    "/assets/img/aluno35.png"
+    "/assets/img/aluno33.png"
 ];
 
 // imprimir.innerHTML += `<option value='${comidas[i]}'>${comidas[i]}</option>`

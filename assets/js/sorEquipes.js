@@ -109,9 +109,7 @@ function gerarEquipes(quantEquipe, valResto, npe) {
         "/assets/img/aluno30.png",
         "/assets/img/aluno31.png",
         "/assets/img/aluno32.png",
-        "/assets/img/aluno33.png",
-        "/assets/img/aluno34.png",
-        "/assets/img/aluno35.png"
+        "/assets/img/aluno33.png"
     ];
     
     let equipes = []

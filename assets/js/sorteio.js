@@ -23,9 +23,7 @@ const alunos = [
     "João Vitor Galiotto de Souza",
     "João Vitor Santos",
     "Jonas Luiz Marin",
-    "Kauê Dantti Schaparini",
     "Lucas Pereira",
-    "Lucas Wagner Salim",
     "Manuela Cristina Torres Guimarães",
     "Mateus Queiroz Logrado",
     "Mateus Zandona Krieger",
@@ -88,18 +86,16 @@ function iniciar() {
             <img src="/assets/img/aluno21.png" alt="João Vitor Galiotto de Souza">
             <img src="/assets/img/aluno22.png" alt="João Vitor Santos">
             <img src="/assets/img/aluno23.png" alt="Jonas Luiz Marin">
-            <img src="/assets/img/aluno24.png" alt="Kauê Dantti Schaparini">
-            <img src="/assets/img/aluno25.png" alt="Lucas Pereira">
-            <img src="/assets/img/aluno26.png" alt="Lucas Wagner Salim">
-            <img src="/assets/img/aluno27.png" alt="Manuela Cristina Torres Guimarães">
-            <img src="/assets/img/aluno28.png" alt="Mateus Queiroz Logrado">
-            <img src="/assets/img/aluno29.png" alt="Mateus Zandona Krieger">
-            <img src="/assets/img/aluno30.png" alt="Nicollas Jose Prim">
-            <img src="/assets/img/aluno31.png" alt="Nicollas Lopes do Nascimento">
-            <img src="/assets/img/aluno32.png" alt="Pedro Rafael Santiago">
-            <img src="/assets/img/aluno33.png" alt="Ruan Geraldo">
-            <img src="/assets/img/aluno34.png" alt="Vinícius de Bona Ruas">
-            <img src="/assets/img/aluno35.png" alt="Yan Bueno Goulart">
+            <img src="/assets/img/aluno24.png" alt="Lucas Pereira">
+            <img src="/assets/img/aluno25.png" alt="Manuela Cristina Torres Guimarães">
+            <img src="/assets/img/aluno26.png" alt="Mateus Queiroz Logrado">
+            <img src="/assets/img/aluno27.png" alt="Mateus Zandona Krieger">
+            <img src="/assets/img/aluno28.png" alt="Nicollas Jose Prim">
+            <img src="/assets/img/aluno29.png" alt="Nicollas Lopes do Nascimento">
+            <img src="/assets/img/aluno30.png" alt="Pedro Rafael Santiago">
+            <img src="/assets/img/aluno31.png" alt="Ruan Geraldo">
+            <img src="/assets/img/aluno32.png" alt="Vinícius de Bona Ruas">
+            <img src="/assets/img/aluno33.png" alt="Yan Bueno Goulart">
         `
     }
 }
