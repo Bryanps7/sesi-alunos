@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+input {
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+    border: var(--border);
+    padding: calc(var(--padding) / 2);
+    margin: 0;
+}
