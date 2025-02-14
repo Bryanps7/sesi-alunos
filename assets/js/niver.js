@@ -63,7 +63,10 @@ document.getElementById('gerarGIF').addEventListener('click', ()=> {
     let image = document.createElement('image')
     image.setAttribute('src', codAlunos[salvarIdAluno])
     image.setAttribute('alt', salvarAluno)
+    image.style.height = '10px'
+    image.style.width = '10px'
     console.log(image);
     
     document.getElementById('aniversariante').appendChild(image)
+    console.log(document.getElementById('aniversariante'));
 })
