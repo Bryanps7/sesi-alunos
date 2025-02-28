@@ -4,176 +4,182 @@ let alunos = [
 
 let ataquesAlunos = {
     "Agatha Iasmin Koschel do Nascimento": [
-        ["Chute Veloz", -3],
-        ["Soco Devastador", -4],
-        ["Explosão de Energia", -5]
+        ["Chute Otaku", -3],
+        ["Soco de Mangá", -4],
+        ["Golpe Animado", -5]
     ],
     "Ana Clara Furtado Goudinho": [
-        ["Raio Congelante", -4],
-        ["Soco Flamejante", -3],
-        ["Investida Feroz", -4]
+        ["Patada do Golden", -4],
+        ["Puxão de Cabelo", -3],
+        ["Vassourada", -4]
     ],
     "Arthur Alexandre Abbruzzini": [
-        ["Golpe de Martelo", -5],
-        ["Chute Giratório", -3],
-        ["Corte de Espada", -4]
+        ["Golpe Abuzado", -5],
+        ["Chute Abuzado", -3],
+        ["Soco Abuzado", -4]
     ],
     "Arthur Marcos Serpa Martins": [
-        ["Impacto de Trovão", -4],
-        ["Chute Sônico", -3],
-        ["Soco de Ferro", -4]
+        ["Explosão de Código", -4],
+        ["Chute da Cobra", -3],
+        ["Soco de Python", -4]
     ],
     "Arthur Soglia Veronica": [
-        ["Tornado de Pés", -3],
-        ["Golpe de Impacto", -5],
-        ["Lança Relâmpago", -4]
+        ["TDAH mortal", -3],
+        ["edição épica", +5],
+        ["Bonecas Infláveis", -4]
     ],
     "Artur Ximendes Del Guerso": [
-        ["Soco Flamejante", -4],
-        ["Raio Concentrado", -5],
+        ["raiva incontrolável", -4],
+        ["capoeira proibida", -5],
         ["Investida Poderosa", -3]
     ],
     "Augusto Gonçalves Dias": [
-        ["Escudo de Terra", -3],
-        ["Soco Sísmico", -4],
-        ["Fúria Explosiva", -5]
+        ["vai a merda scapini", -20], // (Apenas se for eric scapini)
+        ["shadow boxing", -10],
+        ["kamikaze", +6]
     ],
     "Brenda Julya de Souza Freitas da Silva": [
-        ["Chicote de Fogo", -4],
-        ["Rajada de Vento", -3],
-        ["Golpe Místico", -4]
+        ["Ataque Silencioso", -4],
+        ["Cash Dash", -3],
+        ["Apunhalada do Marketing", -4]
     ],
     "Bryan Prinz da Silva": [
-        ["Raio Energético", -4],
-        ["Soco Meteoro", -3],
-        ["Ataque de Velocidade", -5]
+        ["Soco de JavaScript", -4],
+        ["Martelada do Vidraceiro", -5],
+        ["Hipnose dos Espelhos", -9]
     ],
     "Daniel Domingo": [
-        ["Muralha de Gelo", -3],
-        ["Lâmina Voadora", -4],
-        ["Soco de Terra", -5]
+        ["Toon Force", -9],
+        ["Lança Guarda-Chuva", -4],
+        ["Soco Animado", -5]
     ],
     "Davi Schoenardie de Almeida": [
-        ["Impacto de Luz", -4],
-        ["Fúria Elétrica", -5],
-        ["Chute de Plasma", -3]
+        ["Soneca Profunda", +10],
+        ["cadeirada Psíquica", -6],
+        ["fumaça aniquiladora", -4]
     ],
     "Eduardo Corrêa da Cruz": [
-        ["Fúria do Dragão", -4],
-        ["Golpe Pesado", -5],
-        ["Soco Rápido", -3]
+        ["Soco do Minecraft", -4],
+        ["Golpe do Baiano", -5],
+        ["Frete Grátis", -3]
     ],
     "Eric D. Scapini": [
-        ["Golpe de Fogo", -5],
-        ["Chute Relâmpago", -4],
-        ["Soco de Gelo", -3]
+        ["back-hand mortal", -6],
+        ["visca barça", +5],
+        ["Ataque das Borboletas", -8]
     ],
-    "Érick Miguel Schuck": [
-        ["Raio Violeta", -5],
-        ["Impacto Pesado", -4],
-        ["Explosão de Chamas", -3]
+    "Erick Miguel Schuck": [
+        ["Lança de nariz", -5],
+        ["Foice de Perna", -4],
+        ["Ataque Fertil", -3]
     ],
     "Francisco Lisboa da Silva Lima": [
-        ["Soco Relâmpago", -4],
-        ["Chute Furioso", -5],
-        ["Golpe Aéreo", -3]
+        ["Puta biscati", -4],
+        ["Chute Farroupilha", -5],
+        ["Golpe Gaúcho", -3]
     ],
-    "Giovanni Filipe Burgo": [
-        ["Corte de Ar", -4],
-        ["Impacto Sombrio", -5],
-        ["Soco Explosivo", -3]
+    "Giovanni Felipe Burgo": [
+        ["Soco da Torradeira", -4],
+        ["Impacto do 0", -5],
+        ["Ataque do Lobo Mal", -3]
     ],
     "Guilherme Tomaz Silva": [
-        ["Lança de Gelo", -4],
-        ["Chute Elétrico", -5],
-        ["Rajada de Fogo", -3]
+        ["Marido de Aluguel", -4],
+        ["Tornado de Açaí", -5],
+        ["Hipnose do Teclado", -3]
     ],
     "Helena Neis da Silva": [
-        ["Golpe de Luz", -4],
-        ["Chute Destruidor", -5],
-        ["Soco Congelante", -3]
+        ["Granada de Cuscuz", -4],
+        ["Chute de Mainha", -5],
+        ["Soco do Nordeste", -3]
     ],
     "João Francisco Luchtenberg Ventura": [
-        ["Chama Azul", -5],
-        ["Golpe de Impacto", -4],
-        ["Lâmina de Vento", -3]
+        ["Pulo do Jaguará", -5],
+        ["Vaca Tossindo", -4],
+        ["É Bucha mesmo", -3]
     ],
     "João Paulo Fagundes": [
-        ["Raio Explosivo", -5],
-        ["Soco Potente", -3],
-        ["Chute de Ferro", -4]
+        ["Simplesmente odeio o Bryan", -20], // (‘Apenas se for o Bryan’)
+        ["Arrumar Cabelo", +3],
+        ["Garras de ANA", -6]
     ],
     "João Victor de Abreu Cunha": [
-        ["Ataque de Velocidade", -3],
-        ["Impacto Sísmico", -5],
-        ["Soco Elétrico", -4]
+        ["Imposto do Sicredi", -3],
+        ["Marretada do Frankie", -10], // (apenas com o JS)
+        ["Soco do chatGPT", -4]
     ],
     "João Vitor Galiotto de Souza": [
-        ["Lâmina de Fogo", -4],
-        ["Golpe Rápido", -3],
-        ["Explosão de Raio", -5]
+        ["Soco da Jambá", -4],
+        ["Ataque do PCD", -3],
+        ["Ataque Flácido", -5]
     ],
     "João Vitor Santos": [
-        ["Impacto de Fogo", -4],
-        ["Soco de Terra", -5],
-        ["Chute de Gelo", -3]
+        ["Soco de JS", -3],
+        ["Rajada de PHP", -6],
+        ["Tapa sem Mouse", -4]
     ],
     "Jonas Luiz Marin": [
-        ["Golpe Meteoro", -5],
-        ["Rajada Congelante", -3],
-        ["Fúria de Raios", -4]
+        ["Transtorno de Identidade", -5],
+        ["DÃRR", -3],
+        ["Punho de Bergamota", -4]
     ],
     "Lucas Pereira": [
-        ["Rajada de Raios", -4],
-        ["Impacto de Lava", -5],
-        ["Chute Rápido", -3]
+        ["Narvalhada Crítica", -4],
+        ["Tesourada", -5],
+        ["Capa Voadora", -3] // (‘Deixa um rodada sem jogar’)
+    ],
+    "Lucas Wagner Salim": [
+        ["Pancada Snorlax", -4],
+        ["IHHAAAAAAAAAAAAA", -5],
+        ["Chute açúcarado", -3]
     ],
     "Manuela Cristina Torres Guimarães": [
-        ["Lança de Luz", -4],
-        ["Golpe Rápido", -3],
-        ["Explosão Sombria", -5]
+        ["Laçada", -4],
+        ["Golpe Boiadeira", -3],
+        ["Pancada Rancheira", -5]
     ],
     "Mateus Queiroz Logrado": [
-        ["Chute Elétrico", -5],
-        ["Impacto de Gelo", -4],
-        ["Soco de Raio", -3]
+        ["Soco Logrado", -5],
+        ["Tapa Intelectual", -4],
+        ["Ondas de Raciocínio", -3]
     ],
     "Mateus Zandona Krieger": [
-        ["Golpe Sombrio", -5],
-        ["Explosão de Luz", -3],
-        ["Chute Devastador", -4]
+        ["Ataque de fumaça", -5],
+        ["Chama meu Advogado", -8],
+        ["Ir ao banheiro", +4] // (‘demora um turno’)
     ],
     "Nicollas Jose Prim": [
-        ["Raio Congelante", -4],
-        ["Golpe de Energia", -5],
-        ["Chute Relâmpago", -3]
+        ["Soco da Rita Lee", -4],
+        ["Golpe de Miopia", -5],
+        ["espingarda cobain", -3]
     ],
     "Nicollas Lopes do Nascimento": [
-        ["Impacto Devastador", -5],
-        ["Explosão de Fogo", -4],
-        ["Soco Rápido", -3]
+        ["Apaixonite de Erick", -5],
+        ["Encoxa Erick", +4], // (‘Apenas com o Erick’)
+        ["Soco Editado", -3]
     ],
     "Pedro Rafael Santiago": [
-        ["Lança Relâmpago", -5],
-        ["Golpe de Impacto", -4],
-        ["Chute de Fogo", -3]
+        ["Voadora de Polenguinho", -4],
+        ["Confusão", -3],
+        ["Celibato Infinito", -5]
     ],
     "Ruan Geraldo": [
-        ["Impacto de Fogo", -5],
-        ["Chute de Gelo", -4],
-        ["Rajada de Raios", -3]
+        ["Rei do Açougue", -7],
+        ["Picadinho Poderoso", -4],
+        ["Costelada Bruta", -3]
     ],
     "Vinícius de Bona Ruas": [
-        ["Explosão de Energia", -5],
-        ["Golpe Pesado", -4],
-        ["Chute Veloz", -3]
+        ["Golpe do Defer", -5],
+        ["Chicote de Glitters", -4],
+        ["Mordida", -3]
     ],
     "Yan Bueno Goulart": [
-        ["Lâmina de Fogo", -4],
-        ["Soco Sísmico", -5],
-        ["Chute Rápido", -3]
+        ["Lâmina de Python", -4],
+        ["Ataque da Lua", -5],
+        ["Chute do Roblox", -3]
     ]
 };
+
 
 function setValueRandom(max, min) {
     let random = Math.floor(Math.random() * (max - min + 1) + min)
