@@ -5,6 +5,12 @@ body {
     height: 100vh;
 }
 
+#pika {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
 header {
     background-color: black;
     padding: 10px 0;
@@ -61,11 +67,34 @@ header p, header span {
 
 main {
     transition: 0.5s;
-    background-color: whitesmoke;
     height: 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    padding-top: 80px;
+}
+
+main .elus {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+main #love {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: end;
+}
+
+main #love #size{
+    position: absolute;
+    background-color: red;
+    width: 200px;
+}
+
+main #love img {
+    position: absolute;
+    width: 200px;
 }
 
 aside {

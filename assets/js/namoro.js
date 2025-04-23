@@ -35,6 +35,39 @@ let alunos = [
     "Yan Bueno Goulart",
 ];
 
+let alunosNP = [
+    "Agatha Iasmin Koschel do Nascimento",
+    "Ana Clara Furtado Goudinho",
+    "Arthur Alexandre Abbruzzini",
+    "Arthur Marcos Serpa Martins",
+    "Artur Ximendes Del Guerso",
+    "Brenda Julya de Souza Freitas da Silva",
+    "Daniel Domingos",
+    "Davi Schoenardie de Almeida",
+    "Eduardo Corrêa da Cruz",
+    "Eric D. Scapini",
+    "Érick Miguel Schuck",
+    "Francisco Lisboa da Silva Lima",
+    "Giovanni Filipe Burgo",
+    "Guilherme Tomaz Silva",
+    "João Francisco Luchtenberg Ventura",
+    "João Paulo Fagundes",
+    "João Victor de Abreu Cunha",
+    "João Vitor Galiotto de Souza",
+    "João Vitor Santos",
+    "Jonas Luiz Marin",
+    "Lucas Pereira",
+    "Manuela Cristina Torres Guimarães",
+    "Mateus Queiroz Logrado",
+    "Mateus Zandona Krieger",
+    "Nicollas Jose Prim",
+    "Nicollas Lopes do Nascimento",
+    "Pedro Rafael Santiago",
+    "Ruan Geraldo",
+    "Vinícius de Bona Ruas",
+    "Yan Bueno Goulart",
+];
+
 let codAlunos = [
     "/assets/img/alunoNA.png",
     "/assets/img/aluno1.png",
@@ -72,189 +105,96 @@ let codAlunos = [
     "/assets/img/aluno33.png"
 ];
 
-// imprimir.innerHTML += `<option value='${comidas[i]}'>${comidas[i]}</option>`
-
 let lista1 = document.getElementById('lista1')
 let lista2 = document.getElementById('lista2')
 
-window.addEventListener('load', ()=>{
+window.addEventListener('load', () => {
 
-    for(let i = 0; i < alunos.length; i++) {
+    for (let i = 0; i < alunos.length; i++) {
         lista1.innerHTML += `<option value='${alunos[i]}'>${alunos[i]}</option>`
-        lista2.innerHTML += `<option value='${alunos[i]}'>${alunos[i]}</option>`
+        lista2.innerHTML += `<option value='${alunosNP[i]}'>${alunosNP[i]}</option>`
     }
 })
 
-lista1.addEventListener('change', () => {
-    console.log("Selecionado:", lista1.value);
-    
-    if ((lista1.innerHTML.toLowerCase().indexOf('Arthur Soglia Veronica') >= -1)){
-        lista2.innerHTML = `<option value='Helena Neis da Silva'>Helena Neis da Silva</option>`
-        console.log('❤ Oh, o amor está no ar');
-    }
-    
-    if ((lista1.innerHTML.toLowerCase().indexOf('Helena Neis da Silva') >= -1)){
-        lista2.innerHTML = `<option value='Arthur Soglia Veronica'>Arthur Soglia Veronica</option>`
-        console.log('❤ Oh, o amor está no ar');
+let aluno1H = document.getElementById('aluno1')
+let aluno2H = document.getElementById('aluno2')
+
+aluno1H.addEventListener('change', () => {
+    console.log("Selecionado:", aluno1H.value);
+
+    switch (aluno1H.value) {
+        case 'Arthur Soglia Veronica':
+            lista2.innerHTML = `<option value='Helena Neis da Silva'>Helena Neis da Silva</option>`
+            console.log('❤ Oh, o amor está no ar');
+            break;
+        case 'Helena Neis da Silva':
+            lista2.innerHTML = `<option value='Arthur Soglia Veronica'>Arthur Soglia Veronica</option>`
+            console.log('❤ Oh, o amor está no ar');
+            break;
+        case 'Bryan Prinz da Silva':
+            lista2.innerHTML = `<option value='Luna Laurato Régis Francisca'>Luna Laurato Régis Francisca</option>`
+            console.log('❤ Oh, o amor está no ar');
+            break;
+        case 'Augusto Gonçalves Dias':
+            lista2.innerHTML = `<option value='Evylleen Argenton'>Evylleen Argenton</option>`
+            console.log('❤ Oh, o amor está no ar');
+            break;
+        default:
+            for (let i = 0; i < alunos.length; i++) {
+                lista1.innerHTML += `<option value='${alunos[i]}'>${alunos[i]}</option>`
+                lista2.innerHTML += `<option value='${alunosNP[i]}'>${alunosNP[i]}</option>`
+            };
+            break;
     }
 });
 
-let aluno1 = '', aluno2 = ''
-
 function inicio() {
+    let caracter1 = aluno1H.value.length
+    let caracter2 = aluno2H.value.length
+
+    let cod1, cod2
+
+    for(let i = 0; i < alunos.length; i++) {
+        if(alunos[i] == aluno1H.value) {
+            cod1 = i
+        } else if(alunos[i] == aluno2H.value) {
+            cod2 = i
+        }
+    }
+
+    let random = (Math.random()).toFixed(2)
     
+    let porcentagem = (caracter1 + caracter2 + cod1 + cod2) * random
+
+    if(((cod1 == 17)&&(cod2 == 4))||((cod1 == 4)&&(cod2 == 17))) {
+        porcentagem = 100
+    }
+
+    console.log(porcentagem);
+
     let escolha = document.getElementById('escolha')
-    aluno1 = document.getElementById('aluno1').value
-    aluno2 = document.getElementById('aluno2').value
+
     escolha.innerHTML = ''
     escolha.style.backgroundColor = 'black'
+
     document.getElementById('header').style.height = '10vh'
     document.getElementById('main').style.height = '70vh'
+
     document.getElementById('main').innerHTML = `
-        <aside id="aside">
-        </aside>
-        <table>
-            <tbody>
-                <tr>
-                    <td id="11" onclick="velho(11)"></td>
-                    <td id="12" onclick="velho(12)"></td>
-                    <td id="13" onclick="velho(13)"></td>
-                </tr>
-                <tr>
-                    <td id="21" onclick="velho(21)"></td>
-                    <td id="22" onclick="velho(22)"></td>
-                    <td id="23" onclick="velho(23)"></td>
-                </tr>
-                <tr>
-                    <td id="31" onclick="velho(31)"></td>
-                    <td id="32" onclick="velho(32)"></td>
-                    <td id="33" onclick="velho(33)"></td>
-                </tr>
-            </tbody>
-        </table>
+        <img class='elus' src='${codAlunos[cod1]}'>
+        <div id='love'>
+            <div id='size'></div>
+            <img src='/assets/img/so-love.png'>
+        </div>
+        <img class='elus' src='${codAlunos[cod2]}'>
     `
+
+    document.getElementById('size').style.height = 2*porcentagem + 'px'
+
+    console.log(document.getElementById('main'))
+
     document.getElementById('header').innerHTML = `
-    <p>Vez de:</p>
-    <span id="vez">${aluno1}</span>
+    <p>Porcentagem:</p>
+    <span id="vez">${porcentagem.toFixed(2)}%</span>
     `
-    descobrir(aluno1, aluno2)
-}
-
-let save1 = 0, save2 = 0
-let vez = 0
-let cod = 0
-
-function descobrir(carinha1, carinha2) {
-    for(let i = 0; i < alunos.length; i++) {
-        if(carinha1 == alunos[i]) {
-            save1 = i
-        }
-    }
-    
-    for(let i = 0; i < alunos.length; i++) {
-        if(carinha2 == alunos[i]) {
-            save2 = i
-        }
-    }
-    vez = alunos[save1]
-    cod = save1
-}
-
-
-let veios = [
-    [11, 12, 13],
-    [21, 22, 23],    
-    [31, 32, 33],
-]
-
-function rodada(name) {
-    document.getElementById('vez').innerHTML = name    
-}
-
-function velho(value) {
-    if(document.getElementById(value).innerHTML == '') {
-        document.getElementById(value).src = `${codAlunos[cod]}`
-        document.getElementById(value).innerHTML = `<img src='${codAlunos[cod]}' alt='${vez}'>`
-        troca()
-        rodada(vez)
-    } else {
-        alert('Inválido')
-    }
-    
-    final()
-    ganhador()
-}
-
-function final() {
-    let cont = 0
-    for(let i = 1; i <= veios.length; i++) {
-        for(let j = 1; j <= veios.length; j++) {
-            if(document.getElementById(i+''+j).innerHTML == '') {
-            } else {
-                cont++
-            }
-        }
-    }
-    if(cont == 9) {
-        // alert('Deu velho')
-        // document.getElementById('aside').style = "background: url('img/velho.png');"
-        document.getElementById('aside').innerHTML = '<img src="/assets/img/velho.png">'
-        // document.getElementById('aside').style = "background-repeat: no-repeat;"
-        setTimeout(acabou, 3000)
-    }
-}
-
-function acabou() {
-    for(let i = 0; i < 3; i++) {
-        for(let j = 0; j < 3; j++) {
-            document.getElementById(veios[i][j]).innerHTML = ''
-        }
-    }
-    document.getElementById('aside').innerHTML = ''
-}
-
-function troca() {
-    if(vez == alunos[save1]) {
-        vez = alunos[save2]
-        cod = save2
-    } else {
-        vez = alunos[save1]
-        cod = save1
-    }
-}
-
-function ganhador() {
-    for(let i = 0; i < veios.length; i++) {
-        if((document.getElementById((i+1)+'1').innerHTML != '')&&(document.getElementById((i+1)+'2').innerHTML != '')&&(document.getElementById((i+1)+'3').innerHTML != '')) {
-            if((document.getElementById((i+1)+'1').innerHTML == document.getElementById((i+1)+'2').innerHTML)&&(document.getElementById((i+1)+'1').innerHTML == document.getElementById((i+1)+'3').innerHTML)) {
-                troca()
-                document.getElementById('aside').innerHTML = `<img style='width: 100%;' src="${codAlunos[cod]}">`
-                setTimeout(acabou, 3000)
-            }
-        }
-        
-        if((document.getElementById('1'+(i+1)).innerHTML != '')&&(document.getElementById('2'+(i+1)).innerHTML != '')&&(document.getElementById('3'+(i+1)).innerHTML != '')) {
-            if((document.getElementById('1'+(i+1)).innerHTML == document.getElementById('2'+(i+1)).innerHTML)&&(document.getElementById('1'+(i+1)).innerHTML == document.getElementById('3'+(i+1)).innerHTML)) {
-                troca()
-                document.getElementById('aside').innerHTML = `<img style='width: 100%;' src="${codAlunos[cod]}">`
-                setTimeout(acabou, 3000)
-            }
-        }
-        
-        if((document.getElementById('11').innerHTML != '')&&(document.getElementById('22').innerHTML != '')&&(document.getElementById('33').innerHTML != '')) {
-            if((document.getElementById('11').innerHTML == document.getElementById('22').innerHTML)&&(document.getElementById('11').innerHTML == document.getElementById('33').innerHTML)) {
-                troca()
-                document.getElementById('aside').innerHTML = `<img style='width: 100%;' src="${codAlunos[cod]}">`
-                setTimeout(acabou, 3000)
-            }
-        }
-
-        if((document.getElementById('13').innerHTML != '')&&(document.getElementById('22').innerHTML != '')&&(document.getElementById('31').innerHTML != '')) {
-            if((document.getElementById('13').innerHTML == document.getElementById('22').innerHTML)&&(document.getElementById('13').innerHTML == document.getElementById('31').innerHTML)) {
-                troca()
-                document.getElementById('aside').innerHTML = `<img style='width: 100%;' src="${codAlunos[cod]}">`
-                setTimeout(acabou, 3000)
-            }
-        }
-    }
 }
