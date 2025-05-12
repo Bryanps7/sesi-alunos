@@ -242,6 +242,7 @@ const participantes = [
     ['O', 4, 'Marcia da Luz'],
 
     // P
+    ['P', 1, 'Manuela Cristina'],
     ['P', 2, 'Lara Paganelli'],
     ['P', 3, 'Lara Paganelli'],
     ['P', 4, 'Lara Paganelli'],
@@ -260,6 +261,7 @@ const participantes = [
     ['P', 17, 'Lara Paganelli'],
     ['P', 18, 'Lara Paganelli'],
     ['P', 19, 'Lara Paganelli'],
+    ['P', 20, 'Manuela Cristina'],
 
     // R
     ['R', 1, 'João Pedro S'],
