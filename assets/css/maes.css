@@ -1,0 +1,145 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffe6f2; /* Fundo rosa claro */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #ff99cc; /* Rosa mais forte */
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    text-align: center;
+}
+
+.title h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.title h2:hover {
+    transition: var(--transition);
+    font-weight: 900;
+}
+
+.buttons {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    background-color: #ff66b2; /* Rosa vibrante */
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    margin: 0 var(--margin);
+}
+
+button:hover {
+    background-color: #e60073; /* Rosa mais escuro */
+    transform: scale(1.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+#scren {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem; /* Aumenta o tamanho do texto */
+    font-weight: bold;
+    color: #333;
+    border: 2px solid #000;
+    padding: 20px;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#cassino {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.roda {
+    width: 120px;
+    height: 120px;
+    border: 5px solid #ff66b2; /* Rosa vibrante */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    background-color: #ff99cc; /* Rosa mais forte */
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: center; /* Garante que o texto fique centralizado */
+    line-height: normal; /* Remove qualquer espaçamento vertical indesejado */
+}
+
+.roda::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    animation: girar 1s linear infinite;
+}
+
+.roda.parada::before {
+    animation-play-state: paused;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1rem;
+    color: #666;
+}
+
+footer a {
+    color: #ff66b2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
