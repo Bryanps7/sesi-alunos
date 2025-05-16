@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <title>Sorteador</title>
+    <title>Sorteador Simples</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/public/sesi-logo.png" type="image/x-icon">
-
-    <script src="/assets/js/sorteioSimples.js" defer></script>
-    
-    <link rel="stylesheet" href="/assets/css/sorteador.css">
     <link rel="stylesheet" href="/assets/css/config.css">
+    <link rel="stylesheet" href="/assets/css/sorteador.css">
+    <script src="/assets/js/sorteioSimples.js" defer></script>
 </head>
- <body>
+<body>
     <header>
         <div class="title">
-            <h2>Feito por Bryan Prinz</h2>
+            <h1>Sorteador Simples</h1>
+            <p>Feito por Bryan Prinz</p>
         </div>
-        <button onclick="sorteacao()">Sortear</button>
-    </header><br><br>
+        <div class="buttons">
+            <button class="spin" onclick="sorteacao()">Sortear</button>
+        </div>
+    </header>
     <main>
-        <div id="scren"></div>
+        <div id="scren" class="result-container"></div>
     </main>
 </body>
 </html>

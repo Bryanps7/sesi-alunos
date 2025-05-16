@@ -38,19 +38,20 @@ let alunos = [
 let nAlunos = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33];
 
 function sorteacao() {
-    let valor = randomValue(alunos.length - 1, 0)
-    
-    document.getElementById('scren').innerHTML = ''
-    document.getElementById('scren').innerHTML += `
-        <h1>${alunos[valor]}</h1><br>
-        <img src="/assets/img/aluno${nAlunos[valor]}.png" width="300px">
-    `
+    let valor = randomValue(alunos.length - 1, 0);
 
-    alunos.splice(valor, 1)
-    nAlunos.splice(valor, 1)
+    // Atualiza o conteúdo do container de resultados
+    const scren = document.getElementById('scren');
+    scren.innerHTML = `
+        <h1>${alunos[valor]}</h1>
+        <img src="/assets/img/aluno${nAlunos[valor]}.png" alt="Aluno(a) ${alunos[valor]}">
+    `;
 
+    // Remove o aluno sorteado da lista
+    alunos.splice(valor, 1);
+    nAlunos.splice(valor, 1);
 }
 
-function randomValue(max, min){
-    return Math.floor(Math.random() * (max - min + 1) + min)
+function randomValue(max, min) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
 }

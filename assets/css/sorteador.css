@@ -1,86 +1,108 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* padding: 1000px 0 0; */
+    background-color: var(--color2); /* Off-white */
+    color: var(--color1); /* Bordô */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
 }
 
 header {
-    width: 100vw;
-    padding-bottom: 5px;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--color1); /* Bordô */
+    color: var(--color2); /* Off-white */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .title h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header .title p {
+    font-size: 1rem;
+    margin: 5px 0 20px;
+}
+
+header .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+header .buttons button {
+    background-color: var(--color2); /* Off-white */
+    color: var(--color1); /* Bordô */
+    border: var(--border);
+    font-weight: bold;
+    border-radius: var(--border-radius);
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+header .buttons button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: var(--color1); /* Bordô */
+    color: var(--color2); /* Off-white */
+}
+
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh - 150px);
 }
 
-#updateList {
-    margin: 10px 0 10px 30px;
-}
-
-.title {
-    text-align: center;
-}
-
-.title h2:hover {
-    transition: var(--transition);
-    font-weight: 900;
-}
-
-.buttons {
-    width: 50%;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-button {
-    background-color: white;
-    border: var(--border);
+.name {
+    font-size: 1.5rem;
     font-weight: bold;
-    margin: 0 var(--margin);
-    border-radius: var(--border-radius);
-    padding: calc(var(--padding) / 2);
-}
-
-button:hover {
-    background-color: black;
-    color: white;
-    border: var(--border-reverse);
-    transition: var(--transition);
-    font-size: var(--font-size-hover);
+    margin-bottom: 20px;
+    color: var(--color1); /* Bordô */
 }
 
 .carousel {
     position: relative;
-    width: 80%;
-    margin: auto;
+    width: 750px;
+    max-width: 1000px;
     overflow: hidden;
-    border-radius: 500px;
-    border: 5px ridge black;
+    border-radius: 100px;
+    border: 5px solid var(--color1); /* Bordô */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .carousel-images {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    object-fit: cover;
 }
 
 .carousel-images img {
-    width: 33%;
-    flex-shrink: 0;
-    transition: transform 0.5s ease-in-out;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: calc(var(--border) / 2);
+    transition: transform 0.3s;
 }
 
 .carousel-images img.active {
     transform: scale(1.2);
+    border: 3px solid var(--color1); /* Bordô */
 }
 
-
 .triangulo {
-    display: flex;
-    justify-content: center;
     position: relative;
-    top: -78px;
+    top: 0px;
+    justify-content: center;
+    margin-top: -50px;
 }
 
 .triangulo img {
@@ -93,12 +115,41 @@ button:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, black, transparent, transparent, black);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent, rgba(0, 0, 0, 0.8));
 }
 
-#scren {
+.result-container {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: var(--color2); /* Off-white */
+    border: 2px solid var(--color1); /* Bordô */
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+}
+
+.result-container h1 {
+    font-size: 2rem;
+    color: var(--color1); /* Bordô */
+    margin-bottom: 20px;
+}
+
+.result-container img {
+    width: 300px;
+    height: auto;
+    border-radius: var(--border-radius);
+    border: 2px solid var(--color1); /* Bordô */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.result-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }

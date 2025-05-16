@@ -1,11 +1,29 @@
-#container {
-    background-color: black;
-    height: 100%;
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color2); /* Off-white */
+    color: var(--color1); /* Bordô */
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    transition: 1s;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--color2); /* Off-white */
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px;
 }
 
 #container button {
@@ -13,13 +31,55 @@
     border-color: white;
 }
 
+.logo {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.personagem h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.personagem input {
+    padding: 10px;
+    border: 2px solid var(--color1); /* Bordô */
+    border-radius: var(--border-radius);
+    outline: none;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: var(--color1); /* Bordô */
+    color: var(--color2); /* Off-white */
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: var(--color2); /* Off-white */
+    color: var(--color1); /* Bordô */
+}
+
 #placar {
     display: none;
     justify-content: center;
-    border-bottom: 3px solid;
-    background-color: black;
-    color: white;
-    padding: 20px 0;
+    align-items: center;
+    background-color: var(--color1); /* Bordô */
+    color: var(--color2); /* Off-white */
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #placar span, #placar div {
@@ -30,6 +90,13 @@
 #luta {
     display: none;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#luta div img {
+    width: 100%;
 }
 
 #luta h1 {
@@ -42,11 +109,14 @@
 }
 
 #luta .vida {
-    margin-bottom: 20px;
+    margin: 10px 0;
 }
 
 #jogador, #adversario {
-    flex-basis: 300px;
+    text-align: center;
+    flex-basis: 45%;
+    max-width: 300px;
+    margin: 0 10px;
 }
 
 img {
@@ -59,18 +129,23 @@ img {
     flex-direction: column;
 }
 
+.vida {
+    margin: 10px 0;
+}
+
 .vidao {
-    height: 15px;
-    border: 2px solid black;
-    border-radius: 4px;
-    margin-bottom: 5px;
+    height: 20px;
+    background-color: var(--color2); /* Off-white */
+    border: 2px solid var(--color1); /* Bordô */
+    border-radius: var(--border-radius);
+    overflow: hidden;
 }
 
 #porcentagemJogador, #porcentagemAdversario {
     background-color: red;
     height: 100%;
     width: 100%;
-    transition: 0.6s;
+    transition: width 0.6s;
 }
 
 #golpesJogador button {
@@ -81,16 +156,44 @@ img {
     text-align: end;
 }
 
-#gameOver , #vitory{
+.btn-attack {
+    background-color: var(--color1); /* Bordô */
+    color: var(--color2); /* Off-white */
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-attack:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: var(--color2); /* Off-white */
+    color: var(--color1); /* Bordô */
+}
+
+#gameOver, #vitory {
     display: none;
     justify-content: center;
     align-items: center;
-    font-size: 5rem;
-    color: white;
+    flex-direction: column;
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.9);
-    height: 100%;
-    width: 100%;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: var(--color2); /* Off-white */
+    text-align: center;
+    z-index: 10;
+}
+
+#gameOver h1, #vitory h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
 }

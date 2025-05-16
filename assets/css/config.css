@@ -2,15 +2,15 @@
 
 :root {
     --margin: 10px;
-    --border: 2px solid black;
-    --border-person: 1px solid black;
-    --border-reverse: 2px solid white;
-    --border-radius: 2px;
+    --border: 2px solid #800020; /* Bordô */
+    --border-person: 1px solid #800020; /* Bordô */
+    --border-reverse: 2px solid #f8f8f8; /* Off-white */
+    --border-radius: 5px;
     --padding: 10px;
     --transition: 750ms;
-    --font-size-hover: 1.1rem;
-    --color1: #ff4746;
-    --color2: #92b55f;
+    --font-size-hover: 1.2rem;
+    --color1: #800020; /* Bordô */
+    --color2: #f8f8f8; /* Off-white */
     --color3: #4b4452;
 }
 
@@ -23,21 +23,24 @@
 body {
     margin: 0;
     height: 100vh;
+    background-color: #f8f8f8; /* Off-white */
+    color: #800020; /* Bordô */
 }
 
 button {
-    background-color: white;
+    background-color: #800020; /* Bordô */
+    color: #f8f8f8; /* Off-white */
     border: var(--border);
     font-weight: bold;
     margin: 0;
     border-radius: var(--border-radius);
     padding: calc(var(--padding) / 2);
+    transition: var(--transition);
 }
 
 button:hover {
-    background-color: black;
-    color: white;
+    background-color: #f8f8f8; /* Off-white */
+    color: #800020; /* Bordô */
     border: var(--border-reverse);
-    transition: var(--transition);
     font-size: var(--font-size-hover);
 }

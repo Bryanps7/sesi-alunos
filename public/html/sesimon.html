@@ -13,12 +13,13 @@
 </head>
 <body>
     <div id="container">
-        <img src="/assets/img/sesimon.png" alt="">
+        <img src="/assets/img/sesimon.png" alt="Sesimon Logo" class="logo">
         <div class="personagem">
-            <input id="aluno" list="alunos" required>
+            <h2>Escolha seu personagem:</h2>
+            <input id="aluno" list="alunos" placeholder="Selecione um aluno" required>
             <datalist id="alunos"></datalist>
         </div>
-        <button onclick="saveConfig()">Jogar</button>    
+        <button class="btn-primary" onclick="saveConfig()">Jogar</button>    
     </div>
     <div id="placar">
         <span>Vez de:</span>
@@ -28,7 +29,7 @@
         <div id="jogador">
             <div class="info">
                 <h1 id="nameJogador"></h1>
-                <img id="imgJogador" src="" alt="">
+                <img id="imgJogador" src="" alt="Jogador">
             </div>
             <div class="vida">
                 <p>Vida:</p>
@@ -37,15 +38,15 @@
                 </div>
             </div>
             <div class="golpes" id="golpesJogador">
-                <button onclick="ataque(0)" id="golpe1Jogador"></button>
-                <button onclick="ataque(1)" id="golpe2Jogador"></button>
-                <button onclick="ataque(2)" id="golpe3Jogador"></button>
+                <button class="btn-attack" onclick="ataque(0)" id="golpe1Jogador"></button>
+                <button class="btn-attack" onclick="ataque(1)" id="golpe2Jogador"></button>
+                <button class="btn-attack" onclick="ataque(2)" id="golpe3Jogador"></button>
             </div>
         </div>
         <div id="adversario">
             <div class="info">
                 <h1 id="nameAdversario"></h1>
-                <img id="imgAdversario" src="" alt="">
+                <img id="imgAdversario" src="" alt="Adversário">
             </div>
             <div class="vida">
                 <p>Vida:</p>
@@ -56,10 +57,12 @@
         </div>
     </div>
     <div id="gameOver">
-        GAME OVER
+        <h1>GAME OVER</h1>
+        <button class="btn-primary" onclick="resetar()">Reiniciar</button>
     </div>
     <div id="vitory">
-        VICTORY
+        <h1>VICTORY</h1>
+        <button class="btn-primary" onclick="resetar()">Reiniciar</button>
     </div>
 </body>
 </html>

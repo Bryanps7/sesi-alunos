@@ -5,22 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/public/sesi-logo.png" type="image/x-icon">
-
-    <script src="/assets/js/sorteio.js" defer></script>
-    
-    <link rel="stylesheet" href="/assets/css/sorteador.css">
     <link rel="stylesheet" href="/assets/css/config.css">
+    <link rel="stylesheet" href="/assets/css/sorteador.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="/assets/js/sorteio.js" defer></script>
+    <script defer>
+        function highlightImage(index) {
+            images.forEach(img => img.classList.remove('active'));
+            images[index].classList.add('active');
+
+            // Disparar confetes
+            if (typeof confetti === 'function') {
+                confetti({
+                    particleCount: 150,
+                    spread: 70,
+                    origin: { x: 0.5, y: 0.6 }, // Centralizado
+                    colors: ['#800020', '#f8f8f8'] // Bordô e Off-white
+                });
+            }
+
+            // Repetir confetes para um efeito mais longo
+            setTimeout(() => {
+                confetti({
+                    particleCount: 100,
+                    spread: 120,
+                    origin: { x: 0.5, y: 0.6 },
+                    colors: ['#800020', '#f8f8f8']
+                });
+            }, 300);
+        }
+    </script>
 </head>
- <body>
+<body>
     <header>
         <div class="title">
-            <h2>Feito por Bryan Prinz</h2>
+            <h1>Sorteador</h1>
+            <p>Feito por Bryan Prinz</p>
         </div>
         <div class="buttons">
             <button class="spin" id="playButton">Girar</button>
             <button class="stop" id="stopButton">Parar</button>
         </div>
-    </header><br><br>
+    </header>
     <main>
         <div class="name"></div>
         <div class="carousel">
@@ -28,7 +54,7 @@
             <div class="opacidade"></div>
         </div>
         <div class="triangulo">
-            <img src="/assets/img/triangulo.svg" alt="">
+            <img src="/assets/img/triangulo.svg" alt="Indicador">
         </div>
     </main>
     <audio id="music" src="/assets/aud/music.mp3"></audio>

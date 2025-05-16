@@ -269,45 +269,33 @@ let contAdver = 100
 let contJogad = 100
 
 function ataque(atack) {
-    let lifeJogador = document.querySelector('#porcentagemJogador')
-    let lifeAdversario = document.querySelector('#porcentagemAdversario')
+    let lifeJogador = document.querySelector('#porcentagemJogador');
+    let lifeAdversario = document.querySelector('#porcentagemAdversario');
+    let buttons = document.querySelectorAll('.btn-attack');
+
+    // Desabilitar botões durante o ataque
+    buttons.forEach(button => button.disabled = true);
+
     if (scren.innerHTML == personagem) {
-        let oAtaque = ataquesAlunos[personagem][atack][1]
+        let oAtaque = ataquesAlunos[personagem][atack][1];
 
-        if ((oAtaque <= -1)||(oAtaque == adversario)) {
-            let calculoPor = 0
-            
-            if(oAtaque == adversario) {
-                vidaAdver += -200
-                calculoPor = -100 
-            } else {
-                vidaAdver += oAtaque * 10
-                calculoPor = oAtaque * 5
-            }
-
-
-            lifeAdversario.style.width = contAdver + calculoPor + '%'
-            console.log("Vida do Adversário: " + vidaAdver)
-
-            contAdver += calculoPor
-
+        if (oAtaque < 0) {
+            vidaAdver += oAtaque * 10;
+            contAdver += oAtaque * 5;
+            lifeAdversario.style.width = contAdver + '%';
         } else {
-            vidaPerson += oAtaque * 10
-
-            let calculoPor = oAtaque * 5
-
-            lifeJogador.style.width = contJogad + calculoPor + '%'
-            console.log("Vida do Jogador: " + vidaPerson)
-
-            contJogad += calculoPor
+            vidaPerson += oAtaque * 10;
+            contJogad += oAtaque * 5;
+            lifeJogador.style.width = contJogad + '%';
         }
 
-        gameOver()
+        gameOver();
 
-        scren.innerHTML = adversario
+        scren.innerHTML = adversario;
         setTimeout(() => {
-            ataqueAdversario()
-        }, 2000)
+            ataqueAdversario();
+            buttons.forEach(button => button.disabled = false);
+        }, 2000);
     }
 }
 

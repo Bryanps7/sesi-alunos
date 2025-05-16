@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <title>Sorteador de Equipes</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="/public/sesi-logo.png" type="image/x-icon">
-        
-        <link rel="stylesheet" href="/assets/css/equipe.css">
-        <link rel="stylesheet" href="/assets/css/config.css">
-
-        <script src="/assets/js/sorEquipes.js" defer></script>
-        <link rel="stylesheet" href="/assets/css/grupos.css">
-    </head>
+<head>
+    <title>Sorteador de Equipes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/public/sesi-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/config.css">
+    <link rel="stylesheet" href="/assets/css/equipe.css">
+    <script src="/assets/js/sorEquipes.js" defer></script>
+</head>
 <body>
-    <div class="container">
-        <label for="numPessoaEquipe">Equipe de quantas pessoas?</label>
-        <input type="number" id="numPessoaEquipe">
-        <button onclick="checar()">Gerar Equipes</button>
-    </div>
-    <div id="section-equipes">
-    </div>
+    <header>
+        <div class="title">
+            <h1>Sorteador de Equipes</h1>
+            <p>Feito por Bryan Prinz</p>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <label for="numPessoaEquipe">Quantas pessoas por equipe?</label>
+            <input type="number" id="numPessoaEquipe" placeholder="Digite um número">
+            <button onclick="checar()">Gerar Equipes</button>
+        </div>
+        <div id="section-equipes" class="teams-container"></div>
+    </main>
 </body>
 </html>

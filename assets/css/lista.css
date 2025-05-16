@@ -1,51 +1,100 @@
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--color1); /* Bordô */
+    color: var(--color2); /* Off-white */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
 header nav {
     display: flex;
     justify-content: center;
-    margin-top: calc(var(--margin) / 2);
+    gap: 15px;
 }
 
 header nav button {
-    background-color: white;
+    background-color: var(--color2); /* Off-white */
+    color: var(--color1); /* Bordô */
     border: var(--border);
     font-weight: bold;
-    margin: 0 var(--margin);
     border-radius: var(--border-radius);
-    padding: calc(var(--padding) / 2);
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 header nav button:hover {
-    background-color: black;
-    color: white;
-    border: var(--border-reverse);
-    transition: var(--transition);
-    font-size: var(--font-size-hover);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: var(--color1); /* Bordô */
+    color: var(--color2); /* Off-white */
 }
 
-header div {
+#pesquisa {
+    display: none;
+    margin-top: 15px;
     text-align: center;
-    margin-top: calc(var(--margin) / 2);
-    justify-content: center;
 }
 
-header div input {
+#pesquisa input {
+    padding: 10px;
+    border: var(--border);
     border-radius: var(--border-radius) 0 0 var(--border-radius);
-    border: var(--border);
-    padding: calc(var(--padding) / 2);
+    outline: none;
+    width: 250px;
 }
 
-header div button {
-    background-color: white;
+#pesquisa button {
+    padding: 10px;
+    background-color: var(--color1); /* Bordô */
+    color: var(--color2); /* Off-white */
     border: var(--border);
-    font-weight: bold;
     border-radius: 0 var(--border-radius) var(--border-radius) 0;
-    padding: calc(var(--padding) / 2);
-    outline: 0;
+    cursor: pointer;
 }
 
-header div button:hover {
-    background-color: black;
-    color: white;
-    border: var(--border-reverse);
-    transition: var(--transition);
-    font-size: var(--font-size-hover);
+#pesquisa button:hover {
+    background-color: var(--color2); /* Off-white */
+    color: var(--color1); /* Bordô */
+}
+
+.alunos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.alunos-container div {
+    background-color: var(--color2); /* Off-white */
+    border: var(--border);
+    border-radius: var(--border-radius);
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.alunos-container div:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.alunos-container img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    margin-bottom: 10px;
+}
+
+.alunos-container p {
+    font-size: 1rem;
+    color: var(--color1); /* Bordô */
+    font-weight: bold;
 }
