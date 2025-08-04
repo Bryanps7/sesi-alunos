@@ -2,6 +2,7 @@ let alunos = [
     "Agatha Iasmin Koschel do Nascimento",
     "Ana Clara Furtado Goudinho",
     "Arthur Alexandre Abbruzzini",
+    "Arthur Luiz Beccari",
     "Arthur Marcos Serpa Martins",
     "Arthur Soglia Veronica",
     "Artur Ximendes Del Guerso",
@@ -70,6 +71,7 @@ let imagens = [
     "/assets/img/aluno31.png",
     "/assets/img/aluno32.png",
     "/assets/img/aluno33.png",
+    "/assets/img/aluno34.png"
 ];
 
 let equipes = []

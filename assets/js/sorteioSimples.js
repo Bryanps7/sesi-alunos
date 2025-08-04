@@ -2,6 +2,7 @@ let alunos = [
     "Agatha Iasmin Koschel do Nascimento",
     "Ana Clara Furtado Goudinho",
     "Arthur Alexandre Abbruzzini",
+    "Arthur Luiz Beccari",
     "Arthur Marcos Serpa Martins",
     "Arthur Soglia Veronica",
     "Artur Ximendes Del Guerso",
@@ -35,7 +36,7 @@ let alunos = [
     "Yan Bueno Goulart",
 ];
 
-let nAlunos = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33];
+let nAlunos = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34];
 
 function sorteacao() {
     let valor = randomValue(alunos.length - 1, 0);

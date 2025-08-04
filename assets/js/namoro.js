@@ -2,6 +2,7 @@ let alunos = [
     "Agatha Iasmin Koschel do Nascimento",
     "Ana Clara Furtado Goudinho",
     "Arthur Alexandre Abbruzzini",
+    "Arthur Luiz Beccari",
     "Arthur Marcos Serpa Martins",
     "Arthur Soglia Veronica",
     "Artur Ximendes Del Guerso",
@@ -39,6 +40,7 @@ let alunosNP = [
     "Agatha Iasmin Koschel do Nascimento",
     "Ana Clara Furtado Goudinho",
     "Arthur Alexandre Abbruzzini",
+    "Arthur Luiz Beccari",
     "Arthur Marcos Serpa Martins",
     "Artur Ximendes Del Guerso",
     "Brenda Julya de Souza Freitas da Silva",
@@ -102,7 +104,8 @@ let codAlunos = [
     "/assets/img/aluno30.png",
     "/assets/img/aluno31.png",
     "/assets/img/aluno32.png",
-    "/assets/img/aluno33.png"
+    "/assets/img/aluno33.png",
+    "/assets/img/aluno34.png"
 ];
 
 let lista1 = document.getElementById('lista1')
@@ -166,7 +169,11 @@ function inicio() {
     
     let porcentagem = (caracter1 + caracter2 + cod1 + cod2) * random
 
-    if(((cod1 == 17)&&(cod2 == 4))||((cod1 == 4)&&(cod2 == 17))) {
+    if(((cod1 == 18)&&(cod2 == 5))||((cod1 == 5)&&(cod2 == 18))) {
+        porcentagem = 100
+    }
+
+    if((cod1 == 9)&&(aluno2H.value = "Luna Laurato Régis Francisca")) {
         porcentagem = 100
     }
 
