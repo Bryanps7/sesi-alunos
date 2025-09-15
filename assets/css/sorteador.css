@@ -153,3 +153,13 @@ main {
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+
+#checkout-alunos {
+    /* display: flex;    */
+    justify-content: center;
+    flex-direction: column;
+}
+
+.check {
+    margin-left: 100px;
+}
