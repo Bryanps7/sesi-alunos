@@ -1,3 +1,0 @@
-index.html
-|- Sorteio.html
-|- Lista.html
