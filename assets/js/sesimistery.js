@@ -1,367 +1,249 @@
 let alunos = [
-    "Agatha Iasmin Koschel do Nascime rcos Serpa Martins", "Arthur Soglia Veronica", "Artur Ximendes Del Guerso", "Augusto Gonçalves Dias", "Brenda Julya de Souza Freitas da Silva", "Bryan Prinz da Silva", "Daniel Domingo", "Davi Schoenardie de Almeida", "Eduardo Corrêa da Cruz", "Eric D. Scapini", "Érick Miguel Schuck", "Francisco Lisboa da Silva Lima", "Giovanni Filipe Burgo", "Guilherme Tomaz Silva", "Helena Neis da Silva", "João Francisco Luchtenberg Ventura", "João Paulo Fagundes", "João Victor de Abreu Cunha", "João Vitor Galiotto de Souza", "João Vitor Santos", "Jonas Luiz Marin", "Lucas Pereira", "Manuela Cristina Torres Guimarães", "Mateus Queiroz Logrado", "Mateus Zandona Krieger", "Nicollas Jose Prim", "Nicollas Lopes do Nascimento", "Pedro Rafael Santiago", "Ruan Geraldo", "Vinícius de Bona Ruas", "Yan Bueno Goulart",
+    "Agatha Iasmin Koschel do Nascimento",
+    "Ana Clara Furtado Goudinho",
+    "Arthur Alexandre Abbruzzini",
+    "Arthur Luiz Beccari",
+    "Arthur Marcos Serpa Martins",
+    "Arthur Soglia Veronica",
+    "Artur Ximendes Del Guerso",
+    "Augusto Gonçalves Dias",
+    "Brenda Julya de Souza Freitas da Silva",
+    "Bryan Prinz da Silva",
+    "Daniel Domingo",
+    "Davi Schoenardie de Almeida",
+    "Eduardo Corrêa da Cruz",
+    "Eric D. Scapini",
+    "Érick Miguel Schuck",
+    "Francisco Lisboa da Silva Lima",
+    "Giovanni Filipe Burgo",
+    "Guilherme Tomaz Silva",
+    "Helena Neis da Silva",
+    "João Francisco Luchtenberg Ventura",
+    "João Paulo Fagundes",
+    "João Victor de Abreu Cunha",
+    "João Vitor Galiotto de Souza",
+    "João Vitor Santos",
+    "Jonas Luiz Marin",
+    "Lucas Pereira",
+    "Manuela Cristina Torres Guimarães",
+    "Mateus Queiroz Logrado",
+    "Mateus Zandona Krieger",
+    "Nicollas Jose Prim",
+    "Nicollas Lopes do Nascimento",
+    "Pedro Rafael Santiago",
+    "Ruan Geraldo",
+    "Vinícius de Bona Ruas",
+    "Yan Bueno Goulart"
 ];
 
-let ataquesAlunos = {
+let dadosAlunos = {
     "Agatha Iasmin Koschel do Nascimento": [
-        ["Chute Otaku", -3],
-        ["Soco de Mangá", -4],
-        ["Golpe Animado", -5]
+        "Feminino",
+        "Dezembro de 2008",
+        '',
+        '',
+        '',
+        '' 
     ],
-    "Ana Clara Furtado Goudinho": [
-        ["Patada do Golden", -4],
-        ["Puxão de Cabelo", -3],
-        ["Vassourada", -4]
-    ],
-    "Arthur Alexandre Abbruzzini": [
-        ["Golpe Abuzado", -5],
-        ["Chute Abuzado", -3],
-        ["Soco Abuzado", -4]
-    ],
-    "Arthur Luiz Beccari": [
-        ["Golpe X", -5],
-        ["Chute X", -3],
-        ["Soco X", -4]
-    ],
-    "Arthur Marcos Serpa Martins": [
-        ["Explosão de Código", -4],
-        ["Chute da Cobra", -3],
-        ["Soco de Python", -4]
-    ],
-    "Arthur Soglia Veronica": [
-        ["TDAH mortal", -3],
-        ["edição épica", +5],
-        ["Bonecas Infláveis", -4]
-    ],
-    "Artur Ximendes Del Guerso": [
-        ["raiva incontrolável", -4],
-        ["capoeira proibida", -5],
-        ["Investida Poderosa", -3]
-    ],
-    "Augusto Gonçalves Dias": [
-        ["vai a merda scapini", -20], // (Apenas se for eric scapini)
-        ["shadow boxing", -10],
-        ["kamikaze", +6]
-    ],
-    "Brenda Julya de Souza Freitas da Silva": [
-        ["Ataque Silencioso", -4],
-        ["Cash Dash", -3],
-        ["Apunhalada do Marketing", -4]
-    ],
+    "Ana Clara Furtado Goudinho": [],
+    "Arthur Alexandre Abbruzzini": [],
+    "Arthur Luiz Beccari": [],
+    "Arthur Marcos Serpa Martins": [],
+    "Arthur Soglia Veronica": [],
+    "Artur Ximendes Del Guerso": [],
+    "Augusto Gonçalves Dias": [],
+    "Brenda Julya de Souza Freitas da Silva": [],
     "Bryan Prinz da Silva": [
-        ["Soco de JavaScript", -4],
-        ["Martelada do Vidraceiro", -5],
-        ["Hipnose dos Espelhos", -9]
+        "Masculino",
+        "Março de 2008",
+        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28379.870351043755!2d-48.654605008634235!3d-27.23535228522384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a96722683abb%3A0xd95794b9cc95d33f!2sTijucas%2C%20SC%2C%2088200-000!5e0!3m2!1spt-BR!2sbr!4v1761008478065!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+        "#368b45ff",
+        "Desenvolvimento de Sistemas",
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0TXRO7qVCw0UOSkCPxWvUM?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
     ],
-    "Daniel Domingo": [
-        ["Toon Force", -9],
-        ["Lança Guarda-Chuva", -4],
-        ["Soco Animado", -5]
-    ],
-    "Davi Schoenardie de Almeida": [
-        ["Soneca Profunda", +10],
-        ["cadeirada Psíquica", -6],
-        ["fumaça aniquiladora", -4]
-    ],
-    "Eduardo Corrêa da Cruz": [
-        ["Soco do Minecraft", -4],
-        ["Golpe do Baiano", -5],
-        ["Frete Grátis", -3]
-    ],
-    "Eric D. Scapini": [
-        ["back-hand mortal", -6],
-        ["visca barça", +5],
-        ["Ataque das Borboletas", -8]
-    ],
-    "Erick Miguel Schuck": [
-        ["Lança de nariz", -5],
-        ["Foice de Perna", -4],
-        ["Ataque Fertil", -3]
-    ],
-    "Francisco Lisboa da Silva Lima": [
-        ["Puta biscati", -4],
-        ["Chute Farroupilha", -5],
-        ["Golpe Gaúcho", -3]
-    ],
-    "Giovanni Felipe Burgo": [
-        ["Soco da Torradeira", -4],
-        ["Impacto do 0", -5],
-        ["Ataque do Lobo Mal", -3]
-    ],
-    "Guilherme Tomaz Silva": [
-        ["Marido de Aluguel", -4],
-        ["Tornado de Açaí", -5],
-        ["Hipnose do Teclado", -3]
-    ],
-    "Helena Neis da Silva": [
-        ["Granada de Cuscuz", -4],
-        ["Chute de Mainha", -5],
-        ["Soco do Nordeste", -3]
-    ],
-    "João Francisco Luchtenberg Ventura": [
-        ["Pulo do Jaguará", -5],
-        ["Vaca Tossindo", -4],
-        ["É Bucha mesmo", -3]
-    ],
-    "João Paulo Fagundes": [
-        ["Simplesmente odeio o Bryan", -20], // (‘Apenas se for o Bryan’)
-        ["Arrumar Cabelo", +3],
-        ["Garras de ANA", -6]
-    ],
-    "João Victor de Abreu Cunha": [
-        ["Imposto do Sicredi", -3],
-        ["Marretada do Frankie", -10], // (apenas com o JS)
-        ["Soco do chatGPT", -4]
-    ],
-    "João Vitor Galiotto de Souza": [
-        ["Soco da Jambá", -4],
-        ["Ataque do PCD", -3],
-        ["Ataque Flácido", -5]
-    ],
-    "João Vitor Santos": [
-        ["Soco de JS", -3],
-        ["Rajada de PHP", -6],
-        ["Tapa sem Mouse", -4]
-    ],
-    "Jonas Luiz Marin": [
-        ["Transtorno de Identidade", -5],
-        ["DÃRR", -3],
-        ["Punho de Bergamota", -4]
-    ],
-    "Lucas Pereira": [
-        ["Narvalhada Crítica", -4],
-        ["Tesourada", -5],
-        ["Capa Voadora", -3] // (‘Deixa um rodada sem jogar’)
-    ],
-    "Lucas Wagner Salim": [
-        ["Pancada Snorlax", -4],
-        ["IHHAAAAAAAAAAAAA", -5],
-        ["Chute açúcarado", -3]
-    ],
-    "Manuela Cristina Torres Guimarães": [
-        ["Laçada", -4],
-        ["Golpe Boiadeira", -3],
-        ["Pancada Rancheira", -5]
-    ],
-    "Mateus Queiroz Logrado": [
-        ["Soco Logrado", -5],
-        ["Tapa Intelectual", -4],
-        ["Ondas de Raciocínio", -3]
-    ],
-    "Mateus Zandona Krieger": [
-        ["Ataque de fumaça", -5],
-        ["Chama meu Advogado", -8],
-        ["Ir ao banheiro", +4] // (‘demora um turno’)
-    ],
+    "Daniel Domingo": [],
+    "Davi Schoenardie de Almeida": [],
+    "Eduardo Corrêa da Cruz": [],
+    "Eric D. Scapini": [],
+    "Erick Miguel Schuck": [],
+    "Francisco Lisboa da Silva Lima": [],
+    "Giovanni Felipe Burgo": [],
+    "Guilherme Tomaz Silva": [],
+    "Helena Neis da Silva": [],
+    "João Francisco Luchtenberg Ventura": [],
+    "João Paulo Fagundes": [],
+    "João Victor de Abreu Cunha": [],
+    "João Vitor Galiotto de Souza": [],
+    "João Vitor Santos": [],
+    "Jonas Luiz Marin": [],
+    "Lucas Pereira": [],
+    "Manuela Cristina Torres Guimarães": [],
+    "Mateus Queiroz Logrado": [],
+    "Mateus Zandona Krieger": [],
     "Nicollas Jose Prim": [
-        ["Soco da Rita Lee", -4],
-        ["Golpe de Miopia", -5],
-        ["espingarda cobain", -3]
+        "Masculino",
+        "Fevereiro de 2008",
+        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28399.932419006625!2d-48.589466408831505!3d-27.156556011214292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a59192f83479%3A0xb408dc5f7ad35162!2sPorto%20Belo%2C%20SC%2C%2088210-000!5e0!3m2!1spt-BR!2sbr!4v1761010581034!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+        '#9D00FF',
+        'Humanas',
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/42Kv1RoTAm09FeytxiuZIB?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
     ],
-    "Nicollas Lopes do Nascimento": [
-        ["Apaixonite de Erick", -5],
-        ["Encoxa Erick", +4], // (‘Apenas com o Erick’)
-        ["Soco Editado", -3]
-    ],
-    "Pedro Rafael Santiago": [
-        ["Voadora de Polenguinho", -4],
-        ["Confusão", -3],
-        ["Celibato Infinito", -5]
-    ],
-    "Ruan Geraldo": [
-        ["Rei do Açougue", -7],
-        ["Picadinho Poderoso", -4],
-        ["Costelada Bruta", -3]
-    ],
-    "Vinícius de Bona Ruas": [
-        ["Golpe do Defer", -5],
-        ["Chicote de Glitters", -4],
-        ["Mordida", -3]
-    ],
-    "Yan Bueno Goulart": [
-        ["Lâmina de Python", -4],
-        ["Ataque da Lua", -5],
-        ["Chute do Roblox", -3]
-    ]
+    "Nicollas Lopes do Nascimento": [],
+    "Pedro Rafael Santiago": [],
+    "Ruan Geraldo": [],
+    "Vinícius de Bona Ruas": [],
+    "Yan Bueno Goulart": []
 };
 
+let jogo = document.getElementById("jogo");
+let random1 = document.getElementById("random1");
+let random2 = document.getElementById("random2");
+let container = document.getElementById("container");
 
-function setValueRandom(max, min) {
-    let random = Math.floor(Math.random() * (max - min + 1) + min)
-    return random
+function diario() {
+    // function que pega o a data atual e multiplica seus valores para gerar um numero aleatorio diário
+    let data = new Date();
+    let dia = data.getDate();
+    let mes = data.getMonth() + 1;
+    let numeroDiario = (20 * mes) % alunos.length;
+
+    const resposta = alunos[numeroDiario];
+
+    jogo.style.display = "flex";
+    random1.style.display = "flex";
+    random2.style.display = "flex";
+    container.style.display = "none";
+    document.querySelector('body').style.flexDirection = "row";
+    document.querySelector('body').style.justifyContent = "space-around";
+
+    jogo.innerHTML = `
+        <h2 id="titulo">Adivinhe o Aluno:</h2>
+        <div id="foto">
+            <img src="/assets/img/silhueta/aluno${numeroDiario}.png">
+        <div>
+        <div class="aluno">
+            <input id="inAluno" list="lista">
+            <datalist id="lista">
+                <option value="Agatha Iasmin Koschel do Nascimento">
+                <option value="Ana Clara Furtado Goudinho">
+                <option value="Arthur Alexandre Abbruzzini">
+                <option value="Arthur Luiz Beccari">
+                <option value="Arthur Marcos Serpa Martins">
+                <option value="Arthur Soglia Veronica">
+                <option value="Artur Ximendes Del Guerso">
+                <option value="Augusto Gonçalves Dias">
+                <option value="Brenda Julya de Souza Freitas da Silva">
+                <option value="Bryan Prinz da Silva">
+                <option value="Daniel Domingos">
+                <option value="Davi Schoenardie de Almeida">
+                <option value="Eduardo Corrêa da Cruz">
+                <option value="Eric D. Scapini">
+                <option value="Érick Miguel Schuck">
+                <option value="Francisco Lisboa da Silva Lima">
+                <option value="Giovanni Filipe Burgo">
+                <option value="Guilherme Tomaz Silva">
+                <option value="Helena Neis da Silva">
+                <option value="João Francisco Luchtenberg Ventura">
+                <option value="João Paulo Fagundes">
+                <option value="João Victor de Abreu Cunha">
+                <option value="João Vitor Galiotto de Souza">
+                <option value="João Vitor Santos">
+                <option value="Jonas Luiz Marin">
+                <option value="Lucas Pereira">
+                <option value="Manuela Cristina Torres Guimarães">
+                <option value="Mateus Queiroz Logrado">
+                <option value="Mateus Zandona Krieger">
+                <option value="Nicollas Jose Prim">
+                <option value="Nicollas Lopes do Nascimento">
+                <option value="Pedro Rafael Santiago">
+                <option value="Ruan Geraldo">
+                <option value="Vinícius de Bona Ruas">
+                <option value="Yan Bueno Goulart">
+            </datalist>
+        </div><br>
+        <button onclick="verificarResposta('${resposta}', ${numeroDiario})">Verificar</button>
+    `
 }
 
-window.addEventListener('load', () => {
-    let lista = document.getElementById('alunos')
+let jaFoi = ['silhueta', 'cor', 'musica', 'materia', 'endereco', 'genero', 'aniversario', 'caracteres'];
 
-    for (let i = 0; i < alunos.length; i++) {
-        lista.innerHTML += `<option value='${alunos[i]}'>${alunos[i]}</option>`
-    }
-})
+function verificarResposta(res, numeroDiario) {
+    const inputAluno = document.getElementById("inAluno");
 
-let personagem = '', adversario = ''
-let numberPerson = 0, numberAdver = 0
-let vidaPerson = 200, vidaAdver = 200
-let screen = document.getElementById('container')
+    if (res === inputAluno.value) {
+        document.getElementById("titulo").innerHTML = 'VOCÊ ACERTOU!'
+        document.getElementById("foto").innerHTML = `<img src="/assets/img/aluno${numeroDiario}.png">`;
+        document.getElementById("foto").style.backgroundColor = "transparent";
 
-function saveConfig() {
-    let counter = 0
-    for (let i = 0; i < alunos.length; i++) {
-        if (document.getElementById('aluno').value == alunos[i]) {
-            counter++
-        }
-    }
-    if (counter == 1) {
-        personagem = document.getElementById('aluno').value
-        console.log('Seu personagem escolhido: ' + personagem)
-        for (let i = 0; i < alunos.length; i++) {
-            if (alunos[i] == personagem) {
-                alunos.splice(i, 1)
-                numberPerson = i
-            }
-        }
-        numberAdver = setValueRandom(alunos.length, 0)
-        if (numberAdver >= numberPerson) {
-            adversario = alunos[numberAdver - 1]
-        } else {
-            adversario = alunos[numberAdver]
-        }
-        console.log('Seu adversário será: ' + adversario)
-
-        console.log(`Seu número: ${numberPerson} || Número do adversário: ${numberAdver}`)
-        iniciar()
+        confetti({
+            particleCount: 200, // quantidade de confetes
+            spread: 100,        // abertura do efeito
+            origin: { y: 0.6 }  // altura inicial (0 = topo, 1 = base)
+        });
     } else {
-        alert('Personagem Inválido')
-    }
-}
+        let escolhido = Math.floor(Math.random() * jaFoi.length);
 
-let scren = document.getElementById('quem')
+        console.log(jaFoi[escolhido]);
 
-function iniciar() {
-    setTimeout(()=>{
-        document.querySelector('#container').style.display = 'none'
-    }, 1000)
-    document.querySelector('#container').style.height = '0'
-    document.getElementById('luta').style.display = 'flex'
-    document.getElementById('placar').style.display = 'flex'
+        if (jaFoi[escolhido] == 'silhueta') {
+            document.getElementById("foto").style.backgroundColor = "transparent";
 
-    scren.innerHTML = personagem
-
-    let nomeJog = document.querySelector('#nameJogador')
-    let imgJog = document.querySelector('#imgJogador')
-    let ata1Jog = document.querySelector('#golpe1Jogador')
-    let ata2Jog = document.querySelector('#golpe2Jogador')
-    let ata3Jog = document.querySelector('#golpe3Jogador')
-
-    nomeJog.innerHTML = personagem
-    imgJog.src = `/assets/img/aluno${numberPerson}.png`
-    imgJog.alt = personagem
-    ata1Jog.textContent = ataquesAlunos[personagem][0][0]
-    ata2Jog.textContent = ataquesAlunos[personagem][1][0]
-    ata3Jog.textContent = ataquesAlunos[personagem][2][0]
-
-
-
-    let nomeAdv = document.querySelector('#nameAdversario')
-    let imgAdv = document.querySelector('#imgAdversario')
-
-    nomeAdv.innerHTML = adversario
-    imgAdv.src = `/assets/img/aluno${numberAdver}.png`
-    imgAdv.alt = adversario
-}
-
-let contAdver = 100
-let contJogad = 100
-
-function ataque(atack) {
-    let lifeJogador = document.querySelector('#porcentagemJogador');
-    let lifeAdversario = document.querySelector('#porcentagemAdversario');
-    let buttons = document.querySelectorAll('.btn-attack');
-
-    // Desabilitar botões durante o ataque
-    buttons.forEach(button => button.disabled = true);
-
-    if (scren.innerHTML == personagem) {
-        let oAtaque = ataquesAlunos[personagem][atack][1];
-
-        if (oAtaque < 0) {
-            vidaAdver += oAtaque * 10;
-            contAdver += oAtaque * 5;
-            lifeAdversario.style.width = contAdver + '%';
-        } else {
-            vidaPerson += oAtaque * 10;
-            contJogad += oAtaque * 5;
-            lifeJogador.style.width = contJogad + '%';
-        }
-
-        gameOver();
-
-        scren.innerHTML = adversario;
-        setTimeout(() => {
-            ataqueAdversario();
-            buttons.forEach(button => button.disabled = false);
-        }, 2000);
-    }
-}
-
-function ataqueAdversario() {
-    let qualGolpe = setValueRandom(2, 0)
-    let lifeJogador = document.querySelector('#porcentagemJogador')
-    let lifeAdversario = document.querySelector('#porcentagemAdversario')
-    if (scren.innerHTML == adversario) {
-        let oAtaque = ataquesAlunos[adversario][qualGolpe][1]
-
-        if ((oAtaque <= -1)||(oAtaque == personagem)) {
-
-            let calculoPor = 0
-            
-            if(oAtaque == personagem) {
-                vidaPerson += -200
-                calculoPor = -100 
+            // 0: genero || 1: aniversario || 2: bairro e cidade || 3: cor || 4: materia || 5: musica
+        } else if (jaFoi[escolhido] == 'cor') {
+            document.querySelector('body').style.backgroundColor = dadosAlunos[res][3];
+        } else if (jaFoi[escolhido] == 'musica') {
+            if (Math.random() < 0.5) {
+                random1.innerHTML += `<h3>Música Favorita:</h3> ${dadosAlunos[res][5]}`;
             } else {
-                vidaPerson += oAtaque * 10
-                calculoPor = oAtaque * 5
+                random2.innerHTML += `<h3>Música Favorita:</h3> ${dadosAlunos[res][5]}`;
+            }
+        } else if (jaFoi[escolhido] == 'materia') {
+            if (Math.random() < 0.5) {
+                random1.innerHTML += `<h3>Matéria Favorita: ${dadosAlunos[res][4]}</h3>`;
+            } else {
+                random2.innerHTML += `<h3>Matéria Favorita: ${dadosAlunos[res][4]}</h3>`;
+            }
+        } else if (jaFoi[escolhido] == 'endereco') {
+            if (Math.random() < 0.5) {
+                random1.innerHTML += `<h3>Local de Moradia:</h3> ${dadosAlunos[res][2]}`;
+            } else {
+                random2.innerHTML += `<h3>Local de Moradia:</h3> ${dadosAlunos[res][2]}`;
+            }
+        } else if (jaFoi[escolhido] == 'genero') {
+            if (Math.random() < 0.5) {
+                random1.innerHTML += `<h3>Gênero: ${dadosAlunos[res][0]}</h3>`;
+            } else {
+                random2.innerHTML += `<h3>Gênero: ${dadosAlunos[res][0]}</h3>`;
+            }
+        } else if (jaFoi[escolhido] == 'aniversario') {
+            if (Math.random() < 0.5) {
+                random1.innerHTML += `<h3>Data de Aniversário: ${dadosAlunos[res][1]}</h3>`;
+            } else {
+                random2.innerHTML += `<h3>Data de Aniversário: ${dadosAlunos[res][1]}</h3>`;
+            }
+        } else if (jaFoi[escolhido] == 'caracteres') {
+            let campo = ''
+            for (let i = 0; i < res.length; i++) {
+                if (res[i] == ' ') {
+                    campo += ' ';
+                } else {
+                    campo += '_';
+                }
             }
 
-            lifeJogador.style.width = contJogad + calculoPor + '%'
-            console.log("Vida do Personagem: " + vidaPerson)
-
-            contJogad += calculoPor
-        } else {
-            vidaAdver += oAtaque * 10
-
-            let calculoPor = oAtaque * 5
-
-            lifeAdversario.style.width = contAdver + calculoPor + '%'
-            console.log("Vida do Adversario: " + vidaAdver)
-
-            contAdver += calculoPor
+            if (Math.random() < 0.5) {
+                random1.innerHTML += `<h3>Nome do Aluno:</h3> ${campo}`;
+            } else {
+                random2.innerHTML += `<h3>Nome do Aluno:</h3> ${campo}`;
+            }
         }
 
-        gameOver()
+        // remove o item ja escolhido do array para não repetir
+        jaFoi.splice(escolhido, 1);
 
-        scren.innerHTML = personagem
+        if (jaFoi.length == 0) {
+            document.getElementById("titulo").innerHTML = 'PERDEU!'
+            document.getElementById("foto").innerHTML = `<img src="/assets/img/aluno${numeroDiario}.png">`;
+        }
     }
-}
-
-function gameOver() {
-    if (vidaPerson <= 0) {
-        setTimeout(()=>{
-            document.getElementById('gameOver').style.display = 'flex'
-        }, 1000)
-        setTimeout(()=>{
-            resetar()
-        }, 2000)
-    } else if (vidaAdver <= 0) {
-        setTimeout(()=>{
-            document.getElementById('vitory').style.display = 'flex'
-        }, 1000)
-        setTimeout(()=>{
-            resetar()
-        }, 2000)
-    }
-}
-
-function resetar() {
-    window.location.reload()
-}
+} 
