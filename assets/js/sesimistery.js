@@ -396,14 +396,14 @@ let jaFoi = ['silhueta', 'cor', 'musica', 'materia', 'endereco', 'genero', 'aniv
 function verificarResposta(numeroDiario) {
     let res = alunos[numeroDiario]
 
-    const inputAluno = document.getElementById("inAluno").value;
+    const inputAluno = document.getElementById("inAluno");
 
     if (jaFoi.length == 0) {
         document.getElementById("titulo").innerHTML = 'VOCÊ PERDEU!'
         document.getElementById("foto").innerHTML = `<img src="/assets/img/aluno${numeroDiario}.png">`;
     }
 
-    if (res === inputAluno.value) {
+    if (res == inputAluno.value) {
         document.getElementById("titulo").innerHTML = 'VOCÊ ACERTOU!'
         document.getElementById("foto").innerHTML = `<img src="/assets/img/aluno${numeroDiario}.png">`;
         document.getElementById("foto").style.backgroundColor = "transparent";
