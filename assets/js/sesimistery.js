@@ -403,6 +403,9 @@ function verificarResposta(numeroDiario) {
         document.getElementById("foto").innerHTML = `<img src="/assets/img/aluno${numeroDiario}.png">`;
     }
 
+    console.log(res)
+    console.log(inputAluno.value)
+
     if (res == inputAluno.value) {
         document.getElementById("titulo").innerHTML = 'VOCÊ ACERTOU!'
         document.getElementById("foto").innerHTML = `<img src="/assets/img/aluno${numeroDiario}.png">`;
