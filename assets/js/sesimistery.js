@@ -9,7 +9,7 @@ let alunos = [
     "Augusto Gonçalves Dias",
     "Brenda Julya de Souza Freitas da Silva",
     "Bryan Prinz da Silva",
-    "Daniel Domingo",
+    "Daniel Domingos Pereira",
     "Davi Schoenardie de Almeida",
     "Eduardo Corrêa da Cruz",
     "Eric D. Scapini",
@@ -117,7 +117,7 @@ let dadosAlunos = {
         'Desenvolvimento de Sistemas',
         '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0TXRO7qVCw0UOSkCPxWvUM?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
     ],
-    "Daniel Domingo": [
+    "Daniel Domingos Pereira": [
         "Masculino",
         "Março de 2008",
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28379.870351043755!2d-48.654605008634235!3d-27.23535228522384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a96722683abb%3A0xd95794b9cc95d33f!2sTijucas%2C%20SC%2C%2088200-000!5e0!3m2!1spt-BR!2sbr!4v1761008478065!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
@@ -217,9 +217,9 @@ let dadosAlunos = {
         "Masculino",
         "Setembro de X",
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28379.870351043755!2d-48.654605008634235!3d-27.23535228522384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a96722683abb%3A0xd95794b9cc95d33f!2sTijucas%2C%20SC%2C%2088200-000!5e0!3m2!1spt-BR!2sbr!4v1761008478065!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
-        '',
-        '',
-        ''
+        'purple',
+        'N/A',
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3p58wJmZqIc9RjsdeZ5Jfq?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
     ],
     "João Vitor Santos": [
         "Masculino",
@@ -249,9 +249,9 @@ let dadosAlunos = {
         "Feminino",
         "Outubro de X",
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28379.870351043755!2d-48.654605008634235!3d-27.23535228522384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a96722683abb%3A0xd95794b9cc95d33f!2sTijucas%2C%20SC%2C%2088200-000!5e0!3m2!1spt-BR!2sbr!4v1761008478065!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
-        '',
-        '',
-        ''
+        '#fee9ee',
+        'Não gosto de nenhuma',
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7evftBiobEwWOwfxiTnnKc?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
     ],
     "Mateus Queiroz Logrado": [
         "Masculino",
@@ -360,7 +360,7 @@ function diario() {
                 <option value="Augusto Gonçalves Dias">
                 <option value="Brenda Julya de Souza Freitas da Silva">
                 <option value="Bryan Prinz da Silva">
-                <option value="Daniel Domingos">
+                <option value="Daniel Domingos Pereira">
                 <option value="Davi Schoenardie de Almeida">
                 <option value="Eduardo Corrêa da Cruz">
                 <option value="Eric D. Scapini">
@@ -387,20 +387,102 @@ function diario() {
                 <option value="Yan Bueno Goulart">
             </datalist>
         </div><br>
-        <button onclick="verificarResposta(${numeroDiario})">Verificar</button>
+        <button onclick="verificarResposta(${numeroDiario}, 'diario')">Verificar</button>
     `
 }
 
+function platina() {
+    let random = Math.floor(Math.random() * 100) + 1
+
+    let numeroDiario = random % alunos.length;
+
+    jogo.style.display = "flex";
+    random1.style.display = "flex";
+    random2.style.display = "flex";
+    container.style.display = "none";
+    document.querySelector('body').style.flexDirection = "row";
+    document.querySelector('body').style.justifyContent = "space-around";
+
+    if(alunos.length <= 5) {
+        document.getElementById('numberLunos').style.color = 'red'
+        document.getElementById('numberLunos').style.fontWeight = 'bold'
+    }
+
+    jogo.innerHTML = `
+        <h1>FALTA: <span id='numberLunos'>${dadosAlunos.length}</span> Alunos</h1>
+        <h2 id="titulo">Adivinhe o Aluno:</h2>
+        <div id="foto">
+            <img src="/assets/img/silhueta/aluno${numeroDiario}.png">
+        <div>
+        <div class="aluno">
+            <input id="inAluno" list="lista">
+            <datalist id="lista">
+                <option value="Agatha Iasmin Koschel do Nascimento">
+                <option value="Ana Clara Furtado Goudinho">
+                <option value="Arthur Alexandre Abbruzzini">
+                <option value="Arthur Luiz Beccari">
+                <option value="Arthur Marcos Serpa Martins">
+                <option value="Arthur Soglia Veronica">
+                <option value="Artur Ximendes Del Guerso">
+                <option value="Augusto Gonçalves Dias">
+                <option value="Brenda Julya de Souza Freitas da Silva">
+                <option value="Bryan Prinz da Silva">
+                <option value="Daniel Domingos Pereira">
+                <option value="Davi Schoenardie de Almeida">
+                <option value="Eduardo Corrêa da Cruz">
+                <option value="Eric D. Scapini">
+                <option value="Érick Miguel Schuck">
+                <option value="Francisco Lisboa da Silva Lima">
+                <option value="Giovanni Filipe Burgo">
+                <option value="Guilherme Tomaz Silva">
+                <option value="Helena Neis da Silva">
+                <option value="João Francisco Luchtenberg Ventura">
+                <option value="João Paulo Fagundes">
+                <option value="João Victor de Abreu Cunha">
+                <option value="João Vitor Galiotto de Souza">
+                <option value="João Vitor Santos">
+                <option value="Jonas Luiz Marin">
+                <option value="Lucas Pereira">
+                <option value="Manuela Cristina Torres Guimarães">
+                <option value="Mateus Queiroz Logrado">
+                <option value="Mateus Zandona Krieger">
+                <option value="Nicollas Jose Prim">
+                <option value="Nicollas Lopes do Nascimento">
+                <option value="Pedro Rafael Santiago">
+                <option value="Ruan Geraldo">
+                <option value="Vinícius de Bona Ruas">
+                <option value="Yan Bueno Goulart">
+            </datalist>
+        </div><br>
+        <button onclick="verificarResposta(${numeroDiario}, 'platina')">Verificar</button>
+    `
+}
+
+
+
 let jaFoi = ['silhueta', 'cor', 'musica', 'materia', 'endereco', 'genero', 'aniversario', 'caracteres'];
 
-function verificarResposta(numeroDiario) {
+function verificarResposta(numeroDiario, modo) {
     let res = alunos[numeroDiario]
 
     const inputAluno = document.getElementById("inAluno");
 
+    console.log('Aluno: ' + res);
+    console.log('Valor colocado: ' + inputAluno.value);
+    console.log('Esperado Platina: ' + modo)
+    console.log('número da vez: ' + numeroDiario);
+
+
+
+
+
     if (jaFoi.length == 0) {
+        console.log(document.getElementById("foto"))
         document.getElementById("titulo").innerHTML = 'VOCÊ PERDEU!'
-        document.getElementById("foto").innerHTML = `<img src="/assets/img/aluno${numeroDiario}.png">`;
+        document.getElementById("foto").innerHTML = `
+            <img src="/assets/img/aluno${numeroDiario}.png">
+            <button onclick="resetar()">Voltar</button>
+        `;
     }
 
     console.log(res)
@@ -416,7 +498,21 @@ function verificarResposta(numeroDiario) {
             spread: 100,        // abertura do efeito
             origin: { y: 0.6 }  // altura inicial (0 = topo, 1 = base)
         });
-    } else {
+
+        if (modo == 'platina') {
+            console.clear()
+            delete dadosAlunos[res]
+            document.getElementById('foto').innerHTML += `
+                <button onclick='platina()'>PRÓXIMA</button>
+            `
+
+            jaFoi = ['silhueta', 'cor', 'musica', 'materia', 'endereco', 'genero', 'aniversario', 'caracteres']
+            document.querySelector('body').style.backgroundColor = '#f8f8f8'
+            random1.innerHTML = ''
+            random2.innerHTML = ''
+
+        }
+    } else if (jaFoi.length !== 0) {
         let escolhido = Math.floor(Math.random() * jaFoi.length);
 
         console.log(jaFoi[escolhido]);
@@ -483,7 +579,7 @@ function verificarResposta(numeroDiario) {
                     campo += '_';
                 }
             }
-            
+
             if (Math.random() < 0.5) {
                 random1.innerHTML += '<hr>'
                 random1.innerHTML += `<h3>Nome do Aluno:</h3> ${campo}`;
@@ -496,4 +592,8 @@ function verificarResposta(numeroDiario) {
         // remove o item ja escolhido do array para não repetir
         jaFoi.splice(escolhido, 1);
     }
-} 
+}
+
+function resetar() {
+    window.location.reload();
+}

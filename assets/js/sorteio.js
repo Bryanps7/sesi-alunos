@@ -9,7 +9,7 @@ const alunos = [
     "Augusto Gonçalves Dias",
     "Brenda Julya de Souza Freitas da Silva",
     "Bryan Prinz da Silva",
-    "Daniel Domingo",
+    "Daniel Domingos Pereira",
     "Davi Schoenardie de Almeida",
     "Eduardo Corrêa da Cruz",
     "Eric D. Scapini",
@@ -73,7 +73,7 @@ function iniciar() {
             <img src="/assets/img/aluno7.png" alt="Augusto Gonçalves Dias">
             <img src="/assets/img/aluno8.png" alt="Brenda Julya de Souza Freitas da Silva">
             <img src="/assets/img/aluno9.png" alt="Bryan Prinz da Siva">
-            <img src="/assets/img/aluno10.png" alt="Daniel Domingo">
+            <img src="/assets/img/aluno10.png" alt="Daniel Domingos Pereira">
             <img src="/assets/img/aluno11.png" alt="Davi Schoenardie de Almeida">
             <img src="/assets/img/aluno12.png" alt="Eduardo Corrêa da Cruz">
             <img src="/assets/img/aluno13.png" alt="Eric D. Scapini">
