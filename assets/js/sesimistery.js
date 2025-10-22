@@ -508,7 +508,17 @@ function verificarResposta(numeroDiario, modo) {
             document.querySelector('body').style.backgroundColor = '#f8f8f8'
             random1.innerHTML = ''
             random2.innerHTML = ''
-
+    
+            if(alunos.length == 0) {
+                document.getElementById("titulo").innerHTML = 'VOCÊ ACERTOU!'
+                document.getElementById("foto").innerHTML = `<img src="/assets/img/aluno${numeroDiario}.png">`;
+                document.getElementById("foto").style.backgroundColor = "transparent";
+        
+                confetti({
+                    particleCount: 200, // quantidade de confetes
+                    spread: 100,        // abertura do efeito
+                    origin: { y: 0.6 }  // altura inicial (0 = topo, 1 = base)
+                }
         }
     } else if (jaFoi.length !== 0) {
         let escolhido = Math.floor(Math.random() * jaFoi.length);
