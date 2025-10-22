@@ -29,6 +29,10 @@ body {
     max-width: 600px;
 }
 
+hr {
+    width: 80%;
+}
+
 #container button {
     margin-top: 5px;
     border-color: white;
