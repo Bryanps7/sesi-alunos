@@ -9,7 +9,7 @@ let alunos = [
     "Augusto Gonçalves Dias",
     "Brenda Julya de Souza Freitas da Silva",
     "Bryan Prinz da Silva",
-    "Daniel Domingos",
+    "Daniel Domingo",
     "Davi Schoenardie de Almeida",
     "Eduardo Corrêa da Cruz",
     "Eric D. Scapini",
@@ -117,7 +117,7 @@ let dadosAlunos = {
         'Desenvolvimento de Sistemas',
         '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0TXRO7qVCw0UOSkCPxWvUM?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
     ],
-    "Daniel Domingos": [
+    "Daniel Domingo": [
         "Masculino",
         "Março de 2008",
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28379.870351043755!2d-48.654605008634235!3d-27.23535228522384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a96722683abb%3A0xd95794b9cc95d33f!2sTijucas%2C%20SC%2C%2088200-000!5e0!3m2!1spt-BR!2sbr!4v1761008478065!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
