@@ -485,7 +485,10 @@ function verificarResposta(numeroDiario, modo) {
         `;
     }
 
-    if (res === inputAluno.value) {
+    console.log(res)
+    console.log(inputAluno.value)
+
+    if (res == inputAluno.value) {
         document.getElementById("titulo").innerHTML = 'VOCÊ ACERTOU!'
         document.getElementById("foto").innerHTML = `<img src="/assets/img/aluno${numeroDiario}.png">`;
         document.getElementById("foto").style.backgroundColor = "transparent";
