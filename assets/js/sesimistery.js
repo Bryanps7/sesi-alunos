@@ -499,7 +499,10 @@ function verificarResposta(numeroDiario, modo) {
                 <button onclick='platina()'>PRÓXIMA</button>
             `
 
+            console.log('antes: '+alunos.length)
             document.getElementById('numberLunos').innerHTML = alunos.length
+            console.log('treco: 'document.getElementById('numberLunos').innerHTML)
+            console.log('depois: '+alunos.length)
             jaFoi = ['silhueta', 'cor', 'musica', 'materia', 'endereco', 'genero', 'aniversario', 'caracteres']
             document.querySelector('body').style.backgroundColor = '#f8f8f8'
             random1.innerHTML = ''
