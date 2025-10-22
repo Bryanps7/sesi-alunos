@@ -409,7 +409,7 @@ function platina() {
     }
 
     jogo.innerHTML = `
-        <h1>FALTA: <span id='numberLunos'>${dadosAlunos.length}</span> Alunos</h1>
+        <h1>FALTA: <span id='numberLunos'>${alunos.length}</span> Alunos</h1>
         <h2 id="titulo">Adivinhe o Aluno:</h2>
         <div id="foto">
             <img src="/assets/img/silhueta/aluno${numeroDiario}.png">
