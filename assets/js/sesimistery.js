@@ -403,7 +403,13 @@ function platina() {
     document.querySelector('body').style.flexDirection = "row";
     document.querySelector('body').style.justifyContent = "space-around";
 
+    if(alunos.length <= 5) {
+        document.getElementById('numberLunos').style.color = 'red'
+        document.getElementById('numberLunos').style.fontWeight = 'bold'
+    }
+
     jogo.innerHTML = `
+        <h1>FALTA: <span id='numberLunos'>${dadosAlunos.length}</span> Alunos</h1>
         <h2 id="titulo">Adivinhe o Aluno:</h2>
         <div id="foto">
             <img src="/assets/img/silhueta/aluno${numeroDiario}.png">
