@@ -495,6 +495,7 @@ function verificarResposta(numeroDiario, modo) {
         if (modo == 'platina') {
             console.clear()
             delete dadosAlunos[res]
+            alunos.splice(numeroDiario, 1)
             document.getElementById('foto').innerHTML += `
                 <button onclick='platina()'>PRÓXIMA</button>
             `
