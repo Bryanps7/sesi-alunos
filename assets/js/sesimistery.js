@@ -396,7 +396,7 @@ let jaFoi = ['silhueta', 'cor', 'musica', 'materia', 'endereco', 'genero', 'aniv
 function verificarResposta(numeroDiario) {
     let res = alunos[numeroDiario]
 
-    const inputAluno = document.getElementById("inAluno");
+    const inputAluno = document.getElementById("inAluno").value;
 
     if (jaFoi.length == 0) {
         document.getElementById("titulo").innerHTML = 'VOCÊ PERDEU!'
