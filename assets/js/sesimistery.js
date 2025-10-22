@@ -472,11 +472,7 @@ function verificarResposta(numeroDiario, modo) {
     console.log('Esperado Platina: ' + modo)
     console.log('número da vez: ' + numeroDiario);
 
-
-
-
-
-    if (jaFoi.length == 0) {
+    if ((jaFoi.length == 0)||(jaFoi.length <= 6 && modo == 'platina')) {
         console.log(document.getElementById("foto"))
         document.getElementById("titulo").innerHTML = 'VOCÊ PERDEU!'
         document.getElementById("foto").innerHTML = `
@@ -485,10 +481,7 @@ function verificarResposta(numeroDiario, modo) {
         `;
     }
 
-    console.log(res)
-    console.log(inputAluno.value)
-
-    if (res == inputAluno.value) {
+    if (res === inputAluno.value) {
         document.getElementById("titulo").innerHTML = 'VOCÊ ACERTOU!'
         document.getElementById("foto").innerHTML = `<img src="/assets/img/aluno${numeroDiario}.png">`;
         document.getElementById("foto").style.backgroundColor = "transparent";
