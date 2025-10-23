@@ -36,6 +36,8 @@ let alunos = [
     "Yan Bueno Goulart"
 ];
 
+let numeros = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34]
+
 let dadosAlunos = {
     "Agatha Iasmin Koschel do Nascimento": [
         "Feminino",
@@ -43,7 +45,8 @@ let dadosAlunos = {
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14208.002320945485!2d-48.62996773107285!3d-27.093277621506456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b10cf4da0413%3A0x231d20d09ad9775c!2sItapema%2C%20SC%2C%2088220-000!5e0!3m2!1spt-BR!2sbr!4v1761046011586!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         'purple',
         'Natureza',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7JWUQPmqTqujxJs82BWCpA?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7JWUQPmqTqujxJs82BWCpA?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        0
     ],
     "Ana Clara Furtado Goudinho": [
         "Feminino",
@@ -51,7 +54,8 @@ let dadosAlunos = {
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28399.932419006625!2d-48.589466408831505!3d-27.156556011214292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a59192f83479%3A0xb408dc5f7ad35162!2sPorto%20Belo%2C%20SC%2C%2088210-000!5e0!3m2!1spt-BR!2sbr!4v1761010581034!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         '#c92093',
         'Desenvolvimento de Sistemas',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/1yUm0iWD3rDf8dViBRpSkt?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/1yUm0iWD3rDf8dViBRpSkt?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        1
     ],
     "Arthur Alexandre Abbruzzini": [
         "Masculino",
@@ -59,7 +63,8 @@ let dadosAlunos = {
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113424.56218982358!2d-48.94637311374205!3d-27.32828312562523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94df50c40346a35b%3A0xa6d7717d5000efdf!2sS%C3%A3o%20Jo%C3%A3o%20Batista%20-%20SC!5e0!3m2!1spt-BR!2sbr!4v1761046481082!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         '#FF0000',
         'Intervalo',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0upFohXrGxIIAjyaJmCkMU?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0upFohXrGxIIAjyaJmCkMU?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        2
     ],
     "Arthur Luiz Beccari": [
         "Masculino",
@@ -67,7 +72,8 @@ let dadosAlunos = {
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28379.870351043755!2d-48.654605008634235!3d-27.23535228522384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a96722683abb%3A0xd95794b9cc95d33f!2sTijucas%2C%20SC%2C%2088200-000!5e0!3m2!1spt-BR!2sbr!4v1761008478065!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         'black',
         'Desenvolvimento de Sistemas',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7i1EsBBDoR8NDQqL8Smvh9?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7i1EsBBDoR8NDQqL8Smvh9?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        3
     ],
     "Arthur Marcos Serpa Martins": [
         "Masculino",
@@ -75,7 +81,8 @@ let dadosAlunos = {
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28399.932419006625!2d-48.589466408831505!3d-27.156556011214292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a59192f83479%3A0xb408dc5f7ad35162!2sPorto%20Belo%2C%20SC%2C%2088210-000!5e0!3m2!1spt-BR!2sbr!4v1761010581034!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         'yellow',
         'Desenvolvimento de Sistemas',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0vFOzaXqZHahrZp6enQwQb?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0vFOzaXqZHahrZp6enQwQb?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        4
     ],
     "Arthur Soglia Veronica": [
         "Masculino",
@@ -83,7 +90,8 @@ let dadosAlunos = {
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14208.002320945485!2d-48.62996773107285!3d-27.093277621506456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b10cf4da0413%3A0x231d20d09ad9775c!2sItapema%2C%20SC%2C%2088220-000!5e0!3m2!1spt-BR!2sbr!4v1761046011586!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         'purple',
         'Matemática',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4qVR3CF8FuFvHN4L6vXlB1?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4qVR3CF8FuFvHN4L6vXlB1?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        5
     ],
     "Artur Ximendes Del Guerso": [
         "Masculino",
@@ -91,7 +99,8 @@ let dadosAlunos = {
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14208.002320945485!2d-48.62996773107285!3d-27.093277621506456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b10cf4da0413%3A0x231d20d09ad9775c!2sItapema%2C%20SC%2C%2088220-000!5e0!3m2!1spt-BR!2sbr!4v1761046011586!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         'black',
         'Humanas',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/1zTGRPGqfZP0cfyTmoQP0V?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/1zTGRPGqfZP0cfyTmoQP0V?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        6
     ],
     "Augusto Gonçalves Dias": [
         "Masculino",
@@ -99,7 +108,8 @@ let dadosAlunos = {
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14208.002320945485!2d-48.62996773107285!3d-27.093277621506456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b10cf4da0413%3A0x231d20d09ad9775c!2sItapema%2C%20SC%2C%2088220-000!5e0!3m2!1spt-BR!2sbr!4v1761046011586!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         'blue',
         'Desenvolvimento de Sistemas',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/74Es0YAvJFbFCZ6ULMcydb?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/74Es0YAvJFbFCZ6ULMcydb?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        7
     ],
     "Brenda Julya de Souza Freitas da Silva": [
         "Feminino",
@@ -107,7 +117,8 @@ let dadosAlunos = {
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14208.002320945485!2d-48.62996773107285!3d-27.093277621506456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b10cf4da0413%3A0x231d20d09ad9775c!2sItapema%2C%20SC%2C%2088220-000!5e0!3m2!1spt-BR!2sbr!4v1761046011586!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         'black',
         'N/A',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0upFohXrGxIIAjyaJmCkMU?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0upFohXrGxIIAjyaJmCkMU?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        8
     ],
     "Bryan Prinz da Silva": [
         'Masculino',
@@ -116,6 +127,7 @@ let dadosAlunos = {
         '#368b45ff',
         'Desenvolvimento de Sistemas',
         '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0TXRO7qVCw0UOSkCPxWvUM?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        9
     ],
     "Daniel Domingos Pereira": [
         "Masculino",
@@ -123,7 +135,8 @@ let dadosAlunos = {
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28379.870351043755!2d-48.654605008634235!3d-27.23535228522384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a96722683abb%3A0xd95794b9cc95d33f!2sTijucas%2C%20SC%2C%2088200-000!5e0!3m2!1spt-BR!2sbr!4v1761008478065!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         'violet',
         'Humanas',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4mCsFkDzm6z8j0glKdE164?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4mCsFkDzm6z8j0glKdE164?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        10
     ],
     "Davi Schoenardie de Almeida": [
         'Masculino',
@@ -131,7 +144,8 @@ let dadosAlunos = {
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14208.002320945485!2d-48.62996773107285!3d-27.093277621506456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b10cf4da0413%3A0x231d20d09ad9775c!2sItapema%2C%20SC%2C%2088220-000!5e0!3m2!1spt-BR!2sbr!4v1761046011586!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         '#458ff7',
         'Humanas',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/389QX9Q1eUOEZ19vtzzI9O?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/389QX9Q1eUOEZ19vtzzI9O?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        11
     ],
     "Eduardo Corrêa da Cruz": [
         "Masculino",
@@ -139,7 +153,8 @@ let dadosAlunos = {
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28379.870351043755!2d-48.654605008634235!3d-27.23535228522384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a96722683abb%3A0xd95794b9cc95d33f!2sTijucas%2C%20SC%2C%2088200-000!5e0!3m2!1spt-BR!2sbr!4v1761008478065!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         'blue',
         'Humanas',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/1xEzF35lwCRRFEXWG08j8x?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/1xEzF35lwCRRFEXWG08j8x?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        12
     ],
     "Eric D. Scapini": [
         "Masculino",
@@ -147,7 +162,8 @@ let dadosAlunos = {
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14208.002320945485!2d-48.62996773107285!3d-27.093277621506456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b10cf4da0413%3A0x231d20d09ad9775c!2sItapema%2C%20SC%2C%2088220-000!5e0!3m2!1spt-BR!2sbr!4v1761046011586!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         'blue',
         'Desenvolvimento de Sistemas',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0Bo5fjMtTfCD8vHGebivqc?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0Bo5fjMtTfCD8vHGebivqc?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        13
     ],
     "Erick Miguel Schuck": [
         "Masculino",
@@ -155,7 +171,8 @@ let dadosAlunos = {
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14208.002320945485!2d-48.62996773107285!3d-27.093277621506456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b10cf4da0413%3A0x231d20d09ad9775c!2sItapema%2C%20SC%2C%2088220-000!5e0!3m2!1spt-BR!2sbr!4v1761046011586!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         'purple',
         'N/A',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2P4OICZRVAQcYAV2JReRfj?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2P4OICZRVAQcYAV2JReRfj?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        14
     ],
     "Francisco Lisboa da Silva Lima": [
         "Masculino",
@@ -163,7 +180,8 @@ let dadosAlunos = {
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28379.870351043755!2d-48.654605008634235!3d-27.23535228522384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a96722683abb%3A0xd95794b9cc95d33f!2sTijucas%2C%20SC%2C%2088200-000!5e0!3m2!1spt-BR!2sbr!4v1761008478065!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         'blue',
         'Humanas',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/48OuKgageBln1KdmYjBFG5?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/48OuKgageBln1KdmYjBFG5?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        15
     ],
     "Giovanni Felipe Burgo": [
         "Masculino",
@@ -171,7 +189,8 @@ let dadosAlunos = {
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28399.932419006625!2d-48.589466408831505!3d-27.156556011214292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a59192f83479%3A0xb408dc5f7ad35162!2sPorto%20Belo%2C%20SC%2C%2088210-000!5e0!3m2!1spt-BR!2sbr!4v1761010581034!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         'gray',
         'Dormir',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7snQQk1zcKl8gZ92AnueZW?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7snQQk1zcKl8gZ92AnueZW?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        16
     ],
     "Guilherme Tomaz Silva": [
         "Masculino",
@@ -179,7 +198,8 @@ let dadosAlunos = {
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28379.870351043755!2d-48.654605008634235!3d-27.23535228522384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a96722683abb%3A0xd95794b9cc95d33f!2sTijucas%2C%20SC%2C%2088200-000!5e0!3m2!1spt-BR!2sbr!4v1761008478065!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         '#81007f',
         'Desenvolvimento de Sistemas',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2jQ1P0aGT4WkNyJCeoQnb9?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2jQ1P0aGT4WkNyJCeoQnb9?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        17
     ],
     "Helena Neis da Silva": [
         "Feminino",
@@ -187,7 +207,8 @@ let dadosAlunos = {
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28399.932419006625!2d-48.589466408831505!3d-27.156556011214292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a59192f83479%3A0xb408dc5f7ad35162!2sPorto%20Belo%2C%20SC%2C%2088210-000!5e0!3m2!1spt-BR!2sbr!4v1761010581034!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         'purple',
         'Matemática',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4vvsoE0obRvFalTtxHGnTn?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4vvsoE0obRvFalTtxHGnTn?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        18
     ],
     "João Francisco Luchtenberg Ventura": [
         "Masculino",
@@ -195,7 +216,8 @@ let dadosAlunos = {
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28379.870351043755!2d-48.654605008634235!3d-27.23535228522384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a96722683abb%3A0xd95794b9cc95d33f!2sTijucas%2C%20SC%2C%2088200-000!5e0!3m2!1spt-BR!2sbr!4v1761008478065!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         'green',
         'Desenvolvimento de Sistemas',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/0wHl2FK2AEhwIiYISv7cJ4?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/0wHl2FK2AEhwIiYISv7cJ4?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        19
     ],
     "João Paulo Fagundes": [
         "Masculino",
@@ -203,7 +225,8 @@ let dadosAlunos = {
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28379.870351043755!2d-48.654605008634235!3d-27.23535228522384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a96722683abb%3A0xd95794b9cc95d33f!2sTijucas%2C%20SC%2C%2088200-000!5e0!3m2!1spt-BR!2sbr!4v1761008478065!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         'red',
         'Saída',
-        'Não Tem'
+        'Não Tem',
+        20
     ],
     "João Victor de Abreu Cunha": [
         "Masculino",
@@ -211,7 +234,8 @@ let dadosAlunos = {
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14208.002320945485!2d-48.62996773107285!3d-27.093277621506456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b10cf4da0413%3A0x231d20d09ad9775c!2sItapema%2C%20SC%2C%2088220-000!5e0!3m2!1spt-BR!2sbr!4v1761046011586!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         'blue',
         'N/A',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/70dJEanFPdYuWZumkrnKeX?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/70dJEanFPdYuWZumkrnKeX?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        21
     ],
     "João Vitor Galiotto de Souza": [
         "Masculino",
@@ -219,7 +243,8 @@ let dadosAlunos = {
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28379.870351043755!2d-48.654605008634235!3d-27.23535228522384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a96722683abb%3A0xd95794b9cc95d33f!2sTijucas%2C%20SC%2C%2088200-000!5e0!3m2!1spt-BR!2sbr!4v1761008478065!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         'purple',
         'N/A',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3p58wJmZqIc9RjsdeZ5Jfq?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3p58wJmZqIc9RjsdeZ5Jfq?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        22
     ],
     "João Vitor Santos": [
         "Masculino",
@@ -227,7 +252,8 @@ let dadosAlunos = {
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28379.870351043755!2d-48.654605008634235!3d-27.23535228522384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a96722683abb%3A0xd95794b9cc95d33f!2sTijucas%2C%20SC%2C%2088200-000!5e0!3m2!1spt-BR!2sbr!4v1761008478065!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         '#000080',
         'Qualquer uma da Juliana',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2XymTaHTrQWDEuSyhfZvqF?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2XymTaHTrQWDEuSyhfZvqF?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        23
     ],
     "Jonas Luiz Marin": [
         "Masculino",
@@ -235,7 +261,8 @@ let dadosAlunos = {
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28379.870351043755!2d-48.654605008634235!3d-27.23535228522384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a96722683abb%3A0xd95794b9cc95d33f!2sTijucas%2C%20SC%2C%2088200-000!5e0!3m2!1spt-BR!2sbr!4v1761008478065!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         'green',
         'Natureza',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/54MXF9I8s3DuiQo3g0gZ5k?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/54MXF9I8s3DuiQo3g0gZ5k?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        24
     ],
     "Lucas Pereira": [
         "Masculino",
@@ -243,7 +270,8 @@ let dadosAlunos = {
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28379.870351043755!2d-48.654605008634235!3d-27.23535228522384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a96722683abb%3A0xd95794b9cc95d33f!2sTijucas%2C%20SC%2C%2088200-000!5e0!3m2!1spt-BR!2sbr!4v1761008478065!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         'green',
         'Intervalo',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/48KcBYlgJ6L4nPCkGsdDut?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/48KcBYlgJ6L4nPCkGsdDut?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        25
     ],
     "Manuela Cristina Torres Guimarães": [
         "Feminino",
@@ -251,7 +279,8 @@ let dadosAlunos = {
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28379.870351043755!2d-48.654605008634235!3d-27.23535228522384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a96722683abb%3A0xd95794b9cc95d33f!2sTijucas%2C%20SC%2C%2088200-000!5e0!3m2!1spt-BR!2sbr!4v1761008478065!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         '#fee9ee',
         'Não gosto de nenhuma',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7evftBiobEwWOwfxiTnnKc?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7evftBiobEwWOwfxiTnnKc?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        26
     ],
     "Mateus Queiroz Logrado": [
         "Masculino",
@@ -259,7 +288,8 @@ let dadosAlunos = {
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14208.002320945485!2d-48.62996773107285!3d-27.093277621506456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b10cf4da0413%3A0x231d20d09ad9775c!2sItapema%2C%20SC%2C%2088220-000!5e0!3m2!1spt-BR!2sbr!4v1761046011586!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         '#861720',
         'Matemática',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/40i81AcCCxiVEFUWElcjZC?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/40i81AcCCxiVEFUWElcjZC?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        27
     ],
     "Mateus Zandona Krieger": [
         "Masculino",
@@ -267,7 +297,8 @@ let dadosAlunos = {
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14208.002320945485!2d-48.62996773107285!3d-27.093277621506456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b10cf4da0413%3A0x231d20d09ad9775c!2sItapema%2C%20SC%2C%2088220-000!5e0!3m2!1spt-BR!2sbr!4v1761046011586!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         'pink',
         'Humanas',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4QUHJVXhwt14EzC0zOGa2I?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4QUHJVXhwt14EzC0zOGa2I?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        28
     ],
     "Nicollas Jose Prim": [
         'Masculino',
@@ -275,7 +306,8 @@ let dadosAlunos = {
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28399.932419006625!2d-48.589466408831505!3d-27.156556011214292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a59192f83479%3A0xb408dc5f7ad35162!2sPorto%20Belo%2C%20SC%2C%2088210-000!5e0!3m2!1spt-BR!2sbr!4v1761010581034!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         'purple',
         'Humanas',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/42Kv1RoTAm09FeytxiuZIB?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/42Kv1RoTAm09FeytxiuZIB?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        29
     ],
     "Nicollas Lopes do Nascimento": [
         "Masculino",
@@ -283,7 +315,8 @@ let dadosAlunos = {
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14208.002320945485!2d-48.62996773107285!3d-27.093277621506456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b10cf4da0413%3A0x231d20d09ad9775c!2sItapema%2C%20SC%2C%2088220-000!5e0!3m2!1spt-BR!2sbr!4v1761046011586!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         'purple',
         'Linguagens',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7snQQk1zcKl8gZ92AnueZW?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7snQQk1zcKl8gZ92AnueZW?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        30
     ],
     "Pedro Rafael Santiago": [
         "Masculino",
@@ -291,7 +324,8 @@ let dadosAlunos = {
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28379.870351043755!2d-48.654605008634235!3d-27.23535228522384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a96722683abb%3A0xd95794b9cc95d33f!2sTijucas%2C%20SC%2C%2088200-000!5e0!3m2!1spt-BR!2sbr!4v1761008478065!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         '',
         '',
-        ''
+        '',
+        31
     ],
     "Ruan Geraldo": [
         "Masculino",
@@ -299,7 +333,8 @@ let dadosAlunos = {
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28379.870351043755!2d-48.654605008634235!3d-27.23535228522384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a96722683abb%3A0xd95794b9cc95d33f!2sTijucas%2C%20SC%2C%2088200-000!5e0!3m2!1spt-BR!2sbr!4v1761008478065!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         'black',
         'Almoçar',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0hPRWztAIbNkt6GcFcLiqF?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0hPRWztAIbNkt6GcFcLiqF?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        32
     ],
     "Vinícius de Bona Ruas": [
         "Masculino",
@@ -307,7 +342,8 @@ let dadosAlunos = {
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28379.870351043755!2d-48.654605008634235!3d-27.23535228522384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a96722683abb%3A0xd95794b9cc95d33f!2sTijucas%2C%20SC%2C%2088200-000!5e0!3m2!1spt-BR!2sbr!4v1761008478065!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         'arco-iris',
         'Desenvolvimento de Sistemas',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0aRDSJHPIyPBGfOqxkLyTE?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0aRDSJHPIyPBGfOqxkLyTE?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        33
     ],
     "Yan Bueno Goulart": [
         "Masculino",
@@ -315,7 +351,8 @@ let dadosAlunos = {
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14208.002320945485!2d-48.62996773107285!3d-27.093277621506456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b10cf4da0413%3A0x231d20d09ad9775c!2sItapema%2C%20SC%2C%2088220-000!5e0!3m2!1spt-BR!2sbr!4v1761046011586!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         'red',
         'Humanas',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0Bo5fjMtTfCD8vHGebivqc?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0Bo5fjMtTfCD8vHGebivqc?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        34
     ]
 };
 
@@ -366,7 +403,7 @@ function diario() {
                 <option value="Eric D. Scapini">
                 <option value="Érick Miguel Schuck">
                 <option value="Francisco Lisboa da Silva Lima">
-                <option value="Giovanni Filipe Burgo">
+                <option value="Giovanni Felipe Burgo">
                 <option value="Guilherme Tomaz Silva">
                 <option value="Helena Neis da Silva">
                 <option value="João Francisco Luchtenberg Ventura">
@@ -392,9 +429,14 @@ function diario() {
 }
 
 function platina() {
-    let random = Math.floor(Math.random() * 100) + 1
+    let numeroDiario = Math.floor(Math.random() * alunos.length)
 
-    let numeroDiario = random % alunos.length;
+    let res = alunos[numeroDiario]
+    let dados = dadosAlunos[res];
+
+    // garante que os dados existam antes de tentar acessar o índice 6
+    let numeroImagem = dados ? dados[6] : "default";
+
 
     jogo.style.display = "flex";
     random1.style.display = "flex";
@@ -403,16 +445,21 @@ function platina() {
     document.querySelector('body').style.flexDirection = "row";
     document.querySelector('body').style.justifyContent = "space-around";
 
-    if(alunos.length <= 5) {
+    if (alunos.length <= 5) {
         document.getElementById('numberLunos').style.color = 'red'
         document.getElementById('numberLunos').style.fontWeight = 'bold'
     }
+
+    console.log(dadosAlunos[alunos[numeroDiario]][6])
+    console.log(dadosAlunos[alunos[numeroDiario]])
+    console.log(alunos[numeroDiario])
+    console.log(numeroDiario)
 
     jogo.innerHTML = `
         <h1>FALTA: <span id='numberLunos'>${alunos.length}</span> Alunos</h1>
         <h2 id="titulo">Adivinhe o Aluno:</h2>
         <div id="foto">
-            <img src="/assets/img/silhueta/aluno${numeroDiario}.png">
+            <img src="/assets/img/silhueta/aluno${numeroImagem}.png">
         <div>
         <div class="aluno">
             <input id="inAluno" list="lista">
@@ -433,7 +480,7 @@ function platina() {
                 <option value="Eric D. Scapini">
                 <option value="Érick Miguel Schuck">
                 <option value="Francisco Lisboa da Silva Lima">
-                <option value="Giovanni Filipe Burgo">
+                <option value="Giovanni Felipe Burgo">
                 <option value="Guilherme Tomaz Silva">
                 <option value="Helena Neis da Silva">
                 <option value="João Francisco Luchtenberg Ventura">
@@ -467,23 +514,31 @@ function verificarResposta(numeroDiario, modo) {
 
     const inputAluno = document.getElementById("inAluno");
 
-    console.log('Aluno: ' + res);
-    console.log('Valor colocado: ' + inputAluno.value);
-    console.log('Esperado Platina: ' + modo)
+    console.log('----------------------------------------------')
+    console.log('--------------- DADOS DO JOGO ----------------')
     console.log('número da vez: ' + numeroDiario);
+    // console.log('array numeros: '+numeros[numeroDiario])
+    console.log('Aluno: ' + res);
+    console.log(dadosAlunos[res])
+    console.log('Valor colocado: ' + inputAluno.value);
+    console.log('----------------------------------------------')
+    console.log(dadosAlunos)
 
-    if ((jaFoi.length == 0)||(jaFoi.length <= 6 && modo == 'platina')) {
+    if ((jaFoi.length == 0) || (jaFoi.length <= 6 && modo == 'platina')) {
         console.log(document.getElementById("foto"))
         document.getElementById("titulo").innerHTML = 'VOCÊ PERDEU!'
         document.getElementById("foto").innerHTML = `
-            <img src="/assets/img/aluno${numeroDiario}.png">
+            <img src="/assets/img/aluno${dadosAlunos[res][6]}.png">
             <button onclick="resetar()">Voltar</button>
         `;
     }
 
     if (res === inputAluno.value) {
         document.getElementById("titulo").innerHTML = 'VOCÊ ACERTOU!'
-        document.getElementById("foto").innerHTML = `<img src="/assets/img/aluno${numeroDiario}.png">`;
+        document.getElementById("foto").innerHTML = `
+            <img src="/assets/img/aluno${dadosAlunos[res][6]}.png">
+            <button onclick="resetar()">Voltar</button>
+        `;
         document.getElementById("foto").style.backgroundColor = "transparent";
 
         confetti({
@@ -496,29 +551,45 @@ function verificarResposta(numeroDiario, modo) {
             console.clear()
             delete dadosAlunos[res]
             alunos.splice(numeroDiario, 1)
+            // numeros.splice(numeroDiario, 1)
             document.getElementById('foto').innerHTML += `
-                <button onclick='platina()'>PRÓXIMA</button>
+            <button onclick='platina()'>PRÓXIMA</button>
             `
+            console.log('Espero ter apagado: ' + dadosAlunos[res])
+            console.log('Espero ter apagado: ' + alunos[numeroDiario])
 
-            console.log('antes: '+alunos.length)
+            console.log('antes: ' + alunos.length)
             document.getElementById('numberLunos').innerHTML = alunos.length
-            console.log('treco: '+document.getElementById('numberLunos').innerHTML)
-            console.log('depois: '+alunos.length)
+            console.log('treco: ' + document.getElementById('numberLunos').innerHTML)
+            console.log('depois: ' + alunos.length)
             jaFoi = ['silhueta', 'cor', 'musica', 'materia', 'endereco', 'genero', 'aniversario', 'caracteres']
             document.querySelector('body').style.backgroundColor = '#f8f8f8'
             random1.innerHTML = ''
             random2.innerHTML = ''
-    
-            if(alunos.length == 0) {
+
+            if (alunos.length == 0) {
                 document.getElementById("titulo").innerHTML = 'VOCÊ ACERTOU!'
                 document.getElementById("foto").innerHTML = `<img src="/assets/img/aluno${numeroDiario}.png">`;
                 document.getElementById("foto").style.backgroundColor = "transparent";
-        
+
                 confetti({
-                    particleCount: 200, // quantidade de confetes
-                    spread: 100,        // abertura do efeito
-                    origin: { y: 0.6 }  // altura inicial (0 = topo, 1 = base)
-                }
+                    particleCount: 1000, // quantidade de confetes
+                    spread: 1000,        // abertura do efeito
+                    origin: { y: 0.6, x: 0 }  // altura inicial (0 = topo, 1 = base)
+                });
+                confetti({
+                    particleCount: 1000, // quantidade de confetes
+                    spread: 1000,        // abertura do efeito
+                    origin: { y: 0.6, x: 1 }  // altura inicial (0 = topo, 1 = base)
+                });
+                setTimeout(() => {
+                    confetti({
+                        particleCount: 1000, // quantidade de confetes
+                        spread: 1000,        // abertura do efeito
+                        origin: { y: 0.5 }  // altura inicial (0 = topo, 1 = base)
+                    });
+                }, 1000)
+            }
         }
     } else if (jaFoi.length !== 0) {
         let escolhido = Math.floor(Math.random() * jaFoi.length);
