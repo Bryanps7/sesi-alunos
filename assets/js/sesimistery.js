@@ -450,10 +450,10 @@ function platina() {
         document.getElementById('numberLunos').style.fontWeight = 'bold'
     }
 
-    console.log(dadosAlunos[alunos[numeroDiario]][6])
-    console.log(dadosAlunos[alunos[numeroDiario]])
-    console.log(alunos[numeroDiario])
-    console.log(numeroDiario)
+    // console.log(dadosAlunos[alunos[numeroDiario]][6])
+    // console.log(dadosAlunos[alunos[numeroDiario]])
+    // console.log(alunos[numeroDiario])
+    // console.log(numeroDiario)
 
     jogo.innerHTML = `
         <h1>FALTA: <span id='numberLunos'>${alunos.length}</span> Alunos</h1>
@@ -514,18 +514,18 @@ function verificarResposta(numeroDiario, modo) {
 
     const inputAluno = document.getElementById("inAluno");
 
-    console.log('----------------------------------------------')
-    console.log('--------------- DADOS DO JOGO ----------------')
-    console.log('número da vez: ' + numeroDiario);
+    // console.log('----------------------------------------------')
+    // console.log('--------------- DADOS DO JOGO ----------------')
+    // console.log('número da vez: ' + numeroDiario);
     // console.log('array numeros: '+numeros[numeroDiario])
-    console.log('Aluno: ' + res);
-    console.log(dadosAlunos[res])
-    console.log('Valor colocado: ' + inputAluno.value);
-    console.log('----------------------------------------------')
-    console.log(dadosAlunos)
+    // console.log('Aluno: ' + res);
+    // console.log(dadosAlunos[res])
+    // console.log('Valor colocado: ' + inputAluno.value);
+    // console.log('----------------------------------------------')
+    // console.log(dadosAlunos)
 
     if ((jaFoi.length == 0) || (jaFoi.length <= 6 && modo == 'platina')) {
-        console.log(document.getElementById("foto"))
+        // console.log(document.getElementById("foto"))
         document.getElementById("titulo").innerHTML = 'VOCÊ PERDEU!'
         document.getElementById("foto").innerHTML = `
             <img src="/assets/img/aluno${dadosAlunos[res][6]}.png">
@@ -555,13 +555,13 @@ function verificarResposta(numeroDiario, modo) {
             document.getElementById('foto').innerHTML += `
             <button onclick='platina()'>PRÓXIMA</button>
             `
-            console.log('Espero ter apagado: ' + dadosAlunos[res])
-            console.log('Espero ter apagado: ' + alunos[numeroDiario])
+            // console.log('Espero ter apagado: ' + dadosAlunos[res])
+            // console.log('Espero ter apagado: ' + alunos[numeroDiario])
 
-            console.log('antes: ' + alunos.length)
+            // console.log('antes: ' + alunos.length)
             document.getElementById('numberLunos').innerHTML = alunos.length
-            console.log('treco: ' + document.getElementById('numberLunos').innerHTML)
-            console.log('depois: ' + alunos.length)
+            // console.log('treco: ' + document.getElementById('numberLunos').innerHTML)
+            // console.log('depois: ' + alunos.length)
             jaFoi = ['silhueta', 'cor', 'musica', 'materia', 'endereco', 'genero', 'aniversario', 'caracteres']
             document.querySelector('body').style.backgroundColor = '#f8f8f8'
             random1.innerHTML = ''
@@ -594,7 +594,7 @@ function verificarResposta(numeroDiario, modo) {
     } else if (jaFoi.length !== 0) {
         let escolhido = Math.floor(Math.random() * jaFoi.length);
 
-        console.log(jaFoi[escolhido]);
+        // console.log(jaFoi[escolhido]);
 
         if (jaFoi[escolhido] == 'silhueta') {
             document.getElementById("foto").style.backgroundColor = "transparent";
