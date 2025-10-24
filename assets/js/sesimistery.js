@@ -36,8 +36,6 @@ let alunos = [
     "Yan Bueno Goulart"
 ];
 
-let numeros = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34]
-
 let dadosAlunos = {
     "Agatha Iasmin Koschel do Nascimento": [
         "Feminino",
@@ -239,7 +237,7 @@ let dadosAlunos = {
     ],
     "João Vitor Galiotto de Souza": [
         "Masculino",
-        "Setembro de X",
+        "Setembro de 2007",
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28379.870351043755!2d-48.654605008634235!3d-27.23535228522384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a96722683abb%3A0xd95794b9cc95d33f!2sTijucas%2C%20SC%2C%2088200-000!5e0!3m2!1spt-BR!2sbr!4v1761008478065!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         'purple',
         'N/A',
@@ -322,14 +320,14 @@ let dadosAlunos = {
         "Masculino",
         "Outubro de X",
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28379.870351043755!2d-48.654605008634235!3d-27.23535228522384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a96722683abb%3A0xd95794b9cc95d33f!2sTijucas%2C%20SC%2C%2088200-000!5e0!3m2!1spt-BR!2sbr!4v1761008478065!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
-        '',
-        '',
-        '',
+        'black',
+        'Matemática',
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7i1EsBBDoR8NDQqL8Smvh9?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
         31
     ],
     "Ruan Geraldo": [
         "Masculino",
-        "Julho de X",
+        "Julho de 2007",
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28379.870351043755!2d-48.654605008634235!3d-27.23535228522384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a96722683abb%3A0xd95794b9cc95d33f!2sTijucas%2C%20SC%2C%2088200-000!5e0!3m2!1spt-BR!2sbr!4v1761008478065!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         'black',
         'Almoçar',
@@ -449,11 +447,17 @@ function platina() {
         document.getElementById('numberLunos').style.color = 'red'
         document.getElementById('numberLunos').style.fontWeight = 'bold'
     }
+    
+    console.log(dadosAlunos);
+    console.log(alunos);
+    console.log(numeroDiario)
+    
+    console.log('-----------');
+    
 
-    // console.log(dadosAlunos[alunos[numeroDiario]][6])
-    // console.log(dadosAlunos[alunos[numeroDiario]])
-    // console.log(alunos[numeroDiario])
-    // console.log(numeroDiario)
+    console.log(dadosAlunos[alunos[numeroDiario]][6])
+    console.log(dadosAlunos[alunos[numeroDiario]])
+    console.log(alunos[numeroDiario])
 
     jogo.innerHTML = `
         <h1>FALTA: <span id='numberLunos'>${alunos.length}</span> Alunos</h1>
@@ -514,18 +518,17 @@ function verificarResposta(numeroDiario, modo) {
 
     const inputAluno = document.getElementById("inAluno");
 
-    // console.log('----------------------------------------------')
-    // console.log('--------------- DADOS DO JOGO ----------------')
-    // console.log('número da vez: ' + numeroDiario);
-    // console.log('array numeros: '+numeros[numeroDiario])
-    // console.log('Aluno: ' + res);
-    // console.log(dadosAlunos[res])
-    // console.log('Valor colocado: ' + inputAluno.value);
-    // console.log('----------------------------------------------')
-    // console.log(dadosAlunos)
+    console.log('----------------------------------------------')
+    console.log('--------------- DADOS DO JOGO ----------------')
+    console.log('número da vez: ' + numeroDiario);
+    console.log('Aluno: ' + res);
+    console.log(dadosAlunos[res])
+    console.log('Valor colocado: ' + inputAluno.value);
+    console.log('----------------------------------------------')
+    console.log(dadosAlunos)
 
     if ((jaFoi.length == 0) || (jaFoi.length <= 6 && modo == 'platina')) {
-        // console.log(document.getElementById("foto"))
+        console.log(document.getElementById("foto"))
         document.getElementById("titulo").innerHTML = 'VOCÊ PERDEU!'
         document.getElementById("foto").innerHTML = `
             <img src="/assets/img/aluno${dadosAlunos[res][6]}.png">
@@ -555,13 +558,13 @@ function verificarResposta(numeroDiario, modo) {
             document.getElementById('foto').innerHTML += `
             <button onclick='platina()'>PRÓXIMA</button>
             `
-            // console.log('Espero ter apagado: ' + dadosAlunos[res])
-            // console.log('Espero ter apagado: ' + alunos[numeroDiario])
+            console.log('Espero ter apagado: ' + dadosAlunos[res])
+            console.log('Espero ter apagado: ' + alunos[numeroDiario])
 
-            // console.log('antes: ' + alunos.length)
+            console.log('antes: ' + alunos.length)
             document.getElementById('numberLunos').innerHTML = alunos.length
-            // console.log('treco: ' + document.getElementById('numberLunos').innerHTML)
-            // console.log('depois: ' + alunos.length)
+            console.log('treco: ' + document.getElementById('numberLunos').innerHTML)
+            console.log('depois: ' + alunos.length)
             jaFoi = ['silhueta', 'cor', 'musica', 'materia', 'endereco', 'genero', 'aniversario', 'caracteres']
             document.querySelector('body').style.backgroundColor = '#f8f8f8'
             random1.innerHTML = ''
@@ -594,7 +597,7 @@ function verificarResposta(numeroDiario, modo) {
     } else if (jaFoi.length !== 0) {
         let escolhido = Math.floor(Math.random() * jaFoi.length);
 
-        // console.log(jaFoi[escolhido]);
+        console.log(jaFoi[escolhido]);
 
         if (jaFoi[escolhido] == 'silhueta') {
             document.getElementById("foto").style.backgroundColor = "transparent";
@@ -667,9 +670,10 @@ function verificarResposta(numeroDiario, modo) {
                 random2.innerHTML += `<h3>Nome do Aluno:</h3> ${campo}`;
             }
         }
-
+        
         // remove o item ja escolhido do array para não repetir
         jaFoi.splice(escolhido, 1);
+        inputAluno.value = ''
     }
 }
 
