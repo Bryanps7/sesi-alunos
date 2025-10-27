@@ -12,10 +12,10 @@ let alunos = [
     "Daniel Domingos Pereira",
     "Davi Schoenardie de Almeida",
     "Eduardo Corrêa da Cruz",
-    "Eric D. Scapini",
+    "Eric Debarba Scapini",
     "Érick Miguel Schuck",
     "Francisco Lisboa da Silva Lima",
-    "Giovanni Filipe Burgo",
+    "Giovanni Felipe Burgo",
     "Guilherme Tomaz Silva",
     "Helena Neis da Silva",
     "João Francisco Luchtenberg Ventura",
@@ -28,12 +28,12 @@ let alunos = [
     "Manuela Cristina Torres Guimarães",
     "Mateus Queiroz Logrado",
     "Mateus Zandona Krieger",
-    "Nicollas Jose Prim",
-    "Nicollas Lopes do Nascimento",
+    "Nicollas José Prim",
+    "Nícollas Lopes do Nascimento",
     "Pedro Rafael Santiago",
     "Ruan Geraldo",
     "Vinícius de Bona Ruas",
-    "Yan Bueno Goulart",
+    "Yan Bueno Goulart"
 ];
 
 let codAlunos = [

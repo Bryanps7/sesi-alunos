@@ -1,5 +1,39 @@
 let alunos = [
-    "Agatha Iasmin Koschel do Nascimento", "Ana Clara Furtado Goudinho", "Arthur Alexandre Abbruzzini", "Arthur Luiz Beccari", "Arthur Marcos Serpa Martins", "Arthur Soglia Veronica", "Artur Ximendes Del Guerso", "Augusto Gonçalves Dias", "Brenda Julya de Souza Freitas da Silva", "Bryan Prinz da Silva", "Daniel Domingos Pereira", "Davi Schoenardie de Almeida", "Eduardo Corrêa da Cruz", "Eric D. Scapini", "Érick Miguel Schuck", "Francisco Lisboa da Silva Lima", "Giovanni Filipe Burgo", "Guilherme Tomaz Silva", "Helena Neis da Silva", "João Francisco Luchtenberg Ventura", "João Paulo Fagundes", "João Victor de Abreu Cunha", "João Vitor Galiotto de Souza", "João Vitor Santos", "Jonas Luiz Marin", "Lucas Pereira", "Manuela Cristina Torres Guimarães", "Mateus Queiroz Logrado", "Mateus Zandona Krieger", "Nicollas Jose Prim", "Nicollas Lopes do Nascimento", "Pedro Rafael Santiago", "Ruan Geraldo", "Vinícius de Bona Ruas", "Yan Bueno Goulart",
+    "Agatha Iasmin Koschel do Nascimento",
+    "Ana Clara Furtado Goudinho",
+    "Arthur Alexandre Abbruzzini",
+    "Arthur Luiz Beccari",
+    "Arthur Marcos Serpa Martins",
+    "Arthur Soglia Veronica",
+    "Artur Ximendes Del Guerso",
+    "Augusto Gonçalves Dias",
+    "Brenda Julya de Souza Freitas da Silva",
+    "Bryan Prinz da Silva",
+    "Daniel Domingos Pereira",
+    "Davi Schoenardie de Almeida",
+    "Eduardo Corrêa da Cruz",
+    "Eric Debarba Scapini",
+    "Érick Miguel Schuck",
+    "Francisco Lisboa da Silva Lima",
+    "Giovanni Felipe Burgo",
+    "Guilherme Tomaz Silva",
+    "Helena Neis da Silva",
+    "João Francisco Luchtenberg Ventura",
+    "João Paulo Fagundes",
+    "João Victor de Abreu Cunha",
+    "João Vitor Galiotto de Souza",
+    "João Vitor Santos",
+    "Jonas Luiz Marin",
+    "Lucas Pereira",
+    "Manuela Cristina Torres Guimarães",
+    "Mateus Queiroz Logrado",
+    "Mateus Zandona Krieger",
+    "Nicollas José Prim",
+    "Nícollas Lopes do Nascimento",
+    "Pedro Rafael Santiago",
+    "Ruan Geraldo",
+    "Vinícius de Bona Ruas",
+    "Yan Bueno Goulart"
 ];
 
 let ataquesAlunos = {
@@ -68,12 +102,12 @@ let ataquesAlunos = {
         ["Golpe do Baiano", -5],
         ["Frete Grátis", -3]
     ],
-    "Eric D. Scapini": [
+    "Eric Debarba Scapini": [
         ["back-hand mortal", -6],
         ["visca barça", +5],
         ["Ataque das Borboletas", -8]
     ],
-    "Erick Miguel Schuck": [
+    "Érick Miguel Schuck": [
         ["Lança de nariz", -5],
         ["Foice de Perna", -4],
         ["Ataque Fertil", -3]
@@ -153,12 +187,12 @@ let ataquesAlunos = {
         ["Chama meu Advogado", -8],
         ["Ir ao banheiro", +4] // (‘demora um turno’)
     ],
-    "Nicollas Jose Prim": [
+    "Nicollas José Prim": [
         ["Soco da Rita Lee", -4],
         ["Golpe de Miopia", -5],
         ["espingarda cobain", -3]
     ],
-    "Nicollas Lopes do Nascimento": [
+    "Nícollas Lopes do Nascimento": [
         ["Apaixonite de Erick", -5],
         ["Encoxa Erick", +4], // (‘Apenas com o Erick’)
         ["Soco Editado", -3]

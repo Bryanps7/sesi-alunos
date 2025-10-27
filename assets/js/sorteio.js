@@ -1,4 +1,4 @@
-const alunos = [
+let alunos = [
     "Agatha Iasmin Koschel do Nascimento",
     "Ana Clara Furtado Goudinho",
     "Arthur Alexandre Abbruzzini",
@@ -12,10 +12,10 @@ const alunos = [
     "Daniel Domingos Pereira",
     "Davi Schoenardie de Almeida",
     "Eduardo Corrêa da Cruz",
-    "Eric D. Scapini",
+    "Eric Debarba Scapini",
     "Érick Miguel Schuck",
     "Francisco Lisboa da Silva Lima",
-    "Giovanni Filipe Burgo",
+    "Giovanni Felipe Burgo",
     "Guilherme Tomaz Silva",
     "Helena Neis da Silva",
     "João Francisco Luchtenberg Ventura",
@@ -28,33 +28,13 @@ const alunos = [
     "Manuela Cristina Torres Guimarães",
     "Mateus Queiroz Logrado",
     "Mateus Zandona Krieger",
-    "Nicollas Jose Prim",
-    "Nicollas Lopes do Nascimento",
+    "Nicollas José Prim",
+    "Nícollas Lopes do Nascimento",
     "Pedro Rafael Santiago",
     "Ruan Geraldo",
     "Vinícius de Bona Ruas",
-    "Yan Bueno Goulart",
+    "Yan Bueno Goulart"
 ];
-
-// let carrosel = document.querySelector(`.carousel-images`)
-// function criarAlunos() {
-//     for(let i=0;i<alunos.length;i++){
-//         const img = document.createElement('img')
-        
-//         img.src = `/assets/img/aluno${i}.png`
-//         img.alt = `Aluno(a) ${alunos[i]}`
-    
-//         carrosel.style.display = `flex`
-//         img.style.width = `20%`
-//         img.style.height = `auto`
-    
-//         img.onerror = function() {
-//             this.src = `/assets/img/alunoNA.png`
-//         }
-    
-//         carrosel.appendChild(img)
-//     }
-// }
 
 window.onload = iniciar()
 
@@ -76,10 +56,10 @@ function iniciar() {
             <img src="/assets/img/aluno10.png" alt="Daniel Domingos Pereira">
             <img src="/assets/img/aluno11.png" alt="Davi Schoenardie de Almeida">
             <img src="/assets/img/aluno12.png" alt="Eduardo Corrêa da Cruz">
-            <img src="/assets/img/aluno13.png" alt="Eric D. Scapini">
+            <img src="/assets/img/aluno13.png" alt="Eric Debarba Scapini">
             <img src="/assets/img/aluno14.png" alt="Érick Miguel Schuck">
             <img src="/assets/img/aluno15.png" alt="Francisco Lisboa da Silva Lima">
-            <img src="/assets/img/aluno16.png" alt="Giovanni Filipe Burgo">
+            <img src="/assets/img/aluno16.png" alt="Giovanni Felipe Burgo">
             <img src="/assets/img/aluno17.png" alt="Guilherme Tomaz Silva">
             <img src="/assets/img/aluno18.png" alt="Helena Neis da Silva">
             <img src="/assets/img/aluno19.png" alt="João Francisco Luchtenberg Ventura">
@@ -92,8 +72,8 @@ function iniciar() {
             <img src="/assets/img/aluno26.png" alt="Manuela Cristina Torres Guimarães">
             <img src="/assets/img/aluno27.png" alt="Mateus Queiroz Logrado">
             <img src="/assets/img/aluno28.png" alt="Mateus Zandona Krieger">
-            <img src="/assets/img/aluno29.png" alt="Nicollas Jose Prim">
-            <img src="/assets/img/aluno30.png" alt="Nicollas Lopes do Nascimento">
+            <img src="/assets/img/aluno29.png" alt="Nicollas José Prim">
+            <img src="/assets/img/aluno30.png" alt="Nícollas Lopes do Nascimento">
             <img src="/assets/img/aluno31.png" alt="Pedro Rafael Santiago">
             <img src="/assets/img/aluno32.png" alt="Ruan Geraldo">
             <img src="/assets/img/aluno33.png" alt="Vinícius de Bona Ruas">
