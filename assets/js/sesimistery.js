@@ -422,7 +422,9 @@ function diario() {
                 <option value="Yan Bueno Goulart">
             </datalist>
         </div><br>
-        <button onclick="verificarResposta(${numeroDiario}, 'diario', ${numImg})">Verificar</button>
+        <div id='button-section'>
+            <button onclick="verificarResposta(${numeroDiario}, 'diario', ${numImg})">Verificar</button>
+        </div>
     `
 }
 
@@ -519,7 +521,98 @@ function platina() {
     // }, 100)
 }
 
+function relampago() {
+    let numeroDiario = Math.floor(Math.random() * alunos.length)
 
+    // let numeroDiario = 33
+
+    const resposta = alunos[numeroDiario];
+
+    const numImg = dadosAlunos[alunos[numeroDiario]][6]
+
+    jogo.style.display = "flex";
+    random1.style.display = "flex";
+    random2.style.display = "flex";
+    container.style.display = "none";
+    document.querySelector('body').style.flexDirection = "row";
+    document.querySelector('body').style.justifyContent = "space-around";
+
+    jogo.innerHTML = `
+        <h1 id='reiTimer'>TIMER: <span id="timer">15</span> SEGUNDOS</h1>
+        <h2 id="titulo">Adivinhe o Aluno:</h2>
+        <div id="foto"></div><br>
+        <div class="aluno">
+            <input id="inAluno" list="lista">
+            <datalist id="lista">
+                <option value="Agatha Iasmin Koschel do Nascimento">
+                <option value="Ana Clara Furtado Goudinho">
+                <option value="Arthur Alexandre Abbruzzini">
+                <option value="Arthur Luiz Beccari">
+                <option value="Arthur Marcos Serpa Martins">
+                <option value="Arthur Soglia Veronica">
+                <option value="Artur Ximendes Del Guerso">
+                <option value="Augusto Gonçalves Dias">
+                <option value="Brenda Julya de Souza Freitas da Silva">
+                <option value="Bryan Prinz da Silva">
+                <option value="Daniel Domingos Pereira">
+                <option value="Davi Schoenardie de Almeida">
+                <option value="Eduardo Corrêa da Cruz">
+                <option value="Eric Debarba Scapini">
+                <option value="Érick Miguel Schuck">
+                <option value="Francisco Lisboa da Silva Lima">
+                <option value="Giovanni Felipe Burgo">
+                <option value="Guilherme Tomaz Silva">
+                <option value="Helena Neis da Silva">
+                <option value="João Francisco Luchtenberg Ventura">
+                <option value="João Paulo Fagundes">
+                <option value="João Victor de Abreu Cunha">
+                <option value="João Vitor Galiotto de Souza">
+                <option value="João Vitor Santos">
+                <option value="Jonas Luiz Marin">
+                <option value="Lucas Pereira">
+                <option value="Manuela Cristina Torres Guimarães">
+                <option value="Mateus Queiroz Logrado">
+                <option value="Mateus Zandona Krieger">
+                <option value="Nicollas José Prim">
+                <option value="Nícollas Lopes do Nascimento">
+                <option value="Pedro Rafael Santiago">
+                <option value="Ruan Geraldo">
+                <option value="Vinícius de Bona Ruas">
+                <option value="Yan Bueno Goulart">
+            </datalist>
+        </div><br>
+        <div id='button-section'>
+            <button onclick="verificarResposta(${numeroDiario}, 'relampago', ${numImg})">Verificar</button>
+        </div>
+    `
+
+    tempoNaTela(numeroDiario)
+}
+
+function tempoNaTela(num) {
+    const res = dadosAlunos[alunos[num]][6]
+
+    let timer = document.getElementById('timer')
+    let number = 15
+
+    const relampago = setInterval(() => {
+        number -= 1
+        timer.innerHTML = number
+
+
+        if (number == 0) {
+            perdeuMane(res)
+        }
+    }, 1000)
+
+    setTimeout(() => {
+        clearInterval(relampago)
+    }, 15000)
+
+    if (stop == true) {
+        clearInterval(relampago)
+    }
+}
 
 let jaFoi = ['silhueta', 'cor', 'musica', 'materia', 'endereco', 'genero', 'aniversario', 'caracteres'];
 
@@ -547,6 +640,8 @@ function verificarResposta(numeroDiario, modo, numImg) {
         document.getElementById('button-section').innerHTML = `
             <button onclick="resetar()">Voltar</button>
         `
+
+        document.getElementById('inAluno').style.display = 'none'
     }
 
     if (res === inputAluno.value) {
@@ -558,13 +653,16 @@ function verificarResposta(numeroDiario, modo, numImg) {
         document.getElementById('button-section').innerHTML = `
             <button onclick="resetar()">Voltar</button>    
         `
+
+        document.getElementById('inAluno').style.display = 'none'
+
         document.getElementById("foto").style.backgroundColor = "transparent";
 
-        // confetti({
-        //     particleCount: 200, // quantidade de confetes
-        //     spread: 100,        // abertura do efeito
-        //     origin: { y: 0.6 }  // altura inicial (0 = topo, 1 = base)
-        // });
+        confetti({
+            particleCount: 200, // quantidade de confetes
+            spread: 100,        // abertura do efeito
+            origin: { y: 0.6 }  // altura inicial (0 = topo, 1 = base)
+        });
 
         if (modo == 'platina') {
             if (alunos.length == 0) {
@@ -579,6 +677,7 @@ function verificarResposta(numeroDiario, modo, numImg) {
 
                 document.getElementById("foto").style.backgroundColor = "transparent";
 
+                document.getElementById('inAluno').style.display = 'none'
             }
 
             // console.clear()
@@ -627,6 +726,8 @@ function verificarResposta(numeroDiario, modo, numImg) {
                     });
                 }, 1000)
             }
+        } else if (modo == 'relampago') {
+            stopTimeout()
         }
     } else if (jaFoi.length !== 0) {
         let escolhido = Math.floor(Math.random() * jaFoi.length);
@@ -718,4 +819,26 @@ function verificarResposta(numeroDiario, modo, numImg) {
 
 function resetar() {
     window.location.reload();
+}
+
+function perdeuMane(res) {
+    document.getElementById("titulo").innerHTML = 'VOCÊ PERDEU!'
+    document.getElementById("foto").innerHTML = `
+        <img src="/assets/img/aluno${res}.png">
+    `;
+
+    document.getElementById('button-section').innerHTML = `
+        <button onclick="resetar()">Voltar</button>
+    `
+
+    document.getElementById('inAluno').style.display = 'none'
+}
+
+function stopTimeout() {
+    let reiTimer = document.getElementById('reiTimer')
+    let timer = document.getElementById('timer').innerHTML
+
+    reiTimer.innerHTML = `
+        TIMER: ${timer} SEGUNDOS
+    `
 }
