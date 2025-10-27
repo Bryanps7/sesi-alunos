@@ -364,11 +364,13 @@ function diario() {
     let data = new Date();
     let dia = data.getDate();
     let mes = data.getMonth() + 1;
-    // let numeroDiario = (dia * mes) % alunos.length;
+    let numeroDiario = (dia * mes) % alunos.length;
 
-    let numeroDiario =  33
+    // let numeroDiario = 33
 
     const resposta = alunos[numeroDiario];
+
+    const numImg = dadosAlunos[alunos[numeroDiario]][6]
 
     jogo.style.display = "flex";
     random1.style.display = "flex";
@@ -420,7 +422,7 @@ function diario() {
                 <option value="Yan Bueno Goulart">
             </datalist>
         </div><br>
-        <button onclick="verificarResposta(${numeroDiario}, 'diario')">Verificar</button>
+        <button onclick="verificarResposta(${numeroDiario}, 'diario', ${numImg})">Verificar</button>
     `
 }
 
@@ -446,16 +448,16 @@ function platina() {
         document.getElementById('numberLunos').style.fontWeight = 'bold'
     }
 
-    console.log(dadosAlunos);
-    console.log(alunos);
-    console.log(numeroDiario)
+    // console.log(dadosAlunos);
+    // console.log(alunos);
+    // console.log(numeroDiario)
 
-    console.log('-----------');
+    // console.log('-----------');
 
 
-    console.log(dadosAlunos[alunos[numeroDiario]][6])
-    console.log(dadosAlunos[alunos[numeroDiario]])
-    console.log(alunos[numeroDiario])
+    // console.log(dadosAlunos[alunos[numeroDiario]][6])
+    // console.log(dadosAlunos[alunos[numeroDiario]])
+    // console.log(alunos[numeroDiario])
 
     jogo.innerHTML = `
         <h1 id="tata">FALTA: <span id='numberLunos'>${alunos.length}</span> Alunos</h1>
@@ -506,15 +508,15 @@ function platina() {
         </div>
     `
 
-    setTimeout(() => {
-        document.getElementById('inAluno').value = alunos[numeroDiario]
-        verificarResposta(numeroDiario, 'platina')
+    // setTimeout(() => {
+    //     document.getElementById('inAluno').value = alunos[numeroDiario]
+    //     verificarResposta(numeroDiario, 'platina')
 
-        platina()
+    //     platina()
 
-        // if(alunos.length >= 3) {
-        // }
-    }, 100)
+    //     if(alunos.length >= 3) {
+    //     }
+    // }, 100)
 }
 
 
@@ -526,22 +528,25 @@ function verificarResposta(numeroDiario, modo, numImg) {
 
     const inputAluno = document.getElementById("inAluno");
 
-    console.log('----------------------------------------------')
-    console.log('--------------- DADOS DO JOGO ----------------')
-    console.log('número da vez: ' + numeroDiario);
-    console.log('Aluno: ' + res);
-    console.log(dadosAlunos[res])
-    console.log('Valor colocado: ' + inputAluno.value);
-    console.log('----------------------------------------------')
-    console.log(dadosAlunos)
+    // console.log('----------------------------------------------')
+    // console.log('--------------- DADOS DO JOGO ----------------')
+    // console.log('número da vez: ' + numeroDiario);
+    // console.log('Aluno: ' + res);
+    // console.log(dadosAlunos[res])
+    // console.log('Valor colocado: ' + inputAluno.value);
+    // console.log('----------------------------------------------')
+    // console.log(dadosAlunos)
 
     if ((jaFoi.length == 0) || (jaFoi.length <= 6 && modo == 'platina')) {
-        console.log(document.getElementById("foto"))
+        // console.log(document.getElementById("foto"))
         document.getElementById("titulo").innerHTML = 'VOCÊ PERDEU!'
         document.getElementById("foto").innerHTML = `
             <img src="/assets/img/aluno${dadosAlunos[res][6]}.png">
+            `;
+
+        document.getElementById('button-section').innerHTML = `
             <button onclick="resetar()">Voltar</button>
-        `;
+        `
     }
 
     if (res === inputAluno.value) {
@@ -564,7 +569,7 @@ function verificarResposta(numeroDiario, modo, numImg) {
         if (modo == 'platina') {
             if (alunos.length == 0) {
 
-                console.log('000000000000000000000000000000000000000000000000000000000000000');
+                // console.log('000000000000000000000000000000000000000000000000000000000000000');
 
 
                 document.getElementById("titulo").innerHTML = 'VOCÊ ACERTOU!'
@@ -586,17 +591,17 @@ function verificarResposta(numeroDiario, modo, numImg) {
             `
 
 
-            console.log('antes: ' + alunos.length)
+            // console.log('antes: ' + alunos.length)
             document.getElementById('numberLunos').innerHTML = alunos.length
-            console.log('treco: ' + document.getElementById('numberLunos').innerHTML)
-            console.log('depois: ' + alunos.length)
+            // console.log('treco: ' + document.getElementById('numberLunos').innerHTML)
+            // console.log('depois: ' + alunos.length)
             jaFoi = ['silhueta', 'cor', 'musica', 'materia', 'endereco', 'genero', 'aniversario', 'caracteres']
             document.querySelector('body').style.backgroundColor = '#f8f8f8'
             random1.innerHTML = ''
             random2.innerHTML = ''
 
 
-            console.log('tamanho: ', alunos.length);
+            // console.log('tamanho: ', alunos.length);
 
             if (alunos.length == 0) {
                 document.getElementById('button-section').innerHTML = `
@@ -626,7 +631,7 @@ function verificarResposta(numeroDiario, modo, numImg) {
     } else if (jaFoi.length !== 0) {
         let escolhido = Math.floor(Math.random() * jaFoi.length);
 
-        console.log(jaFoi[escolhido]);
+        // console.log(jaFoi[escolhido]);
 
         if (jaFoi[escolhido] == 'silhueta') {
             document.getElementById("foto").style.backgroundColor = "transparent";
@@ -638,10 +643,10 @@ function verificarResposta(numeroDiario, modo, numImg) {
         } else if (jaFoi[escolhido] == 'cor') {
             let body = document.querySelector('body')
 
-            console.log(dadosAlunos[res][3]);
-            
+            // console.log(dadosAlunos[res][3]);
+
             if (dadosAlunos[res][3] == 'arco-iris') {
-                body.style.background = `linear-gradient(to right, red, orange, yellow, green, aqua, blue, purple);`
+                body.style.background = `linear-gradient(to right, red, orange, yellow, green, aqua, blue, purple)`
             } else {
                 body.style.backgroundColor = dadosAlunos[res][3];
             }
