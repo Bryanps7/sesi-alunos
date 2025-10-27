@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root {
+    --margin: 10px;
+    --border: 2px solid #000000; /* Bordô */
+    --border-person: 1px solid #000000; /* Bordô */
+    --border-reverse: 2px solid #f8f8f8; /* Off-white */
+    --border-radius: 5px;
+    --padding: 10px;
+    --transition: 750ms;
+    --font-size-hover: 1.2rem;
+    --color1: #000000; /* Bordô */
+    --color2: #f8f8f8; /* Off-white */
+    --color3: #000000;
+}
+
+* {
+    font-family: Nunito Sans;
+    font-size: 1rem;
+    /* position:  */
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #f8f8f8; /* Off-white */
+    color: #000000; /* Bordô */
+}
+
+button {
+    background-color: #000000; /* Bordô */
+    color: #f8f8f8; /* Off-white */
+    border: var(--border);
+    font-weight: bold;
+    margin: 0;
+    border-radius: var(--border-radius);
+    padding: calc(var(--padding) / 2);
+    transition: var(--transition);
+}
+
+button:hover {
+    background-color: #f8f8f8; /* Off-white */
+    color: #000000; /* Bordô */
+    border: var(--border-reverse);
+    font-size: var(--font-size-hover);
+}
