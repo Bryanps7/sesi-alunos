@@ -12,10 +12,10 @@ let alunos = [
     "Daniel Domingos Pereira",
     "Davi Schoenardie de Almeida",
     "Eduardo Corrêa da Cruz",
-    "Eric D. Scapini",
+    "Eric Debarba Scapini",
     "Érick Miguel Schuck",
     "Francisco Lisboa da Silva Lima",
-    "Giovanni Filipe Burgo",
+    "Giovanni Felipe Burgo",
     "Guilherme Tomaz Silva",
     "Helena Neis da Silva",
     "João Francisco Luchtenberg Ventura",
@@ -28,15 +28,13 @@ let alunos = [
     "Manuela Cristina Torres Guimarães",
     "Mateus Queiroz Logrado",
     "Mateus Zandona Krieger",
-    "Nicollas Jose Prim",
-    "Nicollas Lopes do Nascimento",
+    "Nicollas José Prim",
+    "Nícollas Lopes do Nascimento",
     "Pedro Rafael Santiago",
     "Ruan Geraldo",
     "Vinícius de Bona Ruas",
     "Yan Bueno Goulart"
 ];
-
-let numeros = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34]
 
 let dadosAlunos = {
     "Agatha Iasmin Koschel do Nascimento": [
@@ -156,7 +154,7 @@ let dadosAlunos = {
         '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/1xEzF35lwCRRFEXWG08j8x?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
         12
     ],
-    "Eric D. Scapini": [
+    "Eric Debarba Scapini": [
         "Masculino",
         "Janeiro de 2008",
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14208.002320945485!2d-48.62996773107285!3d-27.093277621506456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b10cf4da0413%3A0x231d20d09ad9775c!2sItapema%2C%20SC%2C%2088220-000!5e0!3m2!1spt-BR!2sbr!4v1761046011586!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
@@ -165,7 +163,7 @@ let dadosAlunos = {
         '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0Bo5fjMtTfCD8vHGebivqc?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
         13
     ],
-    "Erick Miguel Schuck": [
+    "Érick Miguel Schuck": [
         "Masculino",
         "Abril de 2008",
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14208.002320945485!2d-48.62996773107285!3d-27.093277621506456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b10cf4da0413%3A0x231d20d09ad9775c!2sItapema%2C%20SC%2C%2088220-000!5e0!3m2!1spt-BR!2sbr!4v1761046011586!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
@@ -176,7 +174,7 @@ let dadosAlunos = {
     ],
     "Francisco Lisboa da Silva Lima": [
         "Masculino",
-        "Janeiro de X",
+        "Janeiro de 2008",
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28379.870351043755!2d-48.654605008634235!3d-27.23535228522384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a96722683abb%3A0xd95794b9cc95d33f!2sTijucas%2C%20SC%2C%2088200-000!5e0!3m2!1spt-BR!2sbr!4v1761008478065!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         'blue',
         'Humanas',
@@ -239,7 +237,7 @@ let dadosAlunos = {
     ],
     "João Vitor Galiotto de Souza": [
         "Masculino",
-        "Setembro de X",
+        "Setembro de 2007",
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28379.870351043755!2d-48.654605008634235!3d-27.23535228522384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a96722683abb%3A0xd95794b9cc95d33f!2sTijucas%2C%20SC%2C%2088200-000!5e0!3m2!1spt-BR!2sbr!4v1761008478065!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         'purple',
         'N/A',
@@ -275,7 +273,7 @@ let dadosAlunos = {
     ],
     "Manuela Cristina Torres Guimarães": [
         "Feminino",
-        "Outubro de X",
+        "Outubro de 2007",
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28379.870351043755!2d-48.654605008634235!3d-27.23535228522384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a96722683abb%3A0xd95794b9cc95d33f!2sTijucas%2C%20SC%2C%2088200-000!5e0!3m2!1spt-BR!2sbr!4v1761008478065!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         '#fee9ee',
         'Não gosto de nenhuma',
@@ -285,7 +283,7 @@ let dadosAlunos = {
     "Mateus Queiroz Logrado": [
         "Masculino",
         "Setembro de 2006",
-        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14208.002320945485!2d-48.62996773107285!3d-27.093277621506456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b10cf4da0413%3A0x231d20d09ad9775c!2sItapema%2C%20SC%2C%2088220-000!5e0!3m2!1spt-BR!2sbr!4v1761046011586!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14179.73229598782!2d-48.56763433095912!3d-27.315283057428992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952759d8bab09ea1%3A0x661be0ca9dd5db00!2sGov.%20Celso%20Ramos%2C%20SC%2C%2088190-000!5e0!3m2!1spt-BR!2sbr!4v1761568898609!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         '#861720',
         'Matemática',
         '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/40i81AcCCxiVEFUWElcjZC?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
@@ -300,7 +298,7 @@ let dadosAlunos = {
         '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4QUHJVXhwt14EzC0zOGa2I?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
         28
     ],
-    "Nicollas Jose Prim": [
+    "Nicollas José Prim": [
         'Masculino',
         'Fevereiro de 2008',
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28399.932419006625!2d-48.589466408831505!3d-27.156556011214292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a59192f83479%3A0xb408dc5f7ad35162!2sPorto%20Belo%2C%20SC%2C%2088210-000!5e0!3m2!1spt-BR!2sbr!4v1761010581034!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
@@ -309,7 +307,7 @@ let dadosAlunos = {
         '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/42Kv1RoTAm09FeytxiuZIB?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
         29
     ],
-    "Nicollas Lopes do Nascimento": [
+    "Nícollas Lopes do Nascimento": [
         "Masculino",
         "Outubro de 2007",
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14208.002320945485!2d-48.62996773107285!3d-27.093277621506456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b10cf4da0413%3A0x231d20d09ad9775c!2sItapema%2C%20SC%2C%2088220-000!5e0!3m2!1spt-BR!2sbr!4v1761046011586!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
@@ -320,16 +318,16 @@ let dadosAlunos = {
     ],
     "Pedro Rafael Santiago": [
         "Masculino",
-        "Outubro de X",
+        "Outubro de 2008",
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28379.870351043755!2d-48.654605008634235!3d-27.23535228522384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a96722683abb%3A0xd95794b9cc95d33f!2sTijucas%2C%20SC%2C%2088200-000!5e0!3m2!1spt-BR!2sbr!4v1761008478065!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
-        '',
-        '',
-        '',
+        'black',
+        'Matemática',
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7i1EsBBDoR8NDQqL8Smvh9?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
         31
     ],
     "Ruan Geraldo": [
         "Masculino",
-        "Julho de X",
+        "Julho de 2007",
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28379.870351043755!2d-48.654605008634235!3d-27.23535228522384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a96722683abb%3A0xd95794b9cc95d33f!2sTijucas%2C%20SC%2C%2088200-000!5e0!3m2!1spt-BR!2sbr!4v1761008478065!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         'black',
         'Almoçar',
@@ -366,9 +364,9 @@ function diario() {
     let data = new Date();
     let dia = data.getDate();
     let mes = data.getMonth() + 1;
-    let numeroDiario = (dia * mes) % alunos.length;
+    // let numeroDiario = (dia * mes) % alunos.length;
 
-    // let numeroDiario =  7
+    let numeroDiario =  33
 
     const resposta = alunos[numeroDiario];
 
@@ -381,9 +379,7 @@ function diario() {
 
     jogo.innerHTML = `
         <h2 id="titulo">Adivinhe o Aluno:</h2>
-        <div id="foto">
-            <img src="/assets/img/silhueta/aluno${numeroDiario}.png">
-        <div>
+        <div id="foto"></div><br>
         <div class="aluno">
             <input id="inAluno" list="lista">
             <datalist id="lista">
@@ -400,7 +396,7 @@ function diario() {
                 <option value="Daniel Domingos Pereira">
                 <option value="Davi Schoenardie de Almeida">
                 <option value="Eduardo Corrêa da Cruz">
-                <option value="Eric D. Scapini">
+                <option value="Eric Debarba Scapini">
                 <option value="Érick Miguel Schuck">
                 <option value="Francisco Lisboa da Silva Lima">
                 <option value="Giovanni Felipe Burgo">
@@ -416,8 +412,8 @@ function diario() {
                 <option value="Manuela Cristina Torres Guimarães">
                 <option value="Mateus Queiroz Logrado">
                 <option value="Mateus Zandona Krieger">
-                <option value="Nicollas Jose Prim">
-                <option value="Nicollas Lopes do Nascimento">
+                <option value="Nicollas José Prim">
+                <option value="Nícollas Lopes do Nascimento">
                 <option value="Pedro Rafael Santiago">
                 <option value="Ruan Geraldo">
                 <option value="Vinícius de Bona Ruas">
@@ -450,17 +446,21 @@ function platina() {
         document.getElementById('numberLunos').style.fontWeight = 'bold'
     }
 
-    // console.log(dadosAlunos[alunos[numeroDiario]][6])
-    // console.log(dadosAlunos[alunos[numeroDiario]])
-    // console.log(alunos[numeroDiario])
-    // console.log(numeroDiario)
+    console.log(dadosAlunos);
+    console.log(alunos);
+    console.log(numeroDiario)
+
+    console.log('-----------');
+
+
+    console.log(dadosAlunos[alunos[numeroDiario]][6])
+    console.log(dadosAlunos[alunos[numeroDiario]])
+    console.log(alunos[numeroDiario])
 
     jogo.innerHTML = `
-        <h1>FALTA: <span id='numberLunos'>${alunos.length}</span> Alunos</h1>
+        <h1 id="tata">FALTA: <span id='numberLunos'>${alunos.length}</span> Alunos</h1>
         <h2 id="titulo">Adivinhe o Aluno:</h2>
-        <div id="foto">
-            <img src="/assets/img/silhueta/aluno${numeroImagem}.png">
-        <div>
+        <div id="foto"></div><br>
         <div class="aluno">
             <input id="inAluno" list="lista">
             <datalist id="lista">
@@ -501,31 +501,42 @@ function platina() {
                 <option value="Yan Bueno Goulart">
             </datalist>
         </div><br>
-        <button onclick="verificarResposta(${numeroDiario}, 'platina')">Verificar</button>
+        <div id='button-section'>
+            <button onclick="verificarResposta(${numeroDiario}, 'platina', ${numeroImagem})">Verificar</button>
+        </div>
     `
+
+    setTimeout(() => {
+        document.getElementById('inAluno').value = alunos[numeroDiario]
+        verificarResposta(numeroDiario, 'platina')
+
+        platina()
+
+        // if(alunos.length >= 3) {
+        // }
+    }, 100)
 }
 
 
 
 let jaFoi = ['silhueta', 'cor', 'musica', 'materia', 'endereco', 'genero', 'aniversario', 'caracteres'];
 
-function verificarResposta(numeroDiario, modo) {
+function verificarResposta(numeroDiario, modo, numImg) {
     let res = alunos[numeroDiario]
 
     const inputAluno = document.getElementById("inAluno");
 
-    // console.log('----------------------------------------------')
-    // console.log('--------------- DADOS DO JOGO ----------------')
-    // console.log('número da vez: ' + numeroDiario);
-    // console.log('array numeros: '+numeros[numeroDiario])
-    // console.log('Aluno: ' + res);
-    // console.log(dadosAlunos[res])
-    // console.log('Valor colocado: ' + inputAluno.value);
-    // console.log('----------------------------------------------')
-    // console.log(dadosAlunos)
+    console.log('----------------------------------------------')
+    console.log('--------------- DADOS DO JOGO ----------------')
+    console.log('número da vez: ' + numeroDiario);
+    console.log('Aluno: ' + res);
+    console.log(dadosAlunos[res])
+    console.log('Valor colocado: ' + inputAluno.value);
+    console.log('----------------------------------------------')
+    console.log(dadosAlunos)
 
     if ((jaFoi.length == 0) || (jaFoi.length <= 6 && modo == 'platina')) {
-        // console.log(document.getElementById("foto"))
+        console.log(document.getElementById("foto"))
         document.getElementById("titulo").innerHTML = 'VOCÊ PERDEU!'
         document.getElementById("foto").innerHTML = `
             <img src="/assets/img/aluno${dadosAlunos[res][6]}.png">
@@ -537,40 +548,61 @@ function verificarResposta(numeroDiario, modo) {
         document.getElementById("titulo").innerHTML = 'VOCÊ ACERTOU!'
         document.getElementById("foto").innerHTML = `
             <img src="/assets/img/aluno${dadosAlunos[res][6]}.png">
-            <button onclick="resetar()">Voltar</button>
-        `;
+            `;
+
+        document.getElementById('button-section').innerHTML = `
+            <button onclick="resetar()">Voltar</button>    
+        `
         document.getElementById("foto").style.backgroundColor = "transparent";
 
-        confetti({
-            particleCount: 200, // quantidade de confetes
-            spread: 100,        // abertura do efeito
-            origin: { y: 0.6 }  // altura inicial (0 = topo, 1 = base)
-        });
+        // confetti({
+        //     particleCount: 200, // quantidade de confetes
+        //     spread: 100,        // abertura do efeito
+        //     origin: { y: 0.6 }  // altura inicial (0 = topo, 1 = base)
+        // });
 
         if (modo == 'platina') {
-            console.clear()
+            if (alunos.length == 0) {
+
+                console.log('000000000000000000000000000000000000000000000000000000000000000');
+
+
+                document.getElementById("titulo").innerHTML = 'VOCÊ ACERTOU!'
+                document.getElementById("foto").innerHTML = `
+                    <img src="/assets/img/aluno${numeroDiario}.png">
+                `;
+
+                document.getElementById("foto").style.backgroundColor = "transparent";
+
+            }
+
+            // console.clear()
             delete dadosAlunos[res]
             alunos.splice(numeroDiario, 1)
             // numeros.splice(numeroDiario, 1)
-            document.getElementById('foto').innerHTML += `
-            <button onclick='platina()'>PRÓXIMA</button>
-            `
-            // console.log('Espero ter apagado: ' + dadosAlunos[res])
-            // console.log('Espero ter apagado: ' + alunos[numeroDiario])
 
-            // console.log('antes: ' + alunos.length)
+            document.getElementById('button-section').innerHTML += `
+                <button onclick='platina()'>PRÓXIMA</button>
+            `
+
+
+            console.log('antes: ' + alunos.length)
             document.getElementById('numberLunos').innerHTML = alunos.length
-            // console.log('treco: ' + document.getElementById('numberLunos').innerHTML)
-            // console.log('depois: ' + alunos.length)
+            console.log('treco: ' + document.getElementById('numberLunos').innerHTML)
+            console.log('depois: ' + alunos.length)
             jaFoi = ['silhueta', 'cor', 'musica', 'materia', 'endereco', 'genero', 'aniversario', 'caracteres']
             document.querySelector('body').style.backgroundColor = '#f8f8f8'
             random1.innerHTML = ''
             random2.innerHTML = ''
 
+
+            console.log('tamanho: ', alunos.length);
+
             if (alunos.length == 0) {
-                document.getElementById("titulo").innerHTML = 'VOCÊ ACERTOU!'
-                document.getElementById("foto").innerHTML = `<img src="/assets/img/aluno${numeroDiario}.png">`;
-                document.getElementById("foto").style.backgroundColor = "transparent";
+                document.getElementById('button-section').innerHTML = `
+                    <button onclick='resetar()'>VOLTAR</button>
+                `
+                document.getElementById('tata').innerHTML = ''
 
                 confetti({
                     particleCount: 1000, // quantidade de confetes
@@ -594,15 +626,20 @@ function verificarResposta(numeroDiario, modo) {
     } else if (jaFoi.length !== 0) {
         let escolhido = Math.floor(Math.random() * jaFoi.length);
 
-        // console.log(jaFoi[escolhido]);
+        console.log(jaFoi[escolhido]);
 
         if (jaFoi[escolhido] == 'silhueta') {
             document.getElementById("foto").style.backgroundColor = "transparent";
+            document.getElementById('foto').innerHTML = `
+                <img src="/assets/img/silhueta/aluno${numImg}.png">
+            `
 
             // 0: genero || 1: aniversario || 2: bairro e cidade || 3: cor || 4: materia || 5: musica
         } else if (jaFoi[escolhido] == 'cor') {
             let body = document.querySelector('body')
 
+            console.log(dadosAlunos[res][3]);
+            
             if (dadosAlunos[res][3] == 'arco-iris') {
                 body.style.background = `linear-gradient(to right, red, orange, yellow, green, aqua, blue, purple);`
             } else {
@@ -670,6 +707,7 @@ function verificarResposta(numeroDiario, modo) {
 
         // remove o item ja escolhido do array para não repetir
         jaFoi.splice(escolhido, 1);
+        inputAluno.value = ''
     }
 }
 
