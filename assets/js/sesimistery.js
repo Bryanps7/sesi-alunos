@@ -497,7 +497,7 @@ function platina() {
                 <option value="Manuela Cristina Torres Guimarães">
                 <option value="Mateus Queiroz Logrado">
                 <option value="Mateus Zandona Krieger">
-                <option value="Nicollas Jose Prim">
+                <option value="Nicollas José Prim">
                 <option value="Nicollas Lopes do Nascimento">
                 <option value="Pedro Rafael Santiago">
                 <option value="Ruan Geraldo">
