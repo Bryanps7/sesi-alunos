@@ -65,13 +65,13 @@ let dadosHalloween = {
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d900736.941013411!2d-83.14085177768295!3d28.131151279668543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2b9c6be5ae77b%3A0x44952e9df4e8ab16!2zw4FyZWEgZGEgYmHDrWEgZGUgVGFtcGEsIEZsw7NyaWRhLCBFVUE!5e0!3m2!1spt-BR!2sbr!4v1761677951422!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         '#000000ff',
         'Edward Mãos de Tesoura',
-        '<iframe width="80%" height="200" src="https://www.youtube.com/embed/s0wCRqCy1Ec?si=6G1pvvVBaFIXIoRS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0zCtZXgVhl2jG9a1nalGOk?utm_source=generator" width="80%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
         4
     ],
     "Davi Schoenardie de Almeida": [
         'Masculino',
         'Lançado em Maio de 2017',
-        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14208.002320945485!2d-48.62996773107285!3d-27.093277621506456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b10cf4da0413%3A0x231d20d09ad9775c!2sItapema%2C%20SC%2C%2088220-000!5e0!3m2!1spt-BR!2sbr!4v1761046011586!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194348.23367842287!2d-3.844342658680299!3d40.43783728707845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid%2C%20Madri%2C%20Espanha!5e0!3m2!1spt-BR!2sbr!4v1761683047612!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         'red',
         'La Casa de Papel',
         '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5XYPTwya4YqPystALy9cLJ?utm_source=generator&theme=0" width="80%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
@@ -80,10 +80,10 @@ let dadosHalloween = {
     "Eric Debarba Scapini": [
         "Masculino",
         "Abril de 1940",
-        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6915.006196012465!2d-90.30339615656396!3d43.22203138655003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87fd9f6537777a01%3A0x32b9e3b6e31af3de!2sGotham%2C%20WI%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1761684512114!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6915.006196012465!2d-90.30339615656396!3d43.22203138655003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87fd9f6537777a01%3A0x32b9e3b6e31af3de!2sGotham%2C%20WI%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1761684512114!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         'green',
-        'Joker',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/3jzmgZ9glr9kdMHb3e3gYi?utm_source=generator" width="80%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        'Coringa',
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0AH0eFTZaQ6V7Qzj3ap7QY?utm_source=generator" width="80%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
         6
     ],
     "Francisco Lisboa da Silva Lima": [
@@ -151,63 +151,63 @@ let dadosHalloween = {
     ],
     "Lucas Pereira": [
         "Masculino",
-        "Agosto de 2007",
-        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28379.870351043755!2d-48.654605008634235!3d-27.23535228522384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a96722683abb%3A0xd95794b9cc95d33f!2sTijucas%2C%20SC%2C%2088200-000!5e0!3m2!1spt-BR!2sbr!4v1761008478065!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
-        'green',
+        "Maio de 1984",
+        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.35196272633!2d-73.97950600000001!3d40.697141499999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNova%20Iorque%2C%20NY%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1761751209852!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+        'orange',
         'Michelangelo',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/48KcBYlgJ6L4nPCkGsdDut?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4QpB8RyVWCAcZ5bWRk14bo?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
         14
     ],
     "Manuela Cristina Torres Guimarães": [
-        "Feminino",
-        "Outubro de 2007",
-        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28379.870351043755!2d-48.654605008634235!3d-27.23535228522384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a96722683abb%3A0xd95794b9cc95d33f!2sTijucas%2C%20SC%2C%2088200-000!5e0!3m2!1spt-BR!2sbr!4v1761008478065!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
-        '#fee9ee',
-        '',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7evftBiobEwWOwfxiTnnKc?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        "Masculino",
+        "Dezembro de 1980",
+        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1563188.3349139972!2d-74.72432305!3d40.073132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c0fb959e00409f%3A0x2cd27b07f83f6d8d!2sNova%20Jersey%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1761751750754!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+        '#off-white',
+        'Jason',
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/1bBvch0ad2VfBuPUXJTV8I?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
         15
     ],
     "Mateus Zandona Krieger": [
         "Masculino",
-        "Abril de 2008",
-        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14208.002320945485!2d-48.62996773107285!3d-27.093277621506456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b10cf4da0413%3A0x231d20d09ad9775c!2sItapema%2C%20SC%2C%2088220-000!5e0!3m2!1spt-BR!2sbr!4v1761046011586!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
-        'pink',
+        "Maio de 1984",
+        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.35196272633!2d-73.97950600000001!3d40.697141499999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNova%20Iorque%2C%20NY%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1761751209852!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+        'purple',
         'Donatello',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4QUHJVXhwt14EzC0zOGa2I?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4QpB8RyVWCAcZ5bWRk14bo?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
         16
     ],
     "Nicollas José Prim": [
         'Masculino',
-        'Fevereiro de 2008',
-        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28399.932419006625!2d-48.589466408831505!3d-27.156556011214292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a59192f83479%3A0xb408dc5f7ad35162!2sPorto%20Belo%2C%20SC%2C%2088210-000!5e0!3m2!1spt-BR!2sbr!4v1761010581034!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
-        'purple',
-        '',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/42Kv1RoTAm09FeytxiuZIB?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        'Fevereiro de 1998',
+        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95523.4026365871!2d-93.6889151653747!3d41.56694322457964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87ee99a4c1611ee7%3A0x710028512691e4b2!2sDes%20Moines%2C%20IA%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1761750599743!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+        'red',
+        'Sid Wilson',
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5IcKIrmgAhaevCJ8dGQ4jE?utm_source=generator&theme=0" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
         17
     ],
     "Pedro Rafael Santiago": [
         "Masculino",
-        "Outubro de 2008",
-        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28379.870351043755!2d-48.654605008634235!3d-27.23535228522384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a96722683abb%3A0xd95794b9cc95d33f!2sTijucas%2C%20SC%2C%2088200-000!5e0!3m2!1spt-BR!2sbr!4v1761008478065!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
-        'black',
+        "Maio de 1984",
+        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.35196272633!2d-73.97950600000001!3d40.697141499999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNova%20Iorque%2C%20NY%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1761751209852!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+        'blue',
         'Leonardo',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7i1EsBBDoR8NDQqL8Smvh9?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4QpB8RyVWCAcZ5bWRk14bo?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
         18
     ],
     "Ruan Geraldo": [
         "Masculino",
-        "Julho de 2007",
-        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28379.870351043755!2d-48.654605008634235!3d-27.23535228522384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a96722683abb%3A0xd95794b9cc95d33f!2sTijucas%2C%20SC%2C%2088200-000!5e0!3m2!1spt-BR!2sbr!4v1761008478065!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
-        'black',
+        "Maio de 1984",
+        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.35196272633!2d-73.97950600000001!3d40.697141499999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNova%20Iorque%2C%20NY%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1761751209852!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+        'red',
         'Raphael',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0hPRWztAIbNkt6GcFcLiqF?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4QpB8RyVWCAcZ5bWRk14bo?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
         19
     ],
     "Vinícius de Bona Ruas": [
-        "Masculino",
-        "Maio de 2007",
-        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28379.870351043755!2d-48.654605008634235!3d-27.23535228522384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a96722683abb%3A0xd95794b9cc95d33f!2sTijucas%2C%20SC%2C%2088200-000!5e0!3m2!1spt-BR!2sbr!4v1761008478065!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
-        'arco-iris',
+        "Feminino",
+        "Julho de 2016",
+        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26891.613107591776!2d-95.20320494999999!3d32.59414545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8649dd67b5f59253%3A0xc7e8a2f6689cc942!2sHawkins%2C%20TX%2075765%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1761751968258!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+        'pink',
         'Eleven',
         '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0aRDSJHPIyPBGfOqxkLyTE?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
         20
@@ -226,7 +226,7 @@ function halloween() {
     let mes = data.getMonth() + 1;
     // let numeroDiario = (dia * mes) % halloLunos.length;
 
-    let numeroDiario = 4
+    let numeroDiario = 7
 
     const resposta = halloLunos[numeroDiario];
 
