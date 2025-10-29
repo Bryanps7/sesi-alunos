@@ -498,7 +498,7 @@ function platina() {
                 <option value="Mateus Queiroz Logrado">
                 <option value="Mateus Zandona Krieger">
                 <option value="Nicollas José Prim">
-                <option value="Nicollas Lopes do Nascimento">
+                <option value="Nícollas Lopes do Nascimento">
                 <option value="Pedro Rafael Santiago">
                 <option value="Ruan Geraldo">
                 <option value="Vinícius de Bona Ruas">
@@ -588,6 +588,75 @@ function relampago() {
 
     tempoNaTela(numeroDiario)
 }
+
+// function halloween() {
+//     // function que pega o a data atual e multiplica seus valores para gerar um numero aleatorio diário
+//     let data = new Date();
+//     let dia = data.getDate();
+//     let mes = data.getMonth() + 1;
+//     let numeroDiario = (dia * mes) % halloween.length;
+
+//     // let numeroDiario = 33
+
+//     const resposta = halloween[numeroDiario];
+
+//     const numImg = dadosAlunos[halloween[numeroDiario]][6]
+
+//     jogo.style.display = "flex";
+//     random1.style.display = "flex";
+//     random2.style.display = "flex";
+//     container.style.display = "none";
+//     document.querySelector('body').style.flexDirection = "row";
+//     document.querySelector('body').style.justifyContent = "space-around";
+
+//     jogo.innerHTML = `
+//         <h2 id="titulo">Adivinhe o Aluno:</h2>
+//         <div id="foto"></div><br>
+//         <div class="aluno">
+//             <input id="inAluno" list="lista">
+//             <datalist id="lista">
+//                 <option value="Agatha Iasmin Koschel do Nascimento">
+//                 <option value="Ana Clara Furtado Goudinho">
+//                 <option value="Arthur Alexandre Abbruzzini">
+//                 <option value="Arthur Luiz Beccari">
+//                 <option value="Arthur Marcos Serpa Martins">
+//                 <option value="Arthur Soglia Veronica">
+//                 <option value="Artur Ximendes Del Guerso">
+//                 <option value="Augusto Gonçalves Dias">
+//                 <option value="Brenda Julya de Souza Freitas da Silva">
+//                 <option value="Bryan Prinz da Silva">
+//                 <option value="Daniel Domingos Pereira">
+//                 <option value="Davi Schoenardie de Almeida">
+//                 <option value="Eduardo Corrêa da Cruz">
+//                 <option value="Eric Debarba Scapini">
+//                 <option value="Érick Miguel Schuck">
+//                 <option value="Francisco Lisboa da Silva Lima">
+//                 <option value="Giovanni Felipe Burgo">
+//                 <option value="Guilherme Tomaz Silva">
+//                 <option value="Helena Neis da Silva">
+//                 <option value="João Francisco Luchtenberg Ventura">
+//                 <option value="João Paulo Fagundes">
+//                 <option value="João Victor de Abreu Cunha">
+//                 <option value="João Vitor Galiotto de Souza">
+//                 <option value="João Vitor Santos">
+//                 <option value="Jonas Luiz Marin">
+//                 <option value="Lucas Pereira">
+//                 <option value="Manuela Cristina Torres Guimarães">
+//                 <option value="Mateus Queiroz Logrado">
+//                 <option value="Mateus Zandona Krieger">
+//                 <option value="Nicollas José Prim">
+//                 <option value="Nícollas Lopes do Nascimento">
+//                 <option value="Pedro Rafael Santiago">
+//                 <option value="Ruan Geraldo">
+//                 <option value="Vinícius de Bona Ruas">
+//                 <option value="Yan Bueno Goulart">
+//             </datalist>
+//         </div><br>
+//         <div id='button-section'>
+//             <button onclick="verificarResposta(${numeroDiario}, 'halloween', ${numImg})">Verificar</button>
+//         </div>
+//     `
+// }
 
 function tempoNaTela(num) {
     const res = dadosAlunos[alunos[num]][6]
