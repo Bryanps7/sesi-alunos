@@ -53,7 +53,7 @@ let dadosHalloween = {
     "Augusto Gonçalves Dias": [
         "Masculino",
         "Lançado em Abril de 2000",
-        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14208.002320945485!2d-48.62996773107285!3d-27.093277621506456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b10cf4da0413%3A0x231d20d09ad9775c!2sItapema%2C%20SC%2C%2088220-000!5e0!3m2!1spt-BR!2sbr!4v1761046011586!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193596.26002806186!2d-74.14431244705199!3d40.697284634899496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNova%20Iorque%2C%20NY%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1761750563949!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         '#8A0303',
         'Patrick Bateman',
         '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7dSCxR4LqkmxoBrq9MzVSD?utm_source=generator" width="80%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
@@ -226,7 +226,7 @@ function halloween() {
     let mes = data.getMonth() + 1;
     // let numeroDiario = (dia * mes) % halloLunos.length;
 
-    let numeroDiario = 2
+    let numeroDiario = 4
 
     const resposta = halloLunos[numeroDiario];
 

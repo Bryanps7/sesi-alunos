@@ -36,33 +36,6 @@ let alunos = [
     "Yan Bueno Goulart"
 ];
 
-// let halloween = [
-//     "Ana Clara Furtado Goudinho",
-//     "Arthur Marcos Serpa Martins",
-//     "Arthur Soglia Veronica",
-//     "Artur Ximendes Del Guerso",
-//     "Augusto Gonçalves Dias",
-//     "Bryan Prinz da Silva",
-//     "Daniel Domingos Pereira",
-//     "Davi Schoenardie de Almeida",
-//     "Eric Debarba Scapini",
-//     "Francisco Lisboa da Silva Lima",
-//     "Giovanni Felipe Burgo",
-//     "Guilherme Tomaz Silva",
-//     "Helena Neis da Silva",
-//     "João Francisco Luchtenberg Ventura",
-//     "João Paulo Fagundes",
-//     "João Vitor Santos",
-//     "Jonas Luiz Marin",
-//     "Lucas Pereira",
-//     "Manuela Cristina Torres Guimarães",
-//     "Mateus Zandona Krieger",
-//     "Nicollas José Prim",
-//     "Pedro Rafael Santiago",
-//     "Ruan Geraldo",
-//     "Vinícius de Bona Ruas"
-// ];
-
 let dadosAlunos = {
     "Agatha Iasmin Koschel do Nascimento": [
         "Feminino",
@@ -525,7 +498,7 @@ function platina() {
                 <option value="Mateus Queiroz Logrado">
                 <option value="Mateus Zandona Krieger">
                 <option value="Nicollas José Prim">
-                <option value="Nicollas Lopes do Nascimento">
+                <option value="Nícollas Lopes do Nascimento">
                 <option value="Pedro Rafael Santiago">
                 <option value="Ruan Geraldo">
                 <option value="Vinícius de Bona Ruas">
