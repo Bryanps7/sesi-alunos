@@ -25,11 +25,11 @@ let halloLunos = [
 let dadosHalloween = {
     "Ana Clara Furtado Goudinho": [
         "Feminino",
-        "Lançado em: Novembro de 1991",
+        "Lançado em Novembro de 1991",
         '<img src="/assets/img/halloween/aluno0-location.png" width="80% height="200px">',
         '#000000ff',
         'Mortícia Addams',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/1UjpesqYC0N0Ad99togIjw?utm_source=generator&theme=0" width="80%" height="150" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/1UjpesqYC0N0Ad99togIjw?utm_source=generator&theme=0" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
         0
     ],
     "Arthur Marcos Serpa Martins": [
@@ -38,7 +38,7 @@ let dadosHalloween = {
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7292965.664616427!2d25.587029056005186!3d26.80754303406689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14368976c35c36e9%3A0x2c45a00925c4c444!2sEgito!5e0!3m2!1spt-BR!2sbr!4v1761680999896!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         '#8A0303',
         'Ocultista Qualquer',
-        '<iframe width="80%" height="200" src="https://www.youtube.com/embed/_iF7lkXKHlA?si=GBcRqSK2G6C93I7X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6isCIMYopGCIwikVz8SLb5?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
         1
     ],
     "Artur Ximendes Del Guerso": [
@@ -47,25 +47,25 @@ let dadosHalloween = {
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194348.23367842287!2d-3.844342658680299!3d40.43783728707845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid%2C%20Madri%2C%20Espanha!5e0!3m2!1spt-BR!2sbr!4v1761683047612!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         'red',
         'La Casa de Papel',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5XYPTwya4YqPystALy9cLJ?utm_source=generator&theme=0" width="80%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5XYPTwya4YqPystALy9cLJ?utm_source=generator&theme=0" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
         2
     ],
     "Augusto Gonçalves Dias": [
         "Masculino",
         "Lançado em Abril de 2000",
-        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193596.26002806186!2d-74.14431244705199!3d40.697284634899496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNova%20Iorque%2C%20NY%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1761750563949!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193596.26002806186!2d-74.14431244705199!3d40.697284634899496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNova%20Iorque%2C%20NY%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1761750563949!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         '#8A0303',
         'Patrick Bateman',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7dSCxR4LqkmxoBrq9MzVSD?utm_source=generator" width="80%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7dSCxR4LqkmxoBrq9MzVSD?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
         3
     ],
     "Bryan Prinz da Silva": [
         'Masculino',
-        'Dezembro de 1990',
+        'Lançado em Dezembro de 1990',
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d900736.941013411!2d-83.14085177768295!3d28.131151279668543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2b9c6be5ae77b%3A0x44952e9df4e8ab16!2zw4FyZWEgZGEgYmHDrWEgZGUgVGFtcGEsIEZsw7NyaWRhLCBFVUE!5e0!3m2!1spt-BR!2sbr!4v1761677951422!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         '#000000ff',
         'Edward Mãos de Tesoura',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0zCtZXgVhl2jG9a1nalGOk?utm_source=generator" width="80%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0zCtZXgVhl2jG9a1nalGOk?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
         4
     ],
     "Davi Schoenardie de Almeida": [
@@ -74,85 +74,85 @@ let dadosHalloween = {
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194348.23367842287!2d-3.844342658680299!3d40.43783728707845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid%2C%20Madri%2C%20Espanha!5e0!3m2!1spt-BR!2sbr!4v1761683047612!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         'red',
         'La Casa de Papel',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5XYPTwya4YqPystALy9cLJ?utm_source=generator&theme=0" width="80%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5XYPTwya4YqPystALy9cLJ?utm_source=generator&theme=0" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
         5
     ],
     "Eric Debarba Scapini": [
         "Masculino",
-        "Abril de 1940",
+        "Publicado em Abril de 1940",
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6915.006196012465!2d-90.30339615656396!3d43.22203138655003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87fd9f6537777a01%3A0x32b9e3b6e31af3de!2sGotham%2C%20WI%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1761684512114!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         'green',
         'Coringa',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0AH0eFTZaQ6V7Qzj3ap7QY?utm_source=generator" width="80%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0AH0eFTZaQ6V7Qzj3ap7QY?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
         6
     ],
     "Francisco Lisboa da Silva Lima": [
         "Masculino",
-        "Junho de 2013",
-        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28379.870351043755!2d-48.654605008634235!3d-27.23535228522384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a96722683abb%3A0xd95794b9cc95d33f!2sTijucas%2C%20SC%2C%2088200-000!5e0!3m2!1spt-BR!2sbr!4v1761008478065!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
-        'blue',
+        "Lançado em Junho de 2013",
+        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52862543.76772183!2d-161.6560891214425!3d36.033145461755275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sEstados%20Unidos!5e0!3m2!1spt-BR!2sbr!4v1761792822673!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+        '#db5d37',
         'Uma Noite de Crime',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/48OuKgageBln1KdmYjBFG5?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3gGyzpBLb7pqOw5oC47QaV?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
         7
     ],
     "Guilherme Tomaz Silva": [
         "Masculino",
-        "Abril de 2008",
-        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28379.870351043755!2d-48.654605008634235!3d-27.23535228522384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a96722683abb%3A0xd95794b9cc95d33f!2sTijucas%2C%20SC%2C%2088200-000!5e0!3m2!1spt-BR!2sbr!4v1761008478065!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
-        '#81007f',
+        "Lançado em Setembro de 1985",
+        '<img src="/assets/img/halloween/aluno8-location.png" width="80% height="200px">',
+        'red',
         'Mario',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2jQ1P0aGT4WkNyJCeoQnb9?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/03fijJ2GEzZ92Zl5fuTxI7?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
         8
     ],
     "Helena Neis da Silva": [
-        "Feminino",
-        "Abril de 2007",
-        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28399.932419006625!2d-48.589466408831505!3d-27.156556011214292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a59192f83479%3A0xb408dc5f7ad35162!2sPorto%20Belo%2C%20SC%2C%2088210-000!5e0!3m2!1spt-BR!2sbr!4v1761010581034!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
-        'purple',
+        "Masculino",
+        "Lançado em Agosto de 2016",
+        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6915.006196012465!2d-90.30339615656396!3d43.22203138655003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87fd9f6537777a01%3A0x32b9e3b6e31af3de!2sGotham%2C%20WI%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1761684512114!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+        'green',
         'Coringa',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4vvsoE0obRvFalTtxHGnTn?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0AH0eFTZaQ6V7Qzj3ap7QY?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
         9
     ],
     "João Francisco Luchtenberg Ventura": [
         "Masculino",
-        "Março de 2009",
-        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28379.870351043755!2d-48.654605008634235!3d-27.23535228522384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a96722683abb%3A0xd95794b9cc95d33f!2sTijucas%2C%20SC%2C%2088200-000!5e0!3m2!1spt-BR!2sbr!4v1761008478065!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
-        'green',
+        "Origem no final dos Anos 1960",
+        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9582025.262833131!2d-15.008325128564216!3d54.10279274704104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x25a3b1142c791a9%3A0xc4f8a0433288257a!2sReino%20Unido!5e0!3m2!1spt-BR!2sbr!4v1761793819018!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+        'gray',
         'Metaleiro do Mal',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/0wHl2FK2AEhwIiYISv7cJ4?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/60fUDmIWuKhngaeBIVhqIV?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
         10
     ],
     "João Paulo Fagundes": [
         "Masculino",
-        "Março de 2008",
-        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28379.870351043755!2d-48.654605008634235!3d-27.23535228522384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a96722683abb%3A0xd95794b9cc95d33f!2sTijucas%2C%20SC%2C%2088200-000!5e0!3m2!1spt-BR!2sbr!4v1761008478065!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
-        'red',
-        '',
-        'Não Tem',
+        "Lançado em Dezembro de 1980",
+        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1563188.3349139972!2d-74.72432305!3d40.073132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c0fb959e00409f%3A0x2cd27b07f83f6d8d!2sNova%20Jersey%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1761751750754!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+        'off-white',
+        'Jason',
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/1bBvch0ad2VfBuPUXJTV8I?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
         11
     ],
     "João Vitor Santos": [
         "Masculino",
-        "Março de 2008",
-        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28379.870351043755!2d-48.654605008634235!3d-27.23535228522384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a96722683abb%3A0xd95794b9cc95d33f!2sTijucas%2C%20SC%2C%2088200-000!5e0!3m2!1spt-BR!2sbr!4v1761008478065!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
-        '#000080',
+        "Lançado em Julho de 2000",
+        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12308.938274402275!2d-77.31845823933908!3d39.531762095314996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c9c9350d261947%3A0xeaea5d6b3b5ceeef!2sWoodsboro%2C%20MD%2021798%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1761794267832!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+        'black',
         'Todo mundo em Pânico',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2XymTaHTrQWDEuSyhfZvqF?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2m00UKm7wLk8SxHQTyBRFj?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
         12
     ],
     "Jonas Luiz Marin": [
         "Masculino",
-        "Março de 2008",
-        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28379.870351043755!2d-48.654605008634235!3d-27.23535228522384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a96722683abb%3A0xd95794b9cc95d33f!2sTijucas%2C%20SC%2C%2088200-000!5e0!3m2!1spt-BR!2sbr!4v1761008478065!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
-        'green',
+        "Lançado em Outubro de 2012",
+        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114964.38937775079!2d-80.30779508662948!3d25.782545373264764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2zTWlhbWksIEZsw7NyaWRhLCBFVUE!5e0!3m2!1spt-BR!2sbr!4v1761794520170!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+        '#f423cf',
         'Jacket',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/54MXF9I8s3DuiQo3g0gZ5k?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2sKCopgrCB5zxQXswBFSxS?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
         13
     ],
     "Lucas Pereira": [
         "Masculino",
-        "Maio de 1984",
-        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.35196272633!2d-73.97950600000001!3d40.697141499999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNova%20Iorque%2C%20NY%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1761751209852!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+        "Lançado em Maio de 1984",
+        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.35196272633!2d-73.97950600000001!3d40.697141499999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNova%20Iorque%2C%20NY%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1761751209852!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         'orange',
         'Michelangelo',
         '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4QpB8RyVWCAcZ5bWRk14bo?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
@@ -160,17 +160,17 @@ let dadosHalloween = {
     ],
     "Manuela Cristina Torres Guimarães": [
         "Masculino",
-        "Dezembro de 1980",
-        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1563188.3349139972!2d-74.72432305!3d40.073132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c0fb959e00409f%3A0x2cd27b07f83f6d8d!2sNova%20Jersey%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1761751750754!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
-        '#off-white',
+        "Lançado em Dezembro de 1980",
+        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1563188.3349139972!2d-74.72432305!3d40.073132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c0fb959e00409f%3A0x2cd27b07f83f6d8d!2sNova%20Jersey%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1761751750754!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+        'off-white',
         'Jason',
         '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/1bBvch0ad2VfBuPUXJTV8I?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
         15
     ],
     "Mateus Zandona Krieger": [
         "Masculino",
-        "Maio de 1984",
-        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.35196272633!2d-73.97950600000001!3d40.697141499999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNova%20Iorque%2C%20NY%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1761751209852!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+        "Lançado em Maio de 1984",
+        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.35196272633!2d-73.97950600000001!3d40.697141499999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNova%20Iorque%2C%20NY%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1761751209852!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         'purple',
         'Donatello',
         '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4QpB8RyVWCAcZ5bWRk14bo?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
@@ -178,8 +178,8 @@ let dadosHalloween = {
     ],
     "Nicollas José Prim": [
         'Masculino',
-        'Fevereiro de 1998',
-        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95523.4026365871!2d-93.6889151653747!3d41.56694322457964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87ee99a4c1611ee7%3A0x710028512691e4b2!2sDes%20Moines%2C%20IA%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1761750599743!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+        'Nascido em Fevereiro de 1998',
+        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95523.4026365871!2d-93.6889151653747!3d41.56694322457964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87ee99a4c1611ee7%3A0x710028512691e4b2!2sDes%20Moines%2C%20IA%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1761750599743!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         'red',
         'Sid Wilson',
         '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5IcKIrmgAhaevCJ8dGQ4jE?utm_source=generator&theme=0" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
@@ -187,8 +187,8 @@ let dadosHalloween = {
     ],
     "Pedro Rafael Santiago": [
         "Masculino",
-        "Maio de 1984",
-        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.35196272633!2d-73.97950600000001!3d40.697141499999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNova%20Iorque%2C%20NY%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1761751209852!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+        "Lançado em Maio de 1984",
+        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.35196272633!2d-73.97950600000001!3d40.697141499999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNova%20Iorque%2C%20NY%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1761751209852!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         'blue',
         'Leonardo',
         '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4QpB8RyVWCAcZ5bWRk14bo?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
@@ -196,8 +196,8 @@ let dadosHalloween = {
     ],
     "Ruan Geraldo": [
         "Masculino",
-        "Maio de 1984",
-        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.35196272633!2d-73.97950600000001!3d40.697141499999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNova%20Iorque%2C%20NY%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1761751209852!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+        "Lançado em Maio de 1984",
+        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.35196272633!2d-73.97950600000001!3d40.697141499999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNova%20Iorque%2C%20NY%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1761751209852!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         'red',
         'Raphael',
         '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4QpB8RyVWCAcZ5bWRk14bo?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
@@ -205,11 +205,11 @@ let dadosHalloween = {
     ],
     "Vinícius de Bona Ruas": [
         "Feminino",
-        "Julho de 2016",
-        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26891.613107591776!2d-95.20320494999999!3d32.59414545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8649dd67b5f59253%3A0xc7e8a2f6689cc942!2sHawkins%2C%20TX%2075765%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1761751968258!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+        "Lançado em Julho de 2016",
+        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26891.613107591776!2d-95.20320494999999!3d32.59414545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8649dd67b5f59253%3A0xc7e8a2f6689cc942!2sHawkins%2C%20TX%2075765%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1761751968258!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         'pink',
         'Eleven',
-        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0aRDSJHPIyPBGfOqxkLyTE?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/1PtQJZVZIdWIYdARpZRDFO?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
         20
     ]
 };
@@ -220,15 +220,9 @@ let random2Halloween = document.getElementById("random2");
 let containerHalloween = document.getElementById("container");
 
 function halloween() {
-    // function que pega o a data atual e multiplica seus valores para gerar um numero aleatorio diário
-    let data = new Date();
-    let dia = data.getDate();
-    let mes = data.getMonth() + 1;
-    // let numeroDiario = (dia * mes) % halloLunos.length;
+    let numeroDiario = Math.floor(Math.random() * halloLunos.length)
 
-    let numeroDiario = 7
-
-    const resposta = halloLunos[numeroDiario];
+    // let numeroDiario = 20
 
     const numImg = dadosHalloween[halloLunos[numeroDiario]][6]
 
