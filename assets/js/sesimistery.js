@@ -49,7 +49,7 @@ let dadosAlunos = {
     "Ana Clara Furtado Goudinho": [
         "Feminino",
         "Janeiro de 2008",
-        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28399.932419006625!2d-48.589466408831505!3d-27.156556011214292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a59192f83479%3A0xb408dc5f7ad35162!2sPorto%20Belo%2C%20SC%2C%2088210-000!5e0!3m2!1spt-BR!2sbr!4v1761010581034!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14179.73229598782!2d-48.56763433095912!3d-27.315283057428992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952759d8bab09ea1%3A0x661be0ca9dd5db00!2sGov.%20Celso%20Ramos%2C%20SC%2C%2088190-000!5e0!3m2!1spt-BR!2sbr!4v1761568898609!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         '#c92093',
         'Desenvolvimento de Sistemas',
         '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/1yUm0iWD3rDf8dViBRpSkt?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
@@ -147,7 +147,7 @@ let dadosAlunos = {
     ],
     "Eduardo Corrêa da Cruz": [
         "Masculino",
-        "Setembro de 2007",
+        "Maio de 2007",
         '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28379.870351043755!2d-48.654605008634235!3d-27.23535228522384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a96722683abb%3A0xd95794b9cc95d33f!2sTijucas%2C%20SC%2C%2088200-000!5e0!3m2!1spt-BR!2sbr!4v1761008478065!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         'blue',
         'Humanas',
@@ -450,17 +450,6 @@ function platina() {
         document.getElementById('numberLunos').style.fontWeight = 'bold'
     }
 
-    // console.log(dadosAlunos);
-    // console.log(alunos);
-    // console.log(numeroDiario)
-
-    // console.log('-----------');
-
-
-    // console.log(dadosAlunos[alunos[numeroDiario]][6])
-    // console.log(dadosAlunos[alunos[numeroDiario]])
-    // console.log(alunos[numeroDiario])
-
     jogo.innerHTML = `
         <h1 id="tata">FALTA: <span id='numberLunos'>${alunos.length}</span> Alunos</h1>
         <h2 id="titulo">Adivinhe o Aluno:</h2>
@@ -589,75 +578,6 @@ function relampago() {
     tempoNaTela(numeroDiario)
 }
 
-// function halloween() {
-//     // function que pega o a data atual e multiplica seus valores para gerar um numero aleatorio diário
-//     let data = new Date();
-//     let dia = data.getDate();
-//     let mes = data.getMonth() + 1;
-//     let numeroDiario = (dia * mes) % halloween.length;
-
-//     // let numeroDiario = 33
-
-//     const resposta = halloween[numeroDiario];
-
-//     const numImg = dadosAlunos[halloween[numeroDiario]][6]
-
-//     jogo.style.display = "flex";
-//     random1.style.display = "flex";
-//     random2.style.display = "flex";
-//     container.style.display = "none";
-//     document.querySelector('body').style.flexDirection = "row";
-//     document.querySelector('body').style.justifyContent = "space-around";
-
-//     jogo.innerHTML = `
-//         <h2 id="titulo">Adivinhe o Aluno:</h2>
-//         <div id="foto"></div><br>
-//         <div class="aluno">
-//             <input id="inAluno" list="lista">
-//             <datalist id="lista">
-//                 <option value="Agatha Iasmin Koschel do Nascimento">
-//                 <option value="Ana Clara Furtado Goudinho">
-//                 <option value="Arthur Alexandre Abbruzzini">
-//                 <option value="Arthur Luiz Beccari">
-//                 <option value="Arthur Marcos Serpa Martins">
-//                 <option value="Arthur Soglia Veronica">
-//                 <option value="Artur Ximendes Del Guerso">
-//                 <option value="Augusto Gonçalves Dias">
-//                 <option value="Brenda Julya de Souza Freitas da Silva">
-//                 <option value="Bryan Prinz da Silva">
-//                 <option value="Daniel Domingos Pereira">
-//                 <option value="Davi Schoenardie de Almeida">
-//                 <option value="Eduardo Corrêa da Cruz">
-//                 <option value="Eric Debarba Scapini">
-//                 <option value="Érick Miguel Schuck">
-//                 <option value="Francisco Lisboa da Silva Lima">
-//                 <option value="Giovanni Felipe Burgo">
-//                 <option value="Guilherme Tomaz Silva">
-//                 <option value="Helena Neis da Silva">
-//                 <option value="João Francisco Luchtenberg Ventura">
-//                 <option value="João Paulo Fagundes">
-//                 <option value="João Victor de Abreu Cunha">
-//                 <option value="João Vitor Galiotto de Souza">
-//                 <option value="João Vitor Santos">
-//                 <option value="Jonas Luiz Marin">
-//                 <option value="Lucas Pereira">
-//                 <option value="Manuela Cristina Torres Guimarães">
-//                 <option value="Mateus Queiroz Logrado">
-//                 <option value="Mateus Zandona Krieger">
-//                 <option value="Nicollas José Prim">
-//                 <option value="Nícollas Lopes do Nascimento">
-//                 <option value="Pedro Rafael Santiago">
-//                 <option value="Ruan Geraldo">
-//                 <option value="Vinícius de Bona Ruas">
-//                 <option value="Yan Bueno Goulart">
-//             </datalist>
-//         </div><br>
-//         <div id='button-section'>
-//             <button onclick="verificarResposta(${numeroDiario}, 'halloween', ${numImg})">Verificar</button>
-//         </div>
-//     `
-// }
-
 function tempoNaTela(num) {
     const res = dadosAlunos[alunos[num]][6]
 
@@ -689,6 +609,10 @@ function verificarResposta(numeroDiario, modo, numImg) {
     let res = alunos[numeroDiario]
 
     const inputAluno = document.getElementById("inAluno");
+
+    if(inputAluno.value == '') {
+        return alert('Vazio = sem dica :(')
+    }
 
     // console.log('----------------------------------------------')
     // console.log('--------------- DADOS DO JOGO ----------------')
