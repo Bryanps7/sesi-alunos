@@ -49,7 +49,7 @@ let dadosAlunos = {
     "Ana Clara Furtado Goudinho": [
         "Feminino",
         "Janeiro de 2008",
-        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14179.73229598782!2d-48.56763433095912!3d-27.315283057428992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952759d8bab09ea1%3A0x661be0ca9dd5db00!2sGov.%20Celso%20Ramos%2C%20SC%2C%2088190-000!5e0!3m2!1spt-BR!2sbr!4v1761568898609!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+        '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56795.14496197555!2d-48.532480656185776!3d-27.165835919028677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a6a6f274d185%3A0xf25e2f1c1cb70fef!2sBombinhas%20-%20SC!5e0!3m2!1spt-BR!2sbr!4v1761913111386!5m2!1spt-BR!2sbr" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         '#c92093',
         'Desenvolvimento de Sistemas',
         '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/1yUm0iWD3rDf8dViBRpSkt?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
@@ -366,7 +366,7 @@ function diario() {
     let mes = data.getMonth() + 1;
     let numeroDiario = (dia * mes) % alunos.length;
 
-    // let numeroDiario = 33
+    // let numeroDiario = 1
 
     const resposta = alunos[numeroDiario];
 
@@ -498,16 +498,6 @@ function platina() {
             <button onclick="verificarResposta(${numeroDiario}, 'platina', ${numeroImagem})">Verificar</button>
         </div>
     `
-
-    // setTimeout(() => {
-    //     document.getElementById('inAluno').value = alunos[numeroDiario]
-    //     verificarResposta(numeroDiario, 'platina')
-
-    //     platina()
-
-    //     if(alunos.length >= 3) {
-    //     }
-    // }, 100)
 }
 
 function relampago() {
@@ -614,17 +604,7 @@ function verificarResposta(numeroDiario, modo, numImg) {
         return alert('Vazio = sem dica :(')
     }
 
-    // console.log('----------------------------------------------')
-    // console.log('--------------- DADOS DO JOGO ----------------')
-    // console.log('número da vez: ' + numeroDiario);
-    // console.log('Aluno: ' + res);
-    // console.log(dadosAlunos[res])
-    // console.log('Valor colocado: ' + inputAluno.value);
-    // console.log('----------------------------------------------')
-    // console.log(dadosAlunos)
-
     if ((jaFoi.length == 0) || (jaFoi.length <= 6 && modo == 'platina')) {
-        // console.log(document.getElementById("foto"))
         document.getElementById("titulo").innerHTML = 'VOCÊ PERDEU!'
         document.getElementById("foto").innerHTML = `
             <img src="/assets/img/aluno${dadosAlunos[res][6]}.png">
@@ -660,9 +640,6 @@ function verificarResposta(numeroDiario, modo, numImg) {
         if (modo == 'platina') {
             if (alunos.length == 0) {
 
-                // console.log('000000000000000000000000000000000000000000000000000000000000000');
-
-
                 document.getElementById("titulo").innerHTML = 'VOCÊ ACERTOU!'
                 document.getElementById("foto").innerHTML = `
                     <img src="/assets/img/aluno${numeroDiario}.png">
@@ -673,27 +650,19 @@ function verificarResposta(numeroDiario, modo, numImg) {
                 document.getElementById('inAluno').style.display = 'none'
             }
 
-            // console.clear()
             delete dadosAlunos[res]
             alunos.splice(numeroDiario, 1)
-            // numeros.splice(numeroDiario, 1)
 
             document.getElementById('button-section').innerHTML += `
                 <button onclick='platina()'>PRÓXIMA</button>
             `
 
 
-            // console.log('antes: ' + alunos.length)
             document.getElementById('numberLunos').innerHTML = alunos.length
-            // console.log('treco: ' + document.getElementById('numberLunos').innerHTML)
-            // console.log('depois: ' + alunos.length)
             jaFoi = ['silhueta', 'cor', 'musica', 'materia', 'endereco', 'genero', 'aniversario', 'caracteres']
             document.querySelector('body').style.backgroundColor = '#f8f8f8'
             random1.innerHTML = ''
             random2.innerHTML = ''
-
-
-            // console.log('tamanho: ', alunos.length);
 
             if (alunos.length == 0) {
                 document.getElementById('button-section').innerHTML = `
@@ -725,8 +694,6 @@ function verificarResposta(numeroDiario, modo, numImg) {
     } else if (jaFoi.length !== 0) {
         let escolhido = Math.floor(Math.random() * jaFoi.length);
 
-        // console.log(jaFoi[escolhido]);
-
         if (jaFoi[escolhido] == 'silhueta') {
             document.getElementById("foto").style.backgroundColor = "transparent";
             document.getElementById('foto').innerHTML = `
@@ -736,8 +703,6 @@ function verificarResposta(numeroDiario, modo, numImg) {
             // 0: genero || 1: aniversario || 2: bairro e cidade || 3: cor || 4: materia || 5: musica
         } else if (jaFoi[escolhido] == 'cor') {
             let body = document.querySelector('body')
-
-            // console.log(dadosAlunos[res][3]);
 
             if (dadosAlunos[res][3] == 'arco-iris') {
                 body.style.background = `linear-gradient(to right, red, orange, yellow, green, aqua, blue, purple)`

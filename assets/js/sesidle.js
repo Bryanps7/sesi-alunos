@@ -400,10 +400,6 @@ window.addEventListener('load', () => {
 function verificarResposta(numeroDiario) {
     let res = alunos[numeroDiario]
 
-    console.log(numeroDiario);
-    console.log(alunos[numeroDiario]);
-    console.log(dadosAlunos[res][8]);
-
     const inputAluno = document.getElementById("inAluno").value;
 
     if (res === inputAluno) {
@@ -421,56 +417,13 @@ function verificarResposta(numeroDiario) {
             origin: { y: 0.6 }  // altura inicial (0 = topo, 1 = base)
         });
     } else {
-        const foto = document.getElementById('foto')
-        const filiação = document.getElementById('filiação')
-        const genero = document.getElementById('genero')
-        const aniversário = document.getElementById('aniversário')
-        const cidade = document.getElementById('cidade')
-        const materia = document.getElementById('materia')
-        const peso = document.getElementById('peso')
-        const altura = document.getElementById('altura')
-
         document.getElementById('dados').style.display = 'flex'
 
-        foto.innerHTML = `
-            <img src='/assets/img/aluno${dadosAlunos[inputAluno][8]}.png'>
-        `
+        montar(res, dadosAlunos[res], dadosAlunos[inputAluno])
 
-        filiação.innerHTML = dadosAlunos[inputAluno][0]
-        if(dadosAlunos[inputAluno][0] == dadosAlunos[res][0]) {
-            filiação.style.backgroundColor = 'rgba(65, 230, 0, 1)';
-            filiação.style.border = '3px solid rgba(140, 255, 125, 1)'
-        }
-        
-        genero.innerHTML = dadosAlunos[inputAluno][1]
-        if(dadosAlunos[inputAluno][1] == dadosAlunos[res][1]) {
-            genero.style.backgroundColor = 'rgba(65, 230, 0, 1)';
-            genero.style.border = '3px solid rgba(140, 255, 125, 1)'
-        }
-        
-        aniversário.innerHTML = meses[dadosAlunos[inputAluno][2]-1] + ' de ' + dadosAlunos[inputAluno][3]
-        if((dadosAlunos[inputAluno][2] == dadosAlunos[res][2])&&(dadosAlunos[inputAluno][3] == dadosAlunos[res][3])) {
-            aniversário.style.backgroundColor = 'rgba(65, 230, 0, 1)';
-            aniversário.style.border = '3px solid rgba(140, 255, 125, 1)'
-        } else if((dadosAlunos[inputAluno][2] == dadosAlunos[res][2])||(dadosAlunos[inputAluno][3] == dadosAlunos[res][3])) {
-            aniversário.style.backgroundColor = 'yellow';
-            aniversário.style.border = '3px solid rgb(204, 204, 0)'
-            aniversário.style.color = 'black'
-        }
-        
-        cidade.innerHTML = dadosAlunos[inputAluno][4]
-        if(dadosAlunos[inputAluno][4] == dadosAlunos[res][4]) {
-            genero.style.backgroundColor = 'rgba(65, 230, 0, 1)';
-            genero.style.border = '3px solid rgba(140, 255, 125, 1)'
-        }
-
-        materia.innerHTML = dadosAlunos[inputAluno][5]
-        if(dadosAlunos[inputAluno][5] == dadosAlunos[res][5]) {
-            genero.style.backgroundColor = 'rgba(65, 230, 0, 1)';
-            genero.style.border = '3px solid rgba(140, 255, 125, 1)'
-        }
-
-        
+        // aluno = res
+        // dados = dadosAlunos[res]
+        // input = dadosAlunos[inputAluno]
 
         inputAluno.value = ''
     }
@@ -478,4 +431,116 @@ function verificarResposta(numeroDiario) {
 
 function resetar() {
     window.location.reload();
+}
+
+function montar(aluno, dados, input) {
+    let divou = document.createElement('div')
+    divou.id = aluno
+    divou.className = 'section-dados'
+    divou.style.display = 'flex'
+
+    let foto = document.createElement('div')
+    let filiacao = document.createElement('div')
+    let genero = document.createElement('div')
+    let aniversario = document.createElement('div')
+    let cidade = document.createElement('div')
+    let materia = document.createElement('div')
+    let peso = document.createElement('div')
+    let altura = document.createElement('div')
+
+    foto.className = 'rebolo'
+    foto.id = 'foto-' + aluno
+
+    filiacao.className = 'rebolo'
+    filiacao.id = 'filiacao-' + aluno
+
+    genero.className = 'rebolo'
+    genero.id = 'genero-' + aluno
+
+    aniversario.className = 'rebolo'
+    aniversario.id = 'aniversario-' + aluno
+
+    cidade.className = 'rebolo'
+    cidade.id = 'cidade-' + aluno
+
+    materia.className = 'rebolo'
+    materia.id = 'materia-' + aluno
+
+    peso.className = 'rebolo'
+    peso.id = 'peso-' + aluno
+
+    altura.className = 'rebolo'
+    altura.id = 'altura-' + aluno
+
+    // 0: FILIAÇÃO || 1: GÊNERO || 2: MÊS || 3: ANO || 4: CIDADE || 5: MATÉRIA FAVORITA || 6: PESO || 7: ALTURA || 8: ID FOTO
+
+    foto.innerHTML = `
+            <img src='/assets/img/aluno${input[8]}.png' width='100' height='100'>
+        `
+    if (input[8] == dados[8]) {
+        foto.style.backgroundColor = 'rgba(65, 230, 0, 1)';
+        foto.style.border = '3px solid rgba(140, 255, 125, 1)'
+    }
+
+    filiacao.innerHTML = input[0]
+    if (input[0] == dados[0]) {
+        filiacao.style.backgroundColor = 'rgba(65, 230, 0, 1)';
+        filiacao.style.border = '3px solid rgba(140, 255, 125, 1)'
+    }
+
+    genero.innerHTML = input[1]
+    if (input[1] == dados[1]) {
+        genero.style.backgroundColor = 'rgba(65, 230, 0, 1)';
+        genero.style.border = '3px solid rgba(140, 255, 125, 1)'
+    }
+
+    aniversario.innerHTML = meses[input[2] - 1] + ' de ' + input[3]
+    if ((input[2] == dados[2]) && (input[3] == dados[3])) {
+        aniversario.style.backgroundColor = 'rgba(65, 230, 0, 1)';
+        aniversario.style.border = '3px solid rgba(140, 255, 125, 1)'
+    } else if ((input[2] == dados[2]) || (input[3] == dados[3])) {
+        aniversario.style.backgroundColor = 'yellow';
+        aniversario.style.border = '3px solid rgb(204, 204, 0)'
+        aniversario.style.color = 'black'
+    }
+    // 3 : ano | 2: mes
+
+    // o aluno inserido é mais velho, logo tem que subir ^
+    if (input[3] < dados[3]) {
+        aniversario.style.backgroundImage = `url('../img/seta.png')`
+
+
+        // o aluno inserido é mais novo, logo tem que descer v
+    } else if (input[3] > dados[3]) {
+
+        // o aluno tem ano igual mas é mais novo, v
+    } else if ((input[3] == dados[3]) || (input[2] > input[2])) {
+
+        // o aluno tem ano igual mas é mais novo, ^
+    } else if ((input[3] == dados[3]) || (input[2] < input[2])) {
+
+    }
+
+    cidade.innerHTML = input[4]
+    if (input[4] == dados[4]) {
+        genero.style.backgroundColor = 'rgba(65, 230, 0, 1)';
+        genero.style.border = '3px solid rgba(140, 255, 125, 1)'
+    }
+
+    materia.innerHTML = input[5]
+    if (input[5] == dados[5]) {
+        genero.style.backgroundColor = 'rgba(65, 230, 0, 1)';
+        genero.style.border = '3px solid rgba(140, 255, 125, 1)'
+    }
+
+    divou.appendChild(foto)
+    divou.appendChild(filiacao)
+    divou.appendChild(genero)
+    divou.appendChild(aniversario)
+    divou.appendChild(cidade)
+    divou.appendChild(materia)
+    divou.appendChild(peso)
+    divou.appendChild(altura)
+
+    document.getElementById('dados').prepend(divou)
 }
