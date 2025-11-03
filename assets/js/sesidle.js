@@ -424,6 +424,11 @@ function verificarResposta(numeroDiario) {
         // aluno = res
         // dados = dadosAlunos[res]
         // input = dadosAlunos[inputAluno]
+        montar(res, dadosAlunos[res], dadosAlunos[inputAluno])
+
+        // aluno = res
+        // dados = dadosAlunos[res]
+        // input = dadosAlunos[inputAluno]
 
         inputAluno.value = ''
     }
