@@ -52,3 +52,20 @@ body {
     width: 100px;
     height: 100px;
 }
+
+.fundo {
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    width: 100px;
+    height: 100px;
+    margin: 0 2px;
+    background-color: red;
+    border: 3px solid var(--color1);
+    /* background: url('/assets/img/seta-cima.png'); */
+    display: flex;
+    border-radius: var(--border-radius);
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+}
