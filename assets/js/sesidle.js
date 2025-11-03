@@ -398,6 +398,7 @@ window.addEventListener('load', () => {
 // 0: FILIAÇÃO || 1: GÊNERO || 2: MÊS || 3: ANO || 4: CIDADE || 5: MATÉRIA FAVORITA || 6: PESO || 7: ALTURA || 8: ID FOTO
 
 function verificarResposta(numeroDiario) {
+    
     let res = alunos[numeroDiario]
 
     const inputAluno = document.getElementById("inAluno").value;
@@ -424,12 +425,7 @@ function verificarResposta(numeroDiario) {
         // aluno = res
         // dados = dadosAlunos[res]
         // input = dadosAlunos[inputAluno]
-        montar(res, dadosAlunos[res], dadosAlunos[inputAluno])
-
-        // aluno = res
-        // dados = dadosAlunos[res]
-        // input = dadosAlunos[inputAluno]
-
+        
         inputAluno.value = ''
     }
 }
@@ -506,30 +502,37 @@ function montar(aluno, dados, input) {
 
     // 3 : ano | 2: mes
     aniversario.innerHTML = meses[input[2] - 1] + ' de ' + input[3]
-    
+
     // ANIVERSÁRIO CORRETO | VERDE | SEM SETA
     if ((input[3] == dados[3]) && (input[2] == dados[2])) {
         aniversario.style.backgroundColor = 'rgba(65, 230, 0, 1)';
         aniversario.style.border = '3px solid rgba(140, 255, 125, 1)'
-    } 
+    }
     // ALUNO MAIS VELHO E MESES IGUAIS | AMARELO | SETA PARA CIMA
-    else if ((input[3] < dados[3])&& (input[2] == dados[2])) {
+    else if ((input[3] < dados[3]) && (input[2] == dados[2])) {
         aniversario.style.background = `url('/assets/img/seta-cima.png')`
         aniversario.style.backgroundSize = '100px 100px'
         aniversario.style.backgroundColor = 'yellow';
-        
-        // o aluno inserido é mais novo, logo tem que descer v
-    } else if (input[3] > dados[3]) {
+    }
+    // ALUNO MAIS VELHO E MESES DIFERENTES | VERMELHO | SETA PARA CIMA
+    else if ((input[3] < dados[3]) && (input[2] != dados[2])) {
         aniversario.style.background = `url('/assets/img/seta-cima.png')`
         aniversario.style.backgroundSize = '100px 100px'
+    }
+    // ALUNO MAIS NOVO E MESES IGUAL | AMARELO | SETA PARA BAIXO
+    else if ((input[3] > dados[3]) && (input[2] == dados[2])) {
+        aniversario.style.background = `url('/assets/img/seta-baixo.png')`
+        aniversario.style.backgroundSize = '100px 100px'
         aniversario.style.backgroundColor = 'yellow';
-        
+
         // o aluno tem ano igual mas é mais novo, v
-    } else if ((input[3] == dados[3]) || (input[2] > input[2])) {
+    } 
+    
+    else if ((input[3] == dados[3]) || (input[2] > input[2])) {
         aniversario.style.background = `url('/assets/img/seta-cima.png')`
         aniversario.style.backgroundSize = '100px 100px'
         aniversario.style.backgroundColor = 'yellow';
-        
+
         // o aluno tem ano igual mas é mais novo, ^
     } else if ((input[3] == dados[3]) || (input[2] < input[2])) {
         aniversario.style.background = `url('/assets/img/seta-cima.png')`
