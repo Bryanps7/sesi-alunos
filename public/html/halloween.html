@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Sorteio de Halloween</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/public/sesi-logo.png" type="image/x-icon">
+
+    <script src="/assets/js/halloween.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <link rel="stylesheet" href="/assets/css/config.css">
+    <link rel="stylesheet" href="/assets/css/halloween.css">
+</head>
+
+<body>
+    <!-- Fantasminhas flutuantes -->
+    <div class="ghost"></div>
+    <div class="ghost"></div>
+    <div class="ghost"></div>
+    <div class="ghost"></div>
+
+    <header>
+        <div class="title">
+            <h2>Rifa de Dia de Halloween</h2>
+        </div>
+        <button onclick="sorteacao()">Sortear</button>
+    </header><br><br>
+    <main>
+        <div id="cassino">
+            <div class="roda" id="roda-letra"></div>
+            <div class="roda" id="roda-numero"></div>
+            <div class="roda" id="roda-ganhador"></div>
+        </div>
+    </main>
+</body>
+
+</html>
