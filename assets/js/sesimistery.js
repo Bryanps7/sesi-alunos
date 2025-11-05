@@ -470,7 +470,7 @@ function platina() {
                 <option value="Daniel Domingos Pereira">
                 <option value="Davi Schoenardie de Almeida">
                 <option value="Eduardo Corrêa da Cruz">
-                <option value="Eric D. Scapini">
+                <option value="Eric Debarba Scapini">
                 <option value="Érick Miguel Schuck">
                 <option value="Francisco Lisboa da Silva Lima">
                 <option value="Giovanni Felipe Burgo">
