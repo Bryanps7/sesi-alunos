@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria Dinâmica por Padrão Numérico</title>
+    <script src="../../assets/js/final.js" defer></script>
+
+    <link rel="stylesheet" href="../../assets/css/config.css">
+    <style>
+        header {
+            background-color: var(--color1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+        }
+
+        header h1 {
+            color: var(--color2);
+            margin: 0;
+            font-size: 2em;
+        }
+
+        body {
+            font-family: sans-serif;
+            margin: 0;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        #gallery {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .image-container {
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 4px;
+        }
+
+        .image-title {
+            margin-top: 8px;
+            font-size: 0.9em;
+            color: #555;
+            word-break: break-all;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Galeria</h1>
+    </header>
+    <br>
+    <div id="gallery">
+    </div>
+</body>
+</html>
