@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Comemoração</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/public/sesi-logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="/assets/css/config.css">
+
+    <script src="/assets/js/comemoracao.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+    <link rel="stylesheet" href="/assets/css/niver.css">
+</head>
+
+<body>
+    <div id="comemorar">
+        <input id="aluno" list="alunos" required>
+        <datalist id="alunos"></datalist>
+        <button id="but-comemorar">Comemorar</button>
+    </div>
+</body>
+<!-- Música de comemoração -->
+<audio id="musica-comemoracao" src="../../assets/aud/crazy_frog.mp3"></audio>
+
+<!-- Tela de efeitos -->
+<div id="tela-comemoracao" style="
+  display:none;
+  position:fixed;
+  top:0; left:0;
+  width:100vw; height:100vh;
+  /* backdrop-filter: blur(6px); */
+  background: rgba(0,0,0,0.3);
+  z-index: 9999;
+  justify-content:center;
+  align-items:center;
+  flex-direction: column;
+  color: white;
+  font-family: Poppins, sans-serif;
+  text-align: center;
+">
+    <h1 id="textao" style="font-size:45px; text-shadow:0 0 20px white; animation:pulse 1.5s infinite;">
+        
+    </h1>
+    <div id="container-aluno"></div>
+</div>
+
+<style>
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.08);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+</style>
+
+</html>
